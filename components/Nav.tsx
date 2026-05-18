@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { AUDIT_URL } from '@/lib/constants'
+import { AUDIT_URL, BOOK_A_CALL_URL } from '@/lib/constants'
 
 const NAV_LINKS = [
   { label: 'About', href: '/about-us' },
@@ -65,12 +65,14 @@ export default function Nav() {
             </div>
 
             <div className="hidden lg:block">
-              <Link
-                href="/contact"
+              <a
+                href={BOOK_A_CALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-navy text-white px-6 py-2.5 font-body font-semibold text-[12px] tracking-widest uppercase hover:bg-gold transition-colors"
               >
                 Book a Call
-              </Link>
+              </a>
             </div>
 
             <button
@@ -98,13 +100,15 @@ export default function Nav() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
+              <a
+                href={BOOK_A_CALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="inline-block bg-navy text-white px-6 py-2.5 font-body font-semibold text-[12px] tracking-widest uppercase hover:bg-gold transition-colors mt-2"
               >
                 Book a Call
-              </Link>
+              </a>
             </div>
           </div>
         )}

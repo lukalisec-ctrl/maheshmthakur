@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import StatBlock from '@/components/StatBlock'
 import TestimonialCard from '@/components/TestimonialCard'
 import Accordion from '@/components/Accordion'
-import { AUDIT_URL } from '@/lib/constants'
+import { AUDIT_URL, BOOK_A_CALL_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'AI Strategy Advisory for Boards. Turn AI Spending Into Real Returns.',
@@ -66,12 +65,14 @@ export default function AdvisoryPage() {
             financial outcomes, not slides.
           </p>
           <div>
-            <Link
-              href="/contact"
+            <a
+              href={BOOK_A_CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
             >
               Book a Call
-            </Link>
+            </a>
           </div>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
@@ -338,12 +339,14 @@ export default function AdvisoryPage() {
             cannot, I will tell you who can.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href="/contact"
+            <a
+              href={BOOK_A_CALL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
             >
               Book a Call
-            </Link>
+            </a>
             <a
               href={AUDIT_URL}
               target="_blank"
