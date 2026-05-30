@@ -20,12 +20,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://maheshmthakur.com'),
   title: {
-    default:
-      'Mahesh M. Thakur. AI ROI for Boards. C-Suite Coaching for Tech Leaders.',
+    default: 'Mahesh M. Thakur | Executive Coach for Technology Leaders',
     template: '%s | Mahesh M. Thakur',
   },
   description:
-    'I help Boards turn AI spending into real returns. I help VPs in tech get to the C-Suite. Former Microsoft, Amazon, GoDaddy operator. Stanford GSB Certified Board Director.',
+    'Mahesh M. Thakur helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope. Top 100 Coach. Former Microsoft, Amazon, GoDaddy operator.',
   openGraph: {
     type: 'website',
     locale: 'en_US',

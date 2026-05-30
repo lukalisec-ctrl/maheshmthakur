@@ -2,78 +2,47 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
-import StatBlock from '@/components/StatBlock'
-import LogoBar from '@/components/LogoBar'
-import TestimonialCard from '@/components/TestimonialCard'
-import { AUDIT_URL } from '@/lib/constants'
+import ContactForm from '@/components/ContactForm'
+import { ASSESSMENT_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title:
-    'Mahesh M. Thakur. AI ROI for Boards. C-Suite Coaching for Tech Leaders.',
+  title: 'Mahesh M. Thakur | Executive Coach for Technology Leaders',
   description:
-    'I help Boards turn AI spending into real returns. I help VPs in tech get to the C-Suite. Microsoft, Amazon, GoDaddy operator. Stanford GSB Certified Board Director.',
+    'Mahesh M. Thakur helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.',
 }
 
-const PROOF_STATS = [
+const INSIGHTS = [
   {
-    number: '$1B',
-    label: 'Revenue Delivered',
-    description:
-      'Core architect of the first $1 billion in Bing Ads revenue at Microsoft.',
+    title: 'Why High Performance Is No Longer Enough',
+    excerpt:
+      'At a certain level, the evaluation changes. Most leaders do not see it until they have already been passed over.',
+    href: '/insights',
   },
   {
-    number: '$600M',
-    label: 'P&L Managed',
-    description: 'Full P&L responsibility at GoDaddy.',
+    title: 'The Invisible Bar: What Is Actually Holding You Back',
+    excerpt: 'The gap between Director and VP is not a capability gap. It is a signal gap.',
+    href: '/insights',
   },
   {
-    number: '81%',
-    label: 'Delivery Rate',
-    description:
-      'Shifted organizational delivery from 23% to 81% on-time and on-budget.',
-  },
-]
-
-const CLIENT_STATS = [
-  {
-    number: '2.7x',
-    label: 'Revenue Growth',
-    description: 'Average revenue growth achieved by client organizations.',
-  },
-  {
-    number: '40%',
-    label: 'Faster Decisions',
-    description: 'Faster decision-making reported by client leadership teams.',
-  },
-  {
-    number: '16%',
-    label: 'Revenue Per Employee',
-    description: 'Increase in Revenue Per Employee within twelve months.',
+    title: 'How to Influence Senior Stakeholders Without Direct Authority',
+    excerpt: 'Getting things done at this level requires moving people who do not report to you.',
+    href: '/insights',
   },
 ]
 
-const HOME_TESTIMONIALS = [
-  {
-    quote:
-      'Mahesh is the rare coach who does not try to change who you are. He amplifies your strengths and equips you with practical tools to lead at a higher level.',
-    name: 'Varun Vontimitta',
-    title: 'Partner Engineering Leader',
-    company: 'Meta',
-  },
-  {
-    quote:
-      'Every engineering leader focused on building executive presence should work with Mahesh. The impact of your work shifts from being competent to achieving true excellence.',
-    name: 'Vijay Kristipati',
-    title: 'Head of Engineering',
-    company: 'Google',
-  },
-  {
-    quote:
-      'Mahesh is uniquely qualified as an indispensable tech CEO coach. His impressive background brings the right shift in the mindset and strategies every CEO needs to run a successful company. He genuinely listens and dives into your business as your thought partner.',
-    name: 'Feyzi Fatehi',
-    title: 'Chief Executive Officer',
-    company: 'Corent Technologies',
-  },
+const INVISIBLE_BAR_ITEMS = [
+  'Executive presence',
+  'Strategic communication',
+  'Stakeholder influence',
+  'Enterprise judgment',
+  'Promotion readiness',
+  'Confidence under pressure',
+]
+
+const INFLECTION_ROWS = [
+  { moment: 'Bigger scope', nav: '"I am being asked to lead beyond my current role."' },
+  { moment: 'Executive presence', nav: '"I need to show up with more clarity, confidence, and authority."' },
+  { moment: 'Enterprise influence', nav: '"I need to influence senior stakeholders across functions and agendas."' },
 ]
 
 export default function HomePage() {
@@ -81,64 +50,28 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2">
-        <div
-          className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0"
-          style={{
-            background:
-              'linear-gradient(135deg, #1A2B49 0%, #162040 100%)',
-          }}
-        >
-          <div className="font-body text-[12px] uppercase tracking-[0.15em] text-gold mb-6">
-            TIRA Strategic Advisory
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0">
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
+            Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
-            I help leaders make the decisions that define their careers.
+            High-Stakes Leadership for Technology Leaders
           </h1>
-          <div className="space-y-4 mb-10">
-            <div className="flex items-baseline gap-4">
-              <span className="font-display text-[18px] font-bold text-gold whitespace-nowrap">
-                Boards.
-              </span>
-              <span className="font-body text-[18px] text-white leading-relaxed">
-                I turn AI spending into real returns.
-              </span>
-            </div>
-            <div className="flex items-baseline gap-4">
-              <span className="font-display text-[18px] font-bold text-gold whitespace-nowrap">
-                Leaders.
-              </span>
-              <span className="font-body text-[18px] text-white leading-relaxed">
-                I get you to the C-Suite.
-              </span>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <Link
-              href="/advisory"
-              className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors text-center border border-white/20"
-            >
-              For Boards and CEOs
-            </Link>
-            <Link
-              href="/executive-coaching"
-              className="border border-white text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors text-center"
-            >
-              For VPs and Directors
-            </Link>
-          </div>
-          <p className="font-body text-[13px] text-white/60">
-            Not sure which path is yours?{' '}
-            <a
-              href={AUDIT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-gold text-white/60"
-            >
-              Take the 3-minute audit.
-            </a>
+          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-4">
+            Delivering impact, influence, and executive presence at enterprise grade.
           </p>
+          <p className="font-body text-[17px] leading-[1.75] text-white/60 mb-10">
+            Mahesh M. Thakur helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.
+          </p>
+          <div>
+            <a
+              href="#work-with-mahesh"
+              className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
-
         <div className="relative min-h-[50vh] lg:min-h-full">
           <Image
             src="/images/mahesh-hero.jpg"
@@ -151,57 +84,159 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About */}
-      <section className="bg-white py-24 lg:py-32">
+      {/* Work With Mahesh */}
+      <section id="work-with-mahesh" className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-                I built revenue lines before I advised them.
-              </h2>
-              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>
-                  My name is Mahesh M. Thakur. I founded TIRA Strategic
-                  Advisory after twenty years inside Microsoft, Amazon, Intuit,
-                  and GoDaddy.
-                </p>
-                <p>
-                  At Microsoft, I was part of the team that built the first
-                  billion dollars in Bing Ads revenue. At GoDaddy, I ran a six
-                  hundred million dollar P&amp;L. At Amazon, I held
-                  responsibility for forty percent of Marketplace units.
-                </p>
-                <p>
-                  I am a Stanford GSB Certified Board Director and one of
-                  fifteen Master Certified Coaches in the world in Marshall
-                  Goldsmith&apos;s Stakeholder Centered Coaching method. I was
-                  selected for his 100 Coaches group from eighteen thousand
-                  applicants worldwide.
-                </p>
-                <p>
-                  I know what it feels like to sit in front of a Board and
-                  explain why an eight-figure AI budget is not moving the
-                  P&amp;L. I know what it feels like to be told you are not
-                  ready for VP with no real explanation why.
-                </p>
-                <p>That is the work I do now.</p>
-              </div>
-              <div className="mt-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
+            Work With Mahesh
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
+              <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
+              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                Private coaching for high-performing technology leaders who are ready to build greater presence, judgment, and influence for bigger scope.
+              </p>
+              <div>
                 <Link
-                  href="/about-us"
-                  className="font-body text-[15px] text-gold underline decoration-gold"
+                  href="/executive-coaching"
+                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
                 >
-                  Read the full bio
+                  Learn More
                 </Link>
               </div>
             </div>
-            <div className="relative h-[500px] lg:h-[600px]">
+            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
+              <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
+              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                A confidential peer room for senior technology leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
+              </p>
+              <div>
+                <Link
+                  href="/c-suite-forum"
+                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                >
+                  Request Invitation
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Partnering With Leaders */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+            Partnering With Leaders at Critical Inflection Points
+          </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+            Mahesh works with high-performing technology leaders when performance alone is no longer enough.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-border">
+              <thead>
+                <tr className="bg-navy text-white">
+                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left w-[200px]">
+                    Moment
+                  </th>
+                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left">
+                    What the leader is navigating
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {INFLECTION_ROWS.map((row, i) => (
+                  <tr key={row.moment} className={`border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-bg'}`}>
+                    <td className="px-6 py-5 font-body font-semibold text-navy align-top">{row.moment}</td>
+                    <td className="px-6 py-5 font-body text-[16px] italic text-[#1A1A1A]">{row.nav}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Credibility Metrics */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
+            Operator Experience. Coaching Depth. Enterprise Context.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-navy p-8">
+              <h3 className="font-body text-[15px] font-semibold text-white mb-3">
+                Top 100 Coach and Rare Master Certification
+              </h3>
+              <p className="font-body text-[15px] leading-[1.7] text-white/70">
+                Selected for Marshall Goldsmith&apos;s 100 Coaches. One of only approximately 15 Master Certified Coaches worldwide in Stakeholder Centered Coaching.
+              </p>
+            </div>
+            <div className="bg-bg border border-border p-8">
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">20+</div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
+                Years of Operator Experience
+              </div>
+              <p className="font-body text-[15px] leading-[1.7] text-muted">
+                Executive experience across Microsoft, Amazon, Intuit, and GoDaddy.
+              </p>
+            </div>
+            <div className="bg-bg border border-border p-8">
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$1B</div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
+                Revenue Delivered
+              </div>
+              <p className="font-body text-[15px] leading-[1.7] text-muted">
+                Part of the Microsoft Bing Ads core team that helped deliver the first $1 billion in revenue.
+              </p>
+            </div>
+            <div className="bg-bg border border-border p-8">
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$600M</div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
+                P&amp;L Managed
+              </div>
+              <p className="font-body text-[15px] leading-[1.7] text-muted">
+                Managed product portfolios with P&amp;L responsibility up to $600M at GoDaddy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Why Senior Leaders Work With Mahesh */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+                Why Senior Leaders Work With Mahesh
+              </h2>
+              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                <p>
+                  Mahesh brings the perspective of a former operator, product executive, AI leader, investor, and executive coach.
+                </p>
+                <p>
+                  He has worked inside high-pressure technology organizations where leaders are expected to deliver results, manage ambiguity, influence stakeholders, and keep growing.
+                </p>
+                <p>At this level, performance matters. But performance alone is not enough.</p>
+                <p>
+                  The next level requires presence, judgment, trust, and communication that lands when the stakes are high.
+                </p>
+              </div>
+            </div>
+            <div>
               <Image
-                src="/images/mahesh-about.jpg"
+                src="/images/mahesh-coaching.jpg"
                 alt="Mahesh M. Thakur"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                width={600}
+                height={700}
+                className="object-cover w-full"
               />
             </div>
           </div>
@@ -210,128 +245,100 @@ export default function HomePage() {
 
       <GoldDivider />
 
-      {/* Press Bar */}
-      <section className="py-8">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            As Featured In
+      {/* The Invisible Bar */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+            The Invisible Bar
+          </h2>
+          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+            <p>
+              Most leaders are not held back because they lack intelligence, effort, or technical capability.
+            </p>
+            <p>They get held back because the bar changes.</p>
+            <p>
+              At one level, leaders are rewarded for execution. At the next level, they are evaluated on judgment, influence, presence, and trust. No one explicitly explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
+            </p>
+            <p>Mahesh helps leaders cross that invisible bar.</p>
           </div>
-          <p className="font-body text-[13px] uppercase tracking-[0.1em] text-muted">
-            Forbes &nbsp;&middot;&nbsp; C-Suite Network &nbsp;&middot;&nbsp; ProductCon
-          </p>
+          <div className="font-body text-[15px] font-semibold uppercase tracking-[0.08em] text-navy mt-8 mb-4">
+            What he strengthens:
+          </div>
+          <ul className="space-y-3">
+            {INVISIBLE_BAR_ITEMS.map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="text-gold font-semibold flex-shrink-0">—</span>
+                <span className="font-body text-[17px] text-[#1A1A1A]">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
       <GoldDivider />
 
-      {/* Two Paths */}
-      <section className="py-24 lg:py-32" style={{ background: '#F4F6FA' }}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-white border border-border border-t-4 border-t-navy p-10">
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mb-4">
-                Boards and CEOs
-              </div>
-              <h3 className="font-body text-[20px] font-semibold text-navy leading-snug mb-5">
-                You are spending real money on AI. Where are the returns?
-              </h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
-                Most enterprise AI budgets are not failing because the
-                technology does not work. They are failing because nobody at the
-                table can connect the spending to the P&amp;L. I fix that.
-              </p>
-              <Link
-                href="/advisory"
-                className="font-body text-[14px] text-gold underline decoration-gold"
-              >
-                See how I work with Boards
-              </Link>
-            </div>
-
-            <div className="bg-white border border-border border-t-4 border-t-navy p-10">
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mb-4">
-                VPs and Directors
-              </div>
-              <h3 className="font-body text-[20px] font-semibold text-navy leading-snug mb-5">
-                You have been told you are not ready for VP. Nobody told you
-                why.
-              </h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
-                The gap between Director and VP is not about capability. It is
-                about how you show up, how you talk about money, and how you
-                handle pressure at the executive level. I map that gap and close
-                it.
-              </p>
-              <Link
-                href="/executive-coaching"
-                className="font-body text-[14px] text-gold underline decoration-gold"
-              >
-                See how I work with tech leaders
-              </Link>
-            </div>
-          </div>
-          <p className="font-body text-[14px] text-muted text-center mt-8">
-            I work with a limited number of clients each quarter. Both programs are currently open.
-          </p>
-          <p className="font-body text-[14px] text-muted text-center mt-3">
-            Looking to book a{' '}
-            <Link href="/speaking" className="text-gold underline decoration-gold">
-              keynote →
-            </Link>
-            ?
-          </p>
-        </div>
-      </section>
-
-      {/* Proof Numbers */}
+      {/* The Invisible Bar Assessment */}
       <section className="bg-navy py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <StatBlock stats={PROOF_STATS} theme="dark" />
-        </div>
-      </section>
-
-      {/* Client Outcomes */}
-      <section className="bg-bg py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[13px] uppercase tracking-[0.08em] text-gold mb-8">
-            What Clients Achieve
+        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-6">
+            The Invisible Bar Assessment
+          </h2>
+          <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/80 mb-10">
+            <p>
+              Find out what may be limiting your readiness for bigger scope, stronger influence, and higher-stakes leadership.
+            </p>
+            <p>Five questions. Five minutes. A clear picture of where you stand.</p>
           </div>
-          <StatBlock stats={CLIENT_STATS} theme="light" />
-        </div>
-      </section>
-
-      {/* Logo Bar */}
-      <section className="bg-white py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[13px] uppercase tracking-[0.08em] text-gold mb-8">
-            Twenty years building. Ten thousand hours coaching.
-          </div>
-          <LogoBar />
+          <a
+            href={ASSESSMENT_URL}
+            className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+          >
+            Take the Assessment
+          </a>
         </div>
       </section>
 
       <GoldDivider />
 
-      {/* Testimonials */}
-      <section className="bg-bg py-24 lg:py-32">
+      {/* Latest Insights */}
+      <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10 overflow-x-auto">
-            {HOME_TESTIMONIALS.map((t) => (
-              <TestimonialCard key={t.name} {...t} />
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+            The Latest From Mahesh
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {INSIGHTS.map((item) => (
+              <div key={item.title} className="bg-bg border border-border p-8 flex flex-col gap-4">
+                <h3 className="font-body text-[17px] font-semibold text-navy leading-snug">
+                  {item.title}
+                </h3>
+                <p className="font-body text-[15px] leading-[1.7] text-muted flex-1">{item.excerpt}</p>
+                <Link
+                  href={item.href}
+                  className="font-body text-[13px] text-gold underline decoration-gold mt-auto"
+                >
+                  Read More
+                </Link>
+              </div>
             ))}
           </div>
-          <div className="text-center">
-            <Link
-              href="/testimonials"
-              className="font-body text-[15px] text-gold underline decoration-gold"
-            >
-              Read all testimonials
-            </Link>
-          </div>
         </div>
       </section>
 
       <GoldDivider />
+
+      {/* Final CTA Form */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-2xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+            Ready to Start the Conversation?
+          </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+            If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note.
+          </p>
+          <ContactForm buttonLabel="Send Request" />
+        </div>
+      </section>
     </>
   )
 }

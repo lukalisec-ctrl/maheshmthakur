@@ -4,17 +4,12 @@ import { useState } from 'react'
 
 type ContactFormProps = {
   defaultService?: string
+  buttonLabel?: string
 }
 
-const SERVICE_OPTIONS = [
-  'Advisory for Boards or CEOs',
-  'Coaching for VPs or Directors',
-  'C-Suite Forum',
-  'Speaking',
-  'Something else',
-]
-
-export default function ContactForm({ defaultService }: ContactFormProps) {
+export default function ContactForm({
+  buttonLabel = 'Send Request',
+}: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'success'>('idle')
 
   if (status === 'success') {
@@ -37,7 +32,7 @@ export default function ContactForm({ defaultService }: ContactFormProps) {
     >
       <div>
         <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          Full Name <span className="text-gold">*</span>
+          Name <span className="text-gold">*</span>
         </label>
         <input
           type="text"
@@ -59,7 +54,7 @@ export default function ContactForm({ defaultService }: ContactFormProps) {
 
       <div>
         <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          LinkedIn URL
+          LinkedIn Link
         </label>
         <input
           type="url"
@@ -69,30 +64,11 @@ export default function ContactForm({ defaultService }: ContactFormProps) {
 
       <div>
         <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          What are you looking for? <span className="text-gold">*</span>
-        </label>
-        <select
-          required
-          defaultValue={defaultService ?? ''}
-          className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold appearance-none"
-        >
-          <option value="" disabled>
-            Select one
-          </option>
-          {SERVICE_OPTIONS.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div>
-        <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          Tell me about your situation
+          Primary Challenge <span className="text-gold">*</span>
         </label>
         <textarea
           rows={4}
+          required
           className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold resize-none"
         />
       </div>
@@ -101,8 +77,11 @@ export default function ContactForm({ defaultService }: ContactFormProps) {
         type="submit"
         className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
       >
-        Send
+        {buttonLabel}
       </button>
+      <p className="font-body text-[13px] text-muted mt-3">
+        All inquiries are treated confidentially.
+      </p>
     </form>
   )
 }

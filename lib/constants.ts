@@ -4,3 +4,6 @@ export const AUDIT_URL =
 
 export const BOOK_A_CALL_URL =
   'https://calendly.com/meetmahesh7/c-suite-connect-with-mahesh-m-thakur'
+
+export const ASSESSMENT_URL =
+  process.env.NEXT_PUBLIC_ASSESSMENT_URL ?? '/assessment'
