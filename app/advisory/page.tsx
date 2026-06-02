@@ -56,7 +56,7 @@ export default function AdvisoryPage() {
       {/* Hero */}
       <section className="bg-navy py-24 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24">
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
+          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             You are approving an eight-figure AI budget. The P&amp;L is not
             moving.
           </h1>

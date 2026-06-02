@@ -1,50 +1,18 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import TestimonialCard from '@/components/TestimonialCard'
 
 export const metadata: Metadata = {
-  title: 'Client Testimonials. Mahesh M. Thakur.',
+  title: 'What Clients Say | Mahesh M. Thakur',
   description:
-    'What CEOs, CTOs, and VPs at Meta, Google, NVIDIA, Apple, Microsoft, and more say about working with Mahesh.',
+    'What CEOs, CTOs, and VPs at Meta, Google, NVIDIA, Apple, Microsoft, Samsung, and more say about working with Mahesh.',
 }
 
-const CEO_TESTIMONIALS = [
+const FEATURED = [
   {
     quote:
-      'Mahesh is uniquely qualified as an indispensable tech CEO coach. His impressive background brings the right shift in the mindset and strategies every CEO needs to run a successful company. He genuinely listens and dives into your business as your thought partner.',
-    name: 'Feyzi Fatehi',
-    title: 'CEO',
-    company: 'Corent Technologies',
-  },
-  {
-    quote:
-      'Mahesh truly understands what it takes to formulate and deliver product-led growth. Mahesh quickly understood the need for us to scale and came up with effective strategies for us to incubate a new line of products.',
-    name: 'Kris Rudeegraap',
-    title: 'CEO',
-    company: 'Sendoso',
-  },
-  {
-    quote:
-      'Mahesh helped us prepare how to get in front of large investors and made our pitch impactful by including key insights that matter.',
-    name: 'Amit Chachnek',
-    title: 'CEO and Founder',
-    company: 'WeR',
-  },
-  {
-    quote:
-      'I recommend this program with no hesitation. Employee engagement, customer growth, and board relations are critical for every CEO to address. Mahesh helped us with these areas through active leadership training.',
-    name: 'Jeff Paul',
-    title: 'CEO and Founder',
-    company: 'Ziotag',
-  },
-]
-
-const VP_TESTIMONIALS = [
-  {
-    quote:
-      'Mahesh is the rare coach who does not try to change who you are. He amplifies your strengths and equips you with practical tools to lead at a higher level.',
+      'Hiring Mahesh will amplify your strengths and equip you with practical tools to lead at a higher level.',
     name: 'Varun Vontimitta',
     title: 'Partner Engineering Leader',
     company: 'Meta',
@@ -58,6 +26,20 @@ const VP_TESTIMONIALS = [
   },
   {
     quote:
+      'Thanks to Mahesh, I am now a part of a Fortune 5 company. Working with Mahesh has been life-changing for me.',
+    name: 'Shikha Jain',
+    title: 'Machine Learning Product Manager',
+    company: 'Apple',
+  },
+  {
+    quote:
+      'What sets Mahesh apart is that he has himself walked the walk a few times in startups and in trillion-dollar companies.',
+    name: 'Sudha Thota',
+    title: 'Senior Director of Product Management',
+    company: 'Microsoft',
+  },
+  {
+    quote:
       'Mahesh brings a rich perspective as a business leader, technologist, and coach. He humanizes and simplifies complex situations. It is very hard to find an executive coach who has been there and done that.',
     name: 'Hyo Jung Song',
     title: 'Vice President of Mobile',
@@ -65,10 +47,42 @@ const VP_TESTIMONIALS = [
   },
   {
     quote:
-      'Mahesh approaches board and C-Suite advisory with a mixture of mentorship and partnership. His approach improved the dynamics with my team, my relationships with the board, and my rapport with the execs.',
-    name: 'Kent Lopez',
-    title: 'VP of Sales',
-    company: 'Neural',
+      'Mahesh is uniquely qualified as an indispensable tech CEO coach. His impressive background brings the right shift in the mindset and strategies every CEO needs to run a successful company. He genuinely listens and dives into your business as your thought partner.',
+    name: 'Feyzi Fatehi',
+    title: 'Chief Executive Officer',
+    company: 'Corent Technologies',
+  },
+]
+
+const COMPANIES = [
+  'Meta',
+  'Google',
+  'Apple',
+  'Microsoft',
+  'Samsung',
+  'NVIDIA',
+  'PayPal',
+  'Walmart',
+  'Adobe',
+  'LinkedIn',
+  'eBay',
+  'Autodesk',
+  'Intuit',
+  'OpenAI',
+  'National Geographic',
+  'Hackensack Meridian Health',
+  'Sendoso',
+  'Corent Technologies',
+  'Zoox',
+]
+
+const LIBRARY = [
+  {
+    quote:
+      'Mahesh adeptly identified areas where I could improve my leadership skills, communication, and decision-making processes. One of his key strengths is his deep understanding of the corporate landscape and the challenges executives face.',
+    name: 'Mark Eimer',
+    title: 'Chief Technology Officer',
+    company: 'Hackensack Meridian Health',
   },
   {
     quote:
@@ -79,34 +93,17 @@ const VP_TESTIMONIALS = [
   },
   {
     quote:
-      'Mahesh adeptly identified areas where I could improve my leadership skills, communication, and decision-making processes. One of his key strengths is his deep understanding of the corporate landscape and the challenges executives face.',
-    name: 'Mark Eimer',
-    title: 'Chief Technology Officer',
-    company: 'Hackensack Meridian Health',
-  },
-  {
-    quote:
-      "Mahesh's critical guidance equipped me with the leadership skills and executive presence essential for my leadership journey. His approach was highly personalized.",
-    name: 'Henderson Jones',
-    title: 'Sr. Director Infrastructure and Security',
-    company: 'National Geographic',
-  },
-]
-
-const DATA_TESTIMONIALS = [
-  {
-    quote:
-      'Thanks to Mahesh, I am now a part of a Fortune 5 company. Working with Mahesh has been life-changing for me.',
-    name: 'Shikha Jain',
-    title: 'Machine Learning PM',
-    company: 'Apple',
-  },
-  {
-    quote:
       'Mahesh is direct and will not hold back from saying what he sees is preventing you from growing. My only regret is not meeting him earlier in my career.',
     name: 'Monisha Kanoth',
-    title: 'Sr. Data Engineering Manager',
+    title: 'Senior Data Engineering Manager',
     company: 'Apple',
+  },
+  {
+    quote:
+      'Mahesh made me a powerful storyteller. My thought leadership and the impact of what I did was immediately noticed by my leadership and my teams.',
+    name: 'Jogender Singh',
+    title: 'Head of Engineering',
+    company: 'PayPal',
   },
   {
     quote:
@@ -117,34 +114,59 @@ const DATA_TESTIMONIALS = [
   },
   {
     quote:
+      'Mahesh truly understands what it takes to formulate and deliver product-led growth. He quickly understood the need for us to scale and came up with effective strategies to incubate a new line of products.',
+    name: 'Kris Rudeegraap',
+    title: 'Chief Executive Officer',
+    company: 'Sendoso',
+  },
+  {
+    quote:
       'Mahesh has been instrumental in my learning leadership and strategic skills necessary to unlock my true potential and change my career trajectory.',
     name: 'Shirish Tatikonda',
-    title: 'Head of Data Science and ML Engineering',
+    title: 'Head of Data Science and Machine Learning Engineering',
     company: 'Walmart',
+  },
+  {
+    quote:
+      'I recommend this program with no hesitation. Employee engagement, customer growth, and board relations are critical for every CEO to address. Mahesh helped us with these areas through active leadership training.',
+    name: 'Jeff Paul',
+    title: 'Chief Executive Officer and Founder',
+    company: 'Ziotag',
+  },
+  {
+    quote:
+      "Mahesh's critical guidance equipped me with the leadership skills and executive presence essential for my leadership journey. His approach was highly personalized.",
+    name: 'Henderson Jones',
+    title: 'Senior Director Infrastructure and Security',
+    company: 'National Geographic',
   },
   {
     quote:
       'Mahesh is the best advisor I could have ever asked for. He will work with you from the ground up to help you realize your full potential.',
     name: 'Subhan Ali',
-    title: 'Sr. Manager Data Science and ML',
+    title: 'Senior Manager Data Science and Machine Learning',
     company: 'NVIDIA',
   },
-]
-
-const DIRECTOR_TESTIMONIALS = [
   {
     quote:
-      'Mahesh made me a powerful storyteller. My thought leadership and the impact of what I did was immediately noticed by my leadership and my teams.',
-    name: 'Jogender Singh',
-    title: 'Head of Engineering',
-    company: 'PayPal',
+      'Mahesh approaches board and C-Suite advisory with a mixture of mentorship and partnership. His approach improved the dynamics with my team, my relationships with the board, and my rapport with the executives.',
+    name: 'Kent Lopez',
+    title: 'Vice President of Sales',
+    company: 'Neural',
   },
   {
     quote:
-      'What sets Mahesh apart is that he has himself walked the walk a few times in startups and in trillion-dollar companies.',
-    name: 'Sudha Thota',
-    title: 'Sr. Director of Product Management',
-    company: 'Microsoft',
+      'Mahesh helped us prepare how to get in front of large investors and made our pitch impactful by including key insights that matter.',
+    name: 'Amit Chachnek',
+    title: 'Chief Executive Officer and Founder',
+    company: 'WeR',
+  },
+  {
+    quote:
+      'Through thought-provoking questions and practical exercises, Mahesh guided me to explore my potential, confront my limitations, and cultivate a growth mindset.',
+    name: 'Eric Jones',
+    title: 'Director Clinical Informatics',
+    company: 'Hackensack Meridian Health',
   },
   {
     quote:
@@ -155,13 +177,6 @@ const DIRECTOR_TESTIMONIALS = [
   },
   {
     quote:
-      'Mahesh has not only guided me to be a better leader but challenged me to step outside of my comfort zone and take on new challenges.',
-    name: 'Eric Jones',
-    title: 'Director Clinical Informatics',
-    company: 'Hackensack Meridian Health',
-  },
-  {
-    quote:
       'The enterprise strategy work I did with Mahesh has added tremendous value to my organization.',
     name: 'Gautam Kumar',
     title: 'Director of Analytics',
@@ -169,153 +184,114 @@ const DIRECTOR_TESTIMONIALS = [
   },
 ]
 
-type Group = {
-  label: string
-  items: typeof CEO_TESTIMONIALS
-}
-
-const GROUPS: Group[] = [
-  { label: 'From CEOs and Founders', items: CEO_TESTIMONIALS },
-  { label: 'From VPs and Heads of Engineering', items: VP_TESTIMONIALS },
-  { label: 'From Data and AI Leaders', items: DATA_TESTIMONIALS },
-  { label: 'From Directors and Managers', items: DIRECTOR_TESTIMONIALS },
-]
-
 export default function TestimonialsPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-navy py-24 lg:py-0 lg:min-h-[60vh] flex items-center">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full py-24 lg:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-            <div className="lg:col-span-3">
-              <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
-                What the people I work with say.
-              </h1>
-              <p className="font-body text-[18px] leading-[1.75] text-white/70">
-                No selected quotes. The full testimonials, in their own words.
-              </p>
-              <p className="font-body text-[16px] text-gold mt-4">
-                Twenty-two leaders. Fifteen companies. One through line.
-              </p>
-            </div>
-            <div className="hidden md:block lg:col-span-2">
-              <div className="relative h-[400px]">
-                <Image
-                  src="/images/mahesh-hero.jpg"
-                  alt="Mahesh M. Thakur"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                  sizes="(max-width: 1024px) 0vw, 40vw"
-                />
-              </div>
-            </div>
+      {/* Section 1 — Hero */}
+      <section className="bg-navy py-24 lg:py-32">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
+            What Clients Say
           </div>
+          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
+            Voices From the Work.
+          </h1>
+          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-4 max-w-3xl mx-auto">
+            Senior leaders across Meta, Google, Apple, Microsoft, Samsung, NVIDIA, and dozens of other organizations have worked with Mahesh through coaching engagements, forum membership, and keynote audiences. The voices below are theirs, not his.
+          </p>
+          <p className="font-body text-[16px] leading-[1.75] text-white/50 max-w-2xl mx-auto">
+            Every testimonial on this page is from a named client or a verified anonymous contributor. Nothing is paraphrased.
+          </p>
         </div>
       </section>
-
-      {/* Testimonial Groups */}
-      <div className="bg-bg">
-        {GROUPS.map((group, groupIndex) => (
-          <section
-            key={group.label}
-            className={`py-24 lg:py-32 ${groupIndex % 2 === 0 ? 'bg-bg' : 'bg-white'}`}
-          >
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
-              <h3
-                className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2"
-                style={{
-                  borderBottom: '2px solid #D4AF37',
-                  paddingBottom: '8px',
-                  display: 'inline-block',
-                }}
-              >
-                {group.label}
-              </h3>
-              <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {group.items.map((t) => (
-                  <TestimonialCard
-                    key={t.name + t.company + t.title}
-                    {...t}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
-        ))}
-      </div>
 
       <GoldDivider />
 
-      {/* Event Audiences */}
-      <section className="bg-bg py-24 lg:py-32">
+      {/* Section 2 — Featured Testimonials */}
+      <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h3
-            className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2"
-            style={{
-              borderBottom: '2px solid #D4AF37',
-              paddingBottom: '8px',
-              display: 'inline-block',
-            }}
-          >
-            From Event Audiences and Organizers
-          </h3>
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <TestimonialCard
-              quote="Mahesh rebuilt our culture of experimentation. In two years, we ran over a thousand experiments and reignited our growth."
-              name="Senior Vice President"
-              title=""
-              company="GoDaddy"
-            />
-            <TestimonialCard
-              quote="He doesn&apos;t just talk culture. He gives you the tools to practice it daily."
-              name="Chief Operating Officer"
-              title=""
-              company="Fortune 500"
-            />
-            <TestimonialCard
-              quote="Don&apos;t play small. Don&apos;t pitch tweaks. Pitch possibility. Mahesh helps leaders do just that."
-              name="Vice President"
-              title=""
-              company="Global Technology Company"
-            />
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+            Six Voices.
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {FEATURED.map((t) => (
+              <div key={t.name} className="bg-bg border border-border p-10 flex flex-col gap-6">
+                <p className="font-body text-[18px] italic leading-[1.75] text-navy flex-1">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <div className="font-body text-[15px] font-semibold text-navy">{t.name}</div>
+                  <div className="font-body text-[14px] text-muted">{t.title}</div>
+                  <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">
+                    {t.company}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Footer */}
-      <section className="bg-navy py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h3 className="font-body text-[18px] font-semibold uppercase tracking-[0.08em] text-white mb-8">
-            Want a conversation like this for yourself?
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
-            <Link
-              href="/executive-coaching"
-              className="bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors text-center"
-            >
-              Talk About Coaching
-            </Link>
-            <Link
-              href="/advisory"
-              className="border border-white text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors text-center"
-            >
-              Talk About Advisory
-            </Link>
-            <Link
-              href="/c-suite-forum"
-              className="border border-white text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors text-center"
-            >
-              Join the Forum
-            </Link>
-            <Link
-              href="/speaking"
-              className="border border-white text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors text-center"
-            >
-              Book a Keynote
-            </Link>
+      <GoldDivider />
+
+      {/* Section 3 — Companies Represented */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
+            Companies Represented
           </div>
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
+            Leaders From Across the Industry.
+          </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
+            Mahesh has coached and advised leaders at the following organizations.
+          </p>
+          <div className="flex flex-wrap gap-x-10 gap-y-5">
+            {COMPANIES.map((name) => (
+              <span
+                key={name}
+                className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy/60"
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Section 4 — The Full Library */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+            The Full Library.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {LIBRARY.map((t) => (
+              <TestimonialCard key={t.name + t.company} {...t} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Section 5 — Final CTA */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+            Ready to Start the Conversation?
+          </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+            These are not unusual people. They are high-performing executives at demanding organizations who decided that operating at the next level was worth the investment. If that resonates, send a short note.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
+          >
+            Contact Mahesh
+          </Link>
         </div>
       </section>
     </>

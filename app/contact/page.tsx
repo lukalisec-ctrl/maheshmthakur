@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -11,14 +12,24 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-32 lg:py-40">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
+      <section className="bg-navy py-24 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24">
+          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             Let&apos;s talk.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70">
             Tell me what you are working on. I read every message.
           </p>
+        </div>
+        <div className="relative min-h-[40vh] lg:min-h-full">
+          <Image
+            src="/images/mahesh-hero.jpg"
+            alt="Mahesh M. Thakur"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
         </div>
       </section>
 

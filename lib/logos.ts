@@ -1,17 +1,22 @@
 export const builtAt = ['Microsoft', 'Amazon', 'Intuit', 'GoDaddy']
 
 export const coachedAt = [
-  'Meta',
-  'Google',
   'NVIDIA',
   'Apple',
+  'Meta',
+  'Google',
+  'Microsoft',
   'LinkedIn',
   'Adobe',
+  'Intuit',
+  'OpenAI',
   'PayPal',
   'Samsung',
   'Walmart',
   'Autodesk',
-  'OpenAI',
-  'National Geographic',
+  'VMware',
   'eBay',
+  'Bank of America',
+  'John Deere',
+  'National Geographic',
 ]

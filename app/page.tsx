@@ -4,6 +4,7 @@ import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import ContactForm from '@/components/ContactForm'
 import { ASSESSMENT_URL } from '@/lib/constants'
+import { coachedAt } from '@/lib/logos'
 
 export const metadata: Metadata = {
   title: 'Mahesh M. Thakur | Executive Coach for Technology Leaders',
@@ -52,7 +53,7 @@ export default function HomePage() {
       <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
+            Top 100 Coach Globally &nbsp;|&nbsp; Trusted Advisor &nbsp;|&nbsp; Keynote Speaker
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             High-Stakes Leadership for Technology Leaders
@@ -200,7 +201,7 @@ export default function HomePage() {
                 P&amp;L Managed
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-muted">
-                Managed product portfolios with P&amp;L responsibility up to $600M at GoDaddy.
+                Managed product portfolios with P&amp;L responsibility above $600M at GoDaddy.
               </p>
             </div>
           </div>
@@ -245,8 +246,29 @@ export default function HomePage() {
 
       <GoldDivider />
 
+      {/* Coached Leaders At */}
+      <section className="bg-white py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-8">
+            Coached leaders at
+          </div>
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
+            {coachedAt.map((name) => (
+              <span
+                key={name}
+                className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy/60"
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
       {/* The Invisible Bar */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-bg py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             The Invisible Bar
