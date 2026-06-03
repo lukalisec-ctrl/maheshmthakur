@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm'
 import { ASSESSMENT_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Mahesh M. Thakur | The Leader the AI Era Demands',
+  title: 'Mahesh M. Thakur | AI-Native Coaching for Leaders Who Are Ready for More',
   description:
     'Mahesh M. Thakur helps high-performing senior leaders build the presence, judgment, and influence required for bigger scope. AI-Native Coach. Top 100 Coach Globally.',
 }
@@ -55,13 +55,13 @@ export default function HomePage() {
             Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
-            The Leader the AI Era Demands.
+            AI-Native Coaching for Leaders Who Are Ready for More.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-4">
             Delivering impact, influence, and executive presence at enterprise grade.
           </p>
           <p className="font-body text-[17px] leading-[1.75] text-white/60">
-            Mahesh M. Thakur helps high-performing senior leaders build the presence, judgment, and influence required for bigger scope, in an era where AI changes how leadership is evaluated.
+            Mahesh M. Thakur works with senior leaders navigating bigger scope, executive visibility, and high-stakes influence in the AI era.
           </p>
         </div>
         <div className="relative min-h-[50vh] lg:min-h-full">
