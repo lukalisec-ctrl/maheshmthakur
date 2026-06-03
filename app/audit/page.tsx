@@ -24,7 +24,7 @@ export default function AuditPage() {
             href={AUDIT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+            className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
           >
             Start the Audit
           </a>
@@ -73,7 +73,7 @@ export default function AuditPage() {
               href={AUDIT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
+              className="inline-block bg-navy text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
             >
               Start the Audit
             </a>

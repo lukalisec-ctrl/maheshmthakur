@@ -142,7 +142,7 @@ export default function ExecutiveCoachingPage() {
           <div>
             <a
               href="#who-this-is-for"
-              className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+              className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
             >
               Learn More
             </a>

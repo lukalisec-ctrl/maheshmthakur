@@ -270,7 +270,7 @@ export default function TestimonialsPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
+                className="inline-block bg-navy text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
               >
                 Contact Mahesh
               </Link>

@@ -289,13 +289,13 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/advisory"
-              className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
+              className="bg-navy text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
             >
               For Boards and CEOs
             </Link>
             <Link
               href="/executive-coaching"
-              className="border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+              className="border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
             >
               For VPs and Directors
             </Link>

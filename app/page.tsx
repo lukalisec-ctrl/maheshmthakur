@@ -149,7 +149,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <Link
                   href="/executive-coaching"
-                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                  className="inline-block border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
                 >
                   Work With Mahesh
                 </Link>
@@ -249,7 +249,7 @@ export default function HomePage() {
                 <div>
                   <Link
                     href="/executive-coaching"
-                    className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                    className="inline-block border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
                   >
                     Learn More
                   </Link>
@@ -263,7 +263,7 @@ export default function HomePage() {
                 <div>
                   <Link
                     href="/c-suite-forum"
-                    className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                    className="inline-block border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
                   >
                     Request Invitation
                   </Link>
@@ -327,7 +327,7 @@ export default function HomePage() {
           </div>
           <a
             href={ASSESSMENT_URL}
-            className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+            className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
           >
             Take the Assessment
           </a>
