@@ -121,7 +121,7 @@ const FAQ_ITEMS = [
   {
     question: 'Can my company reimburse the cost?',
     answer:
-      'Yes. Graduates receive a Certificate in Strategic Command from TIRA Academy. Most members submit this as the formal credential their company reimburses against. An invoice can be provided in any format required.',
+      'Yes. Most members submit this as the formal credential their company reimburses against. An invoice can be provided in any format required.',
   },
 ]
 

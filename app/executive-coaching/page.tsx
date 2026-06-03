@@ -87,7 +87,7 @@ const COACHING_TESTIMONIALS = [
   },
   {
     quote:
-      'Every engineering leader focused on building executive presence should work with Mahesh. The impact of your work shifts from being competent to achieving true excellence.',
+      'Leadership in this era requires you to elevate both yourself and your teams. Every engineering leader focused on building executive presence should work with Mahesh. Many engineers struggle with the so-called "soft skills" required to succeed in the executive suite. With Mahesh\'s guidance, those perceived weaknesses become powerful strengths. The impact of your work shifts from being competent to achieving true excellence.',
     name: 'Vijay Kristipati',
     title: 'Head of Engineering',
     company: 'Google',
@@ -207,13 +207,13 @@ export default function ExecutiveCoachingPage() {
 
       <GoldDivider />
 
-      {/* The Invisible Bar */}
+      {/* The Leadership Bar */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-                The Invisible Bar
+                The Leadership Bar
               </h2>
               <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
                 <p>Most leaders are not held back because they lack intelligence, effort, or capability.</p>

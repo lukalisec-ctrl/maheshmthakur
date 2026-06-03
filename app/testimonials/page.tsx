@@ -20,7 +20,7 @@ const FEATURED = [
   },
   {
     quote:
-      'Every engineering leader focused on building executive presence should work with Mahesh. The impact of your work shifts from being competent to achieving true excellence.',
+      'Leadership in this era requires you to elevate both yourself and your teams. Every engineering leader focused on building executive presence should work with Mahesh. Many engineers struggle with the so-called “soft skills” required to succeed in the executive suite. With Mahesh\'s guidance, those perceived weaknesses become powerful strengths. The impact of your work shifts from being competent to achieving true excellence.',
     name: 'Vijay Kristipati',
     title: 'Head of Engineering',
     company: 'Google',
@@ -73,7 +73,7 @@ const LIBRARY = [
   },
   {
     quote:
-      'Mahesh is direct and will not hold back from saying what he sees is preventing you from growing. My only regret is not meeting him earlier in my career.',
+      'Mahesh is sharp, wise, funny, highly accomplished, and incredibly knowledgeable. His enthusiasm for your team\'s potential is infectious. I value his candor, his wisdom, and his uncanny ability to say precisely what you need to hear at exactly the right moment. My only regret is not hiring him earlier.',
     name: 'Monisha Kanoth',
     title: 'Senior Data Engineering Manager',
     company: 'Apple',
@@ -115,10 +115,10 @@ const LIBRARY = [
   },
   {
     quote:
-      "Mahesh's critical guidance equipped me with the leadership skills and executive presence essential for my leadership journey. His approach was highly personalized.",
+      'Digital acceleration is essential for organizations looking to stay ahead in their industry. Working with Mahesh provided the ideal blend of support, challenge, and confidence building. His guidance equipped us with the leadership skills and executive presence critical to our journey at the National Geographic Society. Mahesh empowered us to lead with clarity and a strong vision, and his approach was highly personalized for our organization.',
     name: 'Henderson Jones',
-    title: 'Senior Director Infrastructure and Security',
-    company: 'National Geographic',
+    title: 'Senior Director, Infrastructure and Security',
+    company: 'National Geographic Society',
   },
   {
     quote:

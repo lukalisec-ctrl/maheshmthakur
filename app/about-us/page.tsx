@@ -66,7 +66,7 @@ export default function AboutPage() {
                 company: 'GoDaddy',
                 metric: '$600M',
                 label: 'P&L Managed',
-                body: 'Managed a six hundred million dollar P&L. Over a thousand experiments in two years. On-time delivery shifted from twenty three to eighty one percent.',
+                body: 'Managed a six hundred million dollar P&L. Over a thousand experiments in two years.',
               },
             ].map((item) => (
               <div key={item.company} className="border-t-2 border-gold pt-5">
@@ -217,44 +217,30 @@ export default function AboutPage() {
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             Three things Mahesh brings to every engagement.
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                Managed the budget.
+                Clarity.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                Mahesh has run a six hundred million dollar P&amp;L. He knows what a real ROI conversation feels like. He does not pretend to understand fiduciary pressure. He has lived inside it.
+                Mahesh helps senior leaders cut through complexity, identify the real business issue, and communicate their leadership agenda with precision.
               </p>
             </div>
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                Invented the product.
+                Connection.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                Mahesh holds two USPTO patents. He has shipped AI products at scale. He does not learn about technology from press releases.
+                He helps them build trust, alignment, and influence with boards, CEOs, peers, and teams so their leadership lands with greater impact.
               </p>
             </div>
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                Sits on the other side of the table.
+                Command.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                Mahesh is a Stanford-certified Board Director. He has governed enterprises through volatility. When he advises a Board, he knows exactly what the seat feels like.
+                He helps them lead with the presence, judgment, and strategic authority required to operate at the next level.
               </p>
-            </div>
-            <div className="border-t-2 border-gold pt-5">
-              <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                Has stood on the stage.
-              </div>
-              <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                Mahesh has delivered keynotes to Fortune 100 leadership teams, executive summits, and Boards. The same clarity he brings to the boardroom, he brings to the stage.
-              </p>
-              <Link
-                href="/speaking"
-                className="font-body text-[13px] text-gold underline decoration-gold mt-2 inline-block"
-              >
-                See speaking topics →
-              </Link>
             </div>
           </div>
         </div>

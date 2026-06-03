@@ -77,46 +77,29 @@ const VIDEO_EMBEDS = [
     id: '5z7Uwx1jon4',
     title: 'AI Product Leaders with Big Bold Vision',
   },
-  {
-    id: '_3zTNgipHJg',
-    title: 'Keynote Speaking with BBB',
-  },
 ]
 
 const TESTIMONIALS = [
   {
     quote:
-      'Mahesh didn\'t just help us adopt AI. He helped us align as a leadership team and use AI to unlock growth in ways we hadn\'t seen before.',
-    name: 'CEO',
-    title: '',
-    company: 'Fortune 500 Financial Services Company',
+      'Digital acceleration is essential for organizations looking to stay ahead in their industry. Working with Mahesh provided the ideal blend of support, challenge, and confidence building. His guidance equipped us with the leadership skills and executive presence critical to our journey at the National Geographic Society. Mahesh empowered us to lead with clarity and a strong vision, and his approach was highly personalized for our organization.',
+    name: 'Henderson Jones',
+    title: 'Senior Director, Infrastructure and Security',
+    company: 'National Geographic Society',
   },
   {
     quote:
-      'Mahesh rebuilt our culture of experimentation. In two years, we ran over one thousand experiments and reignited our growth.',
-    name: 'Senior Vice President',
-    title: '',
-    company: 'GoDaddy',
+      'Hiring Mahesh will amplify your strengths and equip you with practical tools to lead at a higher level.',
+    name: 'Varun Vontimitta',
+    title: 'Partner Engineering Leader',
+    company: 'Meta',
   },
   {
     quote:
-      'Mahesh brings a rich perspective as a business leader, technologist, and coach. He humanizes and simplifies complex situations. It is very hard to find an executive coach who has been there and done that.',
-    name: 'Hyo Jung Song',
-    title: 'Vice President of Mobile',
-    company: 'Samsung',
-  },
-  {
-    quote:
-      'Don\'t play small. Don\'t pitch tweaks. Pitch possibility. Mahesh helps leaders do just that.',
-    name: 'Vice President',
-    title: '',
-    company: 'Global Technology Company',
-  },
-  {
-    quote: 'He doesn\'t just talk culture. He gives you the tools to practice it daily.',
-    name: 'Chief Operating Officer',
-    title: '',
-    company: 'Fortune 500',
+      'Leadership in this era requires you to elevate both yourself and your teams. Every engineering leader focused on building executive presence should work with Mahesh. Many engineers struggle with the so-called “soft skills” required to succeed in the executive suite. With Mahesh\'s guidance, those perceived weaknesses become powerful strengths. The impact of your work shifts from being competent to achieving true excellence.',
+    name: 'Vijay Kristipati',
+    title: 'Head of Engineering',
+    company: 'Google',
   },
   {
     quote:
@@ -124,6 +107,13 @@ const TESTIMONIALS = [
     name: 'Shirish Tatikonda',
     title: 'Head of Data Science and Machine Learning Engineering',
     company: 'Walmart',
+  },
+  {
+    quote:
+      'Mahesh is sharp, wise, funny, highly accomplished, and incredibly knowledgeable. His enthusiasm for your team\'s potential is infectious. I value his candor, his wisdom, and his uncanny ability to say precisely what you need to hear at exactly the right moment. My only regret is not hiring him earlier.',
+    name: 'Monisha Kanoth',
+    title: 'Senior Data Engineering Manager',
+    company: 'Apple',
   },
 ]
 
@@ -257,7 +247,7 @@ export default function SpeakingPage() {
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Watch Mahesh on stage.
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {VIDEO_EMBEDS.map((video) => (
               <div
                 key={video.id}
@@ -303,69 +293,55 @@ export default function SpeakingPage() {
       {/* Section 7 — Past Stages */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-                Past Stages and Audiences
-              </div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
-                Delivered at Boards, Summits, and Leadership Offsites Globally.
-              </h2>
-              <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
-                {[
-                  'GoDaddy',
-                  'Qualcomm',
-                  'ProductCon',
-                  'Stanford GSB',
-                  'Fortune 100 Leadership Summits',
-                  'C-Suite Network',
-                  'Executive Leadership Councils',
-                ].map((venue) => (
-                  <span
-                    key={venue}
-                    className="font-display text-[15px] font-semibold uppercase tracking-[0.08em] text-navy/70"
-                  >
-                    {venue}
-                  </span>
-                ))}
-              </div>
-              <p className="font-body text-[15px] italic text-muted mb-10">
-                Each talk is customized to the event&apos;s theme, audience, and objectives.
-              </p>
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <div className="font-display text-[56px] font-bold text-navy leading-none mb-2">
-                    100%
-                  </div>
-                  <div className="font-body text-[13px] font-semibold text-navy mb-1">
-                    Value Rating
-                  </div>
-                  <div className="font-body text-[13px] text-muted">
-                    89.5% rated the session inspiring and relevant.
-                  </div>
-                </div>
-                <div>
-                  <div className="font-display text-[56px] font-bold text-navy leading-none mb-2">
-                    100%
-                  </div>
-                  <div className="font-body text-[13px] font-semibold text-navy mb-1">
-                    Re-hire Intent
-                  </div>
-                  <div className="font-body text-[13px] text-muted">
-                    88.4% rated the session engaging and interactive.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative min-h-[400px] lg:min-h-[560px]">
-              <Image
-                src="/images/DSC09664.JPG"
-                alt="Mahesh M. Thakur on stage"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
+            Past Stages and Audiences
+          </div>
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
+            Delivered at Boards, Summits, and Leadership Offsites Globally.
+          </h2>
+          <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
+            {[
+              'GoDaddy',
+              'Qualcomm',
+              'ProductCon',
+              'Stanford GSB',
+              'Fortune 100 Leadership Summits',
+              'C-Suite Network',
+              'Executive Leadership Councils',
+            ].map((venue) => (
+              <span
+                key={venue}
+                className="font-display text-[15px] font-semibold uppercase tracking-[0.08em] text-navy/70"
+              >
+                {venue}
+              </span>
+            ))}
+          </div>
+          <p className="font-body text-[15px] italic text-muted mb-10">
+            Each talk is customized to the event&apos;s theme, audience, and objectives.
+          </p>
+          <div className="grid grid-cols-3 gap-4 items-start">
+            <Image
+              src="/images/talkadot-social-share%20(1).png"
+              alt="Audience feedback social share"
+              width={600}
+              height={800}
+              className="w-full h-auto"
+            />
+            <Image
+              src="/images/talkadot-testimonial-share%20(1).png"
+              alt="Audience testimonial share"
+              width={600}
+              height={800}
+              className="w-full h-auto"
+            />
+            <Image
+              src="/images/talkadot-social-share%20(3).png"
+              alt="Audience feedback social share"
+              width={600}
+              height={800}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
