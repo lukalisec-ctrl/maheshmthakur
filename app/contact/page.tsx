@@ -34,23 +34,24 @@ export default function ContactPage() {
       </section>
 
       {/* Form */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8">
-          <ContactForm />
-        </div>
-      </section>
-
-      {/* What to Expect */}
-      <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8">
-          <h3 className="font-body text-[18px] font-semibold text-navy mb-4">
-            What to expect.
-          </h3>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            Mahesh personally reads every message. He responds to every fit within two
-            business days. He will tell you directly if he is not the right person, and
-            where to go instead.
-          </p>
+      <section className="bg-bg py-10 lg:py-14">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+              <div>
+                <div className="w-8 h-[2px] bg-gold mb-5" />
+                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
+                  Send a Note.
+                </h2>
+                <p className="font-body text-[15px] leading-[1.75] text-white/65">
+                  Mahesh personally reads every message. He responds to every fit within two business days. He will tell you directly if he is not the right person, and where to go instead.
+                </p>
+              </div>
+              <div>
+                <ContactForm dark />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

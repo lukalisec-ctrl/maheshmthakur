@@ -367,17 +367,20 @@ export default function SpeakingPage() {
       {/* Section 9 — Final CTA Form */}
       <section className="bg-bg py-10 lg:py-14">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            <div>
-              <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-navy leading-tight mb-4">
-                Book Mahesh.
-              </h2>
-              <p className="font-body text-[16px] leading-[1.75] text-[#1A1A1A]">
-                If you are organizing a board retreat, executive summit, conference, or leadership offsite and want to explore whether Mahesh is the right speaker for your audience, share a short note. Every inquiry is reviewed personally.
-              </p>
-            </div>
-            <div>
-              <ContactForm buttonLabel="Inquire for Availability" />
+          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+              <div>
+                <div className="w-8 h-[2px] bg-gold mb-5" />
+                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
+                  Book Mahesh.
+                </h2>
+                <p className="font-body text-[15px] leading-[1.75] text-white/65">
+                  If you are organizing a board retreat, executive summit, conference, or leadership offsite and want to explore whether Mahesh is the right speaker for your audience, share a short note. Every inquiry is reviewed personally.
+                </p>
+              </div>
+              <div>
+                <ContactForm buttonLabel="Inquire for Availability" dark />
+              </div>
             </div>
           </div>
         </div>
