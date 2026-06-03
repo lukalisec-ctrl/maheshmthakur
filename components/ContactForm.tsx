@@ -5,22 +5,27 @@ import { useState } from 'react'
 type ContactFormProps = {
   defaultService?: string
   buttonLabel?: string
+  dark?: boolean
 }
 
 export default function ContactForm({
   buttonLabel = 'Send Request',
+  dark = false,
 }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'success'>('idle')
 
   if (status === 'success') {
     return (
-      <div className="py-16 text-center">
-        <p className="font-body text-[17px] text-navy">
+      <div className="py-8 text-center">
+        <p className={`font-body text-[17px] ${dark ? 'text-white/80' : 'text-navy'}`}>
           Received. Mahesh reads every message personally.
         </p>
       </div>
     )
   }
+
+  const labelClass = `block font-body text-[12px] uppercase tracking-[0.08em] mb-1.5 ${dark ? 'text-white/50' : 'text-muted'}`
+  const inputClass = `w-full border bg-white px-4 py-2.5 font-body text-[15px] text-[#1A1A1A] outline-none focus:border-gold transition-colors ${dark ? 'border-white/20' : 'border-border'}`
 
   return (
     <form
@@ -28,60 +33,54 @@ export default function ContactForm({
         e.preventDefault()
         setStatus('success')
       }}
-      className="space-y-6"
+      className="space-y-4"
     >
-      <div>
-        <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          Name <span className="text-gold">*</span>
-        </label>
-        <input
-          type="text"
-          required
-          className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold"
-        />
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <label className={labelClass}>
+            Name <span className="text-gold">*</span>
+          </label>
+          <input type="text" required className={inputClass} />
+        </div>
+        <div>
+          <label className={labelClass}>
+            Email <span className="text-gold">*</span>
+          </label>
+          <input type="email" required className={inputClass} />
+        </div>
       </div>
 
       <div>
-        <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          Email <span className="text-gold">*</span>
-        </label>
-        <input
-          type="email"
-          required
-          className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold"
-        />
+        <label className={labelClass}>LinkedIn Link</label>
+        <input type="url" className={inputClass} />
       </div>
 
       <div>
-        <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
-          LinkedIn Link
-        </label>
-        <input
-          type="url"
-          className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold"
-        />
-      </div>
-
-      <div>
-        <label className="block font-body text-[13px] uppercase tracking-[0.08em] text-muted mb-2">
+        <label className={labelClass}>
           Primary Challenge <span className="text-gold">*</span>
         </label>
         <textarea
-          rows={4}
+          rows={3}
           required
-          className="w-full border border-border bg-white px-4 py-3 font-body text-[16px] text-[#1A1A1A] outline-none focus:border-gold resize-none"
+          className={`${inputClass} resize-none`}
         />
       </div>
 
-      <button
-        type="submit"
-        className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
-      >
-        {buttonLabel}
-      </button>
-      <p className="font-body text-[13px] text-muted mt-3">
-        All inquiries are treated confidentially.
-      </p>
+      <div className="flex items-center gap-6 pt-1">
+        <button
+          type="submit"
+          className={`px-8 py-3 font-body font-semibold text-sm tracking-widest uppercase transition-colors ${
+            dark
+              ? 'bg-gold text-white hover:bg-white hover:text-navy'
+              : 'bg-navy text-white hover:bg-gold'
+          }`}
+        >
+          {buttonLabel}
+        </button>
+        <p className={`font-body text-[12px] ${dark ? 'text-white/40' : 'text-muted'}`}>
+          All inquiries are treated confidentially.
+        </p>
+      </div>
     </form>
   )
 }

@@ -345,24 +345,24 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* How to Join */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
-            How to Join
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
-            Participation is selective and limited. The caliber of the room is everything.
-          </p>
-          <div className="space-y-12">
+      <section className="bg-bg py-10 lg:py-14">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-8">
+            <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight">
+              How to Join
+            </h2>
+            <p className="font-body text-[15px] text-muted">
+              Participation is selective and limited.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {STEPS.map((step) => (
-              <div key={step.number} className="flex gap-8 items-start">
-                <div className="font-display text-[40px] font-bold text-gold leading-none flex-shrink-0 w-12 text-right">
+              <div key={step.number} className="border-t-2 border-gold pt-5">
+                <div className="font-display text-[28px] font-bold text-gold leading-none mb-3">
                   {step.number}
                 </div>
-                <div className="pt-1">
-                  <h3 className="font-body text-[18px] font-semibold text-navy mb-3">{step.title}</h3>
-                  <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{step.body}</p>
-                </div>
+                <h3 className="font-body text-[16px] font-semibold text-navy mb-2">{step.title}</h3>
+                <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">{step.body}</p>
               </div>
             ))}
           </div>

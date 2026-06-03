@@ -153,7 +153,7 @@ export default function SpeakingPage() {
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
-            src="/images/mahesh-speaking.jpg"
+            src="/images/IMG_6593.jpeg"
             alt="Mahesh M. Thakur delivering a keynote"
             fill
             className="object-cover"
@@ -303,55 +303,68 @@ export default function SpeakingPage() {
       {/* Section 7 — Past Stages */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            Past Stages and Audiences
-          </div>
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            Delivered at Boards, Summits, and Leadership Offsites Globally.
-          </h2>
-          <div className="flex flex-wrap gap-x-12 gap-y-5 mb-10">
-            {[
-              'GoDaddy',
-              'Qualcomm',
-              'ProductCon',
-              'Stanford GSB',
-              'Fortune 100 Leadership Summits',
-              'C-Suite Network',
-              'Executive Leadership Councils',
-            ].map((venue) => (
-              <span
-                key={venue}
-                className="font-display text-[17px] font-semibold uppercase tracking-[0.08em] text-navy/70"
-              >
-                {venue}
-              </span>
-            ))}
-          </div>
-          <p className="font-body text-[16px] italic text-muted">
-            Each talk is customized to the event&apos;s theme, audience, and objectives.
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
-            <div className="text-center lg:text-left">
-              <div className="font-display text-[72px] font-bold text-navy leading-none mb-3">
-                100%
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
+                Past Stages and Audiences
               </div>
-              <div className="font-body text-[14px] font-semibold text-navy mb-1">
-                Value Rating
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
+                Delivered at Boards, Summits, and Leadership Offsites Globally.
+              </h2>
+              <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
+                {[
+                  'GoDaddy',
+                  'Qualcomm',
+                  'ProductCon',
+                  'Stanford GSB',
+                  'Fortune 100 Leadership Summits',
+                  'C-Suite Network',
+                  'Executive Leadership Councils',
+                ].map((venue) => (
+                  <span
+                    key={venue}
+                    className="font-display text-[15px] font-semibold uppercase tracking-[0.08em] text-navy/70"
+                  >
+                    {venue}
+                  </span>
+                ))}
               </div>
-              <div className="font-body text-[15px] text-muted">
-                Across every audience surveyed. 89.5% rated the session inspiring and relevant.
+              <p className="font-body text-[15px] italic text-muted mb-10">
+                Each talk is customized to the event&apos;s theme, audience, and objectives.
+              </p>
+              <div className="grid grid-cols-2 gap-8">
+                <div>
+                  <div className="font-display text-[56px] font-bold text-navy leading-none mb-2">
+                    100%
+                  </div>
+                  <div className="font-body text-[13px] font-semibold text-navy mb-1">
+                    Value Rating
+                  </div>
+                  <div className="font-body text-[13px] text-muted">
+                    89.5% rated the session inspiring and relevant.
+                  </div>
+                </div>
+                <div>
+                  <div className="font-display text-[56px] font-bold text-navy leading-none mb-2">
+                    100%
+                  </div>
+                  <div className="font-body text-[13px] font-semibold text-navy mb-1">
+                    Re-hire Intent
+                  </div>
+                  <div className="font-body text-[13px] text-muted">
+                    88.4% rated the session engaging and interactive.
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="text-center lg:text-left">
-              <div className="font-display text-[72px] font-bold text-navy leading-none mb-3">
-                100%
-              </div>
-              <div className="font-body text-[14px] font-semibold text-navy mb-1">
-                Re-hire Intent
-              </div>
-              <div className="font-body text-[15px] text-muted">
-                68% rated &ldquo;Definitely Yes.&rdquo; 88.4% rated the session engaging and interactive.
-              </div>
+            <div className="relative min-h-[400px] lg:min-h-[560px]">
+              <Image
+                src="/images/DSC09664.JPG"
+                alt="Mahesh M. Thakur on stage"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

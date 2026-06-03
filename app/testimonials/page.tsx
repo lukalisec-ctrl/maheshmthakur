@@ -250,19 +250,32 @@ export default function TestimonialsPage() {
 
       {/* Section 5 — Final CTA */}
       <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-            Ready to Start the Conversation?
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            These are not unusual people. They are high-performing executives at demanding organizations who decided that operating at the next level was worth the investment. If that resonates, send a short note.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
-          >
-            Contact Mahesh
-          </Link>
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="relative min-h-[400px] lg:min-h-[480px]">
+              <Image
+                src="/images/mahesh-about.jpg"
+                alt="Mahesh M. Thakur"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+                Ready to Start the Conversation?
+              </h2>
+              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+                These are not unusual people. They are high-performing executives at demanding organizations who decided that operating at the next level was worth the investment. If that resonates, send a short note.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-block bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
+              >
+                Contact Mahesh
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

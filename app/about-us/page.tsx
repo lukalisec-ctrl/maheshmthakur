@@ -39,73 +39,45 @@ export default function AboutPage() {
       {/* Operator Years */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             The operating years.
           </h2>
-
-          <div className="space-y-10">
-            <div>
-              <div className="font-display text-[22px] font-bold text-gold mb-3">
-                Microsoft.
-              </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I was one of the first Product Managers in what is now Microsoft
-                AI. I helped launch Bing Search and Bing Ads. The team I worked
-                on delivered the first billion dollars in revenue for Bing Ads.
-                I sat in rooms with Bill Gates and Satya Nadella while it was
-                happening.
-              </p>
-            </div>
-
-            <div>
-              <div className="font-display text-[22px] font-bold text-gold mb-3">
-                Amazon.
-              </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I held responsibility for forty percent of Amazon Marketplace
-                units.
-              </p>
-            </div>
-
-            <div>
-              <div className="font-display text-[22px] font-bold text-gold mb-3">
-                Intuit.
-              </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I drove nineteen percent SaaS growth in a year most teams did
-                not grow at all.
-              </p>
-            </div>
-
-            <div>
-              <div className="font-display text-[22px] font-bold text-gold mb-3">
-                GoDaddy.
-              </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I managed a six hundred million dollar P&amp;L. We ran more
-                than a thousand experiments in two years. We shifted on-time
-                delivery from twenty three percent to eighty one percent.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
             {[
-              { company: 'Microsoft', metric: '$1B', label: 'Revenue' },
-              { company: 'GoDaddy', metric: '$600M', label: 'P&L Managed' },
-              { company: 'Amazon', metric: '40%', label: 'Marketplace' },
-              { company: 'Intuit', metric: '19%', label: 'SaaS Growth' },
+              {
+                company: 'Microsoft',
+                metric: '$1B',
+                label: 'Revenue',
+                body: 'One of the first PMs in what is now Microsoft AI. Launched Bing Search and Bing Ads. Delivered the first billion dollars in Bing Ads revenue.',
+              },
+              {
+                company: 'Amazon',
+                metric: '40%',
+                label: 'Marketplace',
+                body: 'Held responsibility for forty percent of Amazon Marketplace units.',
+              },
+              {
+                company: 'Intuit',
+                metric: '19%',
+                label: 'SaaS Growth',
+                body: 'Drove nineteen percent SaaS growth in a year most teams did not grow at all.',
+              },
+              {
+                company: 'GoDaddy',
+                metric: '$600M',
+                label: 'P&L Managed',
+                body: 'Managed a six hundred million dollar P&L. Over a thousand experiments in two years. On-time delivery shifted from twenty three to eighty one percent.',
+              },
             ].map((item) => (
               <div key={item.company} className="border-t-2 border-gold pt-5">
                 <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-2">
                   {item.company}
                 </div>
-                <div className="font-display text-[32px] font-bold text-navy leading-none mb-2">
-                  {item.metric}
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="font-display text-[40px] font-bold text-navy leading-none">{item.metric}</span>
+                  <span className="font-body text-[12px] uppercase tracking-[0.08em] text-muted">{item.label}</span>
                 </div>
-                <div className="font-body text-[12px] uppercase tracking-[0.08em] text-muted">
-                  {item.label}
-                </div>
+                <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">{item.body}</p>
               </div>
             ))}
           </div>
@@ -116,26 +88,39 @@ export default function AboutPage() {
 
       {/* Why I Left */}
       <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            In 2021 I stepped out of the corporate chair.
-          </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            <p>
-              I had run global teams. I had managed nine-figure budgets. And I
-              had watched too many smart leaders fail at the exact same moment
-              in their career for the exact same reasons.
-            </p>
-            <p>
-              Talented Directors getting stuck. Capable VPs missing the
-              promotion. CEOs approving AI budgets that never showed up in the
-              P&amp;L. Boards asking the right questions and getting the wrong
-              answers.
-            </p>
-            <p>
-              I left to work on that gap full time. That is what TIRA Strategic
-              Advisory exists to do.
-            </p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+                In 2021 I stepped out of the corporate chair.
+              </h2>
+              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                <p>
+                  I had run global teams. I had managed nine-figure budgets. And I
+                  had watched too many smart leaders fail at the exact same moment
+                  in their career for the exact same reasons.
+                </p>
+                <p>
+                  Talented Directors getting stuck. Capable VPs missing the
+                  promotion. CEOs approving AI budgets that never showed up in the
+                  P&amp;L. Boards asking the right questions and getting the wrong
+                  answers.
+                </p>
+                <p>
+                  I left to work on that gap full time. That is what TIRA Strategic
+                  Advisory exists to do.
+                </p>
+              </div>
+            </div>
+            <div className="relative min-h-[420px] lg:min-h-[520px]">
+              <Image
+                src="/images/mahesh-hero.jpg"
+                alt="Mahesh M. Thakur"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -208,12 +193,12 @@ export default function AboutPage() {
               title="Senior Data Engineering Manager"
               company="Apple"
             />
-            {/* PHOTO SLOT: Add a photo of Mahesh here — e.g. mahesh-about-2.jpg or similar */}
-            <div className="bg-border flex items-center justify-center min-h-[300px] lg:min-h-full">
-              <span className="font-body text-[13px] uppercase tracking-[0.08em] text-muted">
-                Photo coming soon
-              </span>
-            </div>
+            <TestimonialCard
+              quote="What sets Mahesh apart is that he has himself walked the walk a few times in startups and in trillion-dollar companies."
+              name="Sudha Thota"
+              title="Senior Director of Product Management"
+              company="Microsoft"
+            />
             <TestimonialCard
               quote="Mahesh brings a rich perspective as a business leader, technologist, and coach. He humanizes and simplifies complex situations. It is very hard to find an executive coach who has been there and done that."
               name="Hyo Jung Song"
@@ -227,58 +212,49 @@ export default function AboutPage() {
       <GoldDivider />
 
       {/* How I Work */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-14 lg:py-16">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             Three things I bring to every engagement.
           </h2>
-          <div className="space-y-10">
-            <div>
-              <div className="font-body text-[17px] font-semibold text-navy mb-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="border-t-2 border-gold pt-5">
+              <div className="font-body text-[16px] font-semibold text-navy mb-2">
                 I have managed the budget.
               </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I have run a six hundred million dollar P&amp;L. I know what a
-                real ROI conversation feels like. I do not pretend to understand
-                fiduciary pressure. I have lived inside it.
+              <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
+                I have run a six hundred million dollar P&amp;L. I know what a real ROI conversation feels like. I do not pretend to understand fiduciary pressure. I have lived inside it.
               </p>
             </div>
-            <div>
-              <div className="font-body text-[17px] font-semibold text-navy mb-3">
+            <div className="border-t-2 border-gold pt-5">
+              <div className="font-body text-[16px] font-semibold text-navy mb-2">
                 I have invented the product.
               </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I hold two USPTO patents. I have shipped AI products at scale. I
-                do not learn about technology from press releases.
+              <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
+                I hold two USPTO patents. I have shipped AI products at scale. I do not learn about technology from press releases.
               </p>
             </div>
-            <div>
-              <div className="font-body text-[17px] font-semibold text-navy mb-3">
+            <div className="border-t-2 border-gold pt-5">
+              <div className="font-body text-[16px] font-semibold text-navy mb-2">
                 I sit on the other side of the table.
               </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I am a Stanford-certified Board Director. I have governed
-                enterprises through volatility. When I advise a Board, I know
-                exactly what the seat feels like.
+              <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
+                I am a Stanford-certified Board Director. I have governed enterprises through volatility. When I advise a Board, I know exactly what the seat feels like.
               </p>
             </div>
-            <div>
-              <div className="font-body text-[17px] font-semibold text-navy mb-3">
+            <div className="border-t-2 border-gold pt-5">
+              <div className="font-body text-[16px] font-semibold text-navy mb-2">
                 I have stood on the stage.
               </div>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I have delivered keynotes to Fortune 100 leadership teams,
-                executive summits, and Boards. The same clarity I bring to the
-                boardroom, I bring to the stage.
+              <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
+                I have delivered keynotes to Fortune 100 leadership teams, executive summits, and Boards. The same clarity I bring to the boardroom, I bring to the stage.
               </p>
-              <div className="mt-3">
-                <Link
-                  href="/speaking"
-                  className="font-body text-[14px] text-gold underline decoration-gold"
-                >
-                  See speaking topics →
-                </Link>
-              </div>
+              <Link
+                href="/speaking"
+                className="font-body text-[13px] text-gold underline decoration-gold mt-2 inline-block"
+              >
+                See speaking topics →
+              </Link>
             </div>
           </div>
         </div>
@@ -288,35 +264,52 @@ export default function AboutPage() {
 
       {/* Personal */}
       <section className="bg-white py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-            The other things.
-          </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            <p>Home is the Bay Area, where my wife and daughters keep the perspective honest.</p>
-            <p>Reading covers a lot of territory: strategy, behavioral psychology, organizational design, emerging technology. Beyond the desk, there are weights to lift, meals to cook, and travel taken with intention rather than habit.</p>
-            <p>On the side: two USPTO patents, active board seats, and early investments in technology companies. The best clients tend to be the ones who have built something genuinely full outside their titles. That fullness is what carries people through the hardest moments of the work.</p>
-            <p>The work matters most when the rest of it is in order.</p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+                The other things.
+              </h2>
+              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                <p>Home is the Bay Area, where my wife and daughters keep the perspective honest.</p>
+                <p>Reading covers a lot of territory: strategy, behavioral psychology, organizational design, emerging technology. Beyond the desk, there are weights to lift, meals to cook, and travel taken with intention rather than habit.</p>
+                <p>On the side: two USPTO patents, active board seats, and early investments in technology companies. The best clients tend to be the ones who have built something genuinely full outside their titles. That fullness is what carries people through the hardest moments of the work.</p>
+                <p>The work matters most when the rest of it is in order.</p>
+              </div>
+            </div>
+            <div className="relative min-h-[400px] lg:min-h-[500px]">
+              <Image
+                src="/images/P2135140-condensed.jpeg"
+                alt="Mahesh M. Thakur"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Footer */}
-      <section className="bg-navy py-24">
+      <section className="bg-bg py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h3 className="font-body text-[18px] font-semibold uppercase tracking-[0.08em] text-white mb-8">
+          <div className="w-8 h-[2px] bg-gold mx-auto mb-6" />
+          <h3 className="font-display text-[40px] lg:text-[52px] font-bold text-navy leading-tight mb-4">
             Let&apos;s talk.
           </h3>
+          <p className="font-body text-[16px] text-muted mb-10">
+            Select the path that fits where you are.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/advisory"
-              className="bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
+              className="bg-navy text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
             >
               For Boards and CEOs
             </Link>
             <Link
               href="/executive-coaching"
-              className="border border-white text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+              className="border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
             >
               For VPs and Directors
             </Link>

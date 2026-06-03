@@ -49,8 +49,8 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16 lg:py-0">
+      <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-5">
+        <div className="lg:col-span-3 flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16 lg:py-0">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
@@ -61,17 +61,17 @@ export default function HomePage() {
             Delivering impact, influence, and executive presence at enterprise grade.
           </p>
           <p className="font-body text-[17px] leading-[1.75] text-white/60">
-            Mahesh M. Thakur works with senior leaders navigating bigger scope, executive visibility, and high-stakes influence in the AI era.
+            A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur now helps senior leaders navigate bigger scope, executive visibility, and high-stakes influence in the AI era.
           </p>
         </div>
-        <div className="relative min-h-[50vh] lg:min-h-full">
+        <div className="lg:col-span-2 relative min-h-[50vh] lg:min-h-full">
           <Image
-            src="/images/mahesh-hero.jpg"
+            src="/images/P2134653.jpeg"
             alt="Mahesh M. Thakur"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
-            sizes="(max-width: 1024px) 100vw, 50vw"
+            sizes="(max-width: 1024px) 100vw, 40vw"
           />
         </div>
       </section>
@@ -230,33 +230,44 @@ export default function HomePage() {
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
             Work With Mahesh
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
-              <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Private coaching for high-performing leaders who are ready to build greater presence, judgment, and influence for bigger scope.
-              </p>
-              <div>
-                <Link
-                  href="/executive-coaching"
-                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-                >
-                  Learn More
-                </Link>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <div className="relative min-h-[400px] lg:min-h-full">
+              <Image
+                src="/images/P2134727.jpeg"
+                alt="Mahesh M. Thakur"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
-            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
-              <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                A confidential peer room for senior leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
-              </p>
-              <div>
-                <Link
-                  href="/c-suite-forum"
-                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-                >
-                  Request Invitation
-                </Link>
+            <div className="flex flex-col gap-8">
+              <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6 flex-1">
+                <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
+                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                  Private coaching for high-performing leaders who are ready to build greater presence, judgment, and influence for bigger scope.
+                </p>
+                <div>
+                  <Link
+                    href="/executive-coaching"
+                    className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6 flex-1">
+                <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
+                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                  A confidential peer room for senior leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
+                </p>
+                <div>
+                  <Link
+                    href="/c-suite-forum"
+                    className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                  >
+                    Request Invitation
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -265,43 +276,48 @@ export default function HomePage() {
 
       <GoldDivider />
 
-      {/* The Invisible Bar */}
+      {/* The Leadership Bar */}
       <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            The Invisible Bar
-          </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            <p>
-              Most leaders are not held back because they lack intelligence, effort, or technical capability.
-            </p>
-            <p>They get held back because the bar changes.</p>
-            <p>
-              At one level, leaders are rewarded for execution. At the next level, they are evaluated on judgment, influence, presence, and trust. No one explicitly explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
-            </p>
-            <p>Mahesh helps leaders cross that invisible bar.</p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+                The Leadership Bar
+              </h2>
+              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                <p>
+                  Most leaders are not held back because they lack intelligence, effort, or capability.
+                </p>
+                <p>
+                  They get held back because the bar changes. At one level, leaders are rewarded for execution. At the next, they are evaluated on judgment, influence, presence, and trust. No one explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
+                </p>
+                <p>Mahesh helps leaders cross that bar.</p>
+              </div>
+            </div>
+            <div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-5">
+                What We Strengthen
+              </div>
+              <ul className="space-y-3">
+                {INVISIBLE_BAR_ITEMS.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="text-gold font-semibold flex-shrink-0">—</span>
+                    <span className="font-body text-[17px] text-[#1A1A1A]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="font-body text-[15px] font-semibold uppercase tracking-[0.08em] text-navy mt-8 mb-4">
-            What he strengthens:
-          </div>
-          <ul className="space-y-3">
-            {INVISIBLE_BAR_ITEMS.map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="text-gold font-semibold flex-shrink-0">—</span>
-                <span className="font-body text-[17px] text-[#1A1A1A]">{item}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
       <GoldDivider />
 
-      {/* The Invisible Bar Assessment */}
+      {/* The Leadership Assessment */}
       <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-6">
-            The Invisible Bar Assessment
+            The Leadership Assessment
           </h2>
           <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/80 mb-10">
             <p>
@@ -350,17 +366,20 @@ export default function HomePage() {
       {/* Final CTA Form */}
       <section className="bg-bg py-10 lg:py-14">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            <div>
-              <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-navy leading-tight mb-4">
-                Ready to Start the Conversation?
-              </h2>
-              <p className="font-body text-[16px] leading-[1.75] text-[#1A1A1A]">
-                If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note.
-              </p>
-            </div>
-            <div>
-              <ContactForm buttonLabel="Send Request" />
+          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+              <div>
+                <div className="w-8 h-[2px] bg-gold mb-5" />
+                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
+                  Ready to Start the Conversation?
+                </h2>
+                <p className="font-body text-[15px] leading-[1.75] text-white/65">
+                  If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note.
+                </p>
+              </div>
+              <div>
+                <ContactForm buttonLabel="Send Request" dark />
+              </div>
             </div>
           </div>
         </div>
