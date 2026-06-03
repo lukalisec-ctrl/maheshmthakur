@@ -168,7 +168,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Section 1 — Hero */}
-      <section className="bg-navy py-24 lg:py-32">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             What Clients Say
@@ -188,7 +188,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 2 — Featured Testimonials */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             In Their Own Words.
@@ -215,7 +215,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 3 — Trusted At */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Trusted at the Highest Levels of Enterprises
@@ -233,7 +233,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 4 — The Full Library */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Client Success Stories.
@@ -249,7 +249,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 5 — Final CTA */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Ready to Start the Conversation?

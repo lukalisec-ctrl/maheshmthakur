@@ -54,8 +54,8 @@ export default function AdvisoryPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-24 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             You are approving an eight-figure AI budget. The P&amp;L is not
             moving.
@@ -88,7 +88,7 @@ export default function AdvisoryPage() {
       </section>
 
       {/* The Problem */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Three things are happening at the same time.
@@ -132,7 +132,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* How I Work */}
-      <section className="py-24 lg:py-32" style={{ background: '#F4F6FA' }}>
+      <section className="py-14 lg:py-20" style={{ background: '#F4F6FA' }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Three ways I can help.
@@ -177,7 +177,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* The Framework */}
-      <section className="bg-[#F4F6FA] py-24 lg:py-32">
+      <section className="bg-[#F4F6FA] py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
             Three things have to line up. I call this the Conviction Engine.
@@ -219,7 +219,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* CEO Testimonials */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What CEOs Say
@@ -242,14 +242,14 @@ export default function AdvisoryPage() {
       </section>
 
       {/* Proof */}
-      <section className="bg-navy py-24 lg:py-32">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <StatBlock stats={PROOF_STATS} theme="dark" />
         </div>
       </section>
 
       {/* Client Outcomes */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What Clients Achieve
@@ -259,7 +259,7 @@ export default function AdvisoryPage() {
       </section>
 
       {/* Who I Work With */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             The seat I sit in.
@@ -286,7 +286,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* FAQ */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Common questions.
@@ -326,7 +326,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* CTA Footer */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="font-body text-[18px] font-semibold uppercase tracking-[0.08em] text-navy mb-4">
             Book a call.

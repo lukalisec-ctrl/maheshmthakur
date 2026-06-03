@@ -50,7 +50,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0">
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16 lg:py-0">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Credibility Metrics */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
             Operator Experience. Coaching Depth. Enterprise Context.
@@ -127,7 +127,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Why Senior Leaders Work With Mahesh */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -171,7 +171,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Trusted At */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-white py-10 lg:py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Trusted at the Highest Levels of Enterprises
@@ -189,7 +189,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Partnering With Leaders */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Partnering With Leaders at Critical Inflection Points
@@ -225,7 +225,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Work With Mahesh */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
             Work With Mahesh
@@ -266,7 +266,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* The Invisible Bar */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             The Invisible Bar
@@ -298,7 +298,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* The Invisible Bar Assessment */}
-      <section className="bg-navy py-24 lg:py-32">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-6">
             The Invisible Bar Assessment
@@ -321,7 +321,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Latest Insights */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             The Latest From Mahesh
@@ -348,7 +348,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Ready to Start the Conversation?

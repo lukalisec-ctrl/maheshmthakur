@@ -129,8 +129,8 @@ export default function CSuiteForumPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-24 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Top 100 Coach Globally &nbsp;|&nbsp; Stanford GSB Certified Board Member &nbsp;|&nbsp; Trusted Advisor
           </div>
@@ -165,7 +165,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* Why It Exists */}
-      <section id="why-it-exists" className="bg-white py-24 lg:py-32">
+      <section id="why-it-exists" className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             The Higher You Rise, The Fewer Honest Conversations You Have
@@ -199,7 +199,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* Who This Is For */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             Who This Forum Is Designed For
@@ -238,7 +238,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* What the Forum Explores */}
-      <section className="bg-navy py-24 lg:py-32">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
             The Challenges Explored Together
@@ -265,7 +265,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* How the Forum Works */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
             How the Forum Works
@@ -311,7 +311,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* Testimonials */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-4">
             Trusted by Leaders Across Global Organizations
@@ -345,7 +345,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* How to Join */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
             How to Join
@@ -372,7 +372,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* FAQ */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
             Common Questions
@@ -384,7 +384,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Request Invitation

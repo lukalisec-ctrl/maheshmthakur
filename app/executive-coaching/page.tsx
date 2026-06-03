@@ -128,8 +128,8 @@ export default function ExecutiveCoachingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-24 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
@@ -163,7 +163,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* Who Mahesh Works With */}
-      <section id="who-this-is-for" className="bg-white py-24 lg:py-32">
+      <section id="who-this-is-for" className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
             Who Mahesh Works With
@@ -208,7 +208,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* The Invisible Bar */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -245,7 +245,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* What Changes Through the Work */}
-      <section className="bg-navy py-24 lg:py-32">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
             What Changes Through the Work
@@ -272,7 +272,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* What to Expect */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
             What to Expect
@@ -320,7 +320,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* What Clients Say */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What Clients Say
@@ -341,7 +341,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* FAQ */}
-      <section className="bg-bg py-24 lg:py-32">
+      <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
             Common Questions
@@ -353,7 +353,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-white py-14 lg:py-20">
         <div className="max-w-2xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Ready to Start the Conversation?
