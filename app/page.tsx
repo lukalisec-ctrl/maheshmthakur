@@ -49,22 +49,22 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-5">
-        <div className="lg:col-span-3 flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16 lg:py-0">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
+      <section className="bg-navy min-h-[60vh] lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-5">
+        <div className="lg:col-span-3 flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-12 lg:py-0">
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
+          <h1 className="font-display text-[32px] lg:text-[48px] font-bold text-white leading-tight mb-5">
             AI-Native Coaching for Leaders Who Are Ready for More.
           </h1>
-          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-4">
+          <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-3">
             Delivering impact, influence, and executive presence at enterprise grade.
           </p>
-          <p className="font-body text-[17px] leading-[1.75] text-white/60">
+          <p className="font-body text-[15px] leading-[1.75] text-white/60">
             A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur now helps senior leaders navigate bigger scope, executive visibility, and high-stakes influence in the AI era.
           </p>
         </div>
-        <div className="lg:col-span-2 relative min-h-[50vh] lg:min-h-full">
+        <div className="lg:col-span-2 relative min-h-[40vh] lg:min-h-full">
           <Image
             src="/images/P2134653.jpeg"
             alt="Mahesh M. Thakur"
