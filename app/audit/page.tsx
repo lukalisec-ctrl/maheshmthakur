@@ -62,9 +62,9 @@ export default function AuditPage() {
               </li>
             </ul>
             <p>
-              You also get a clear answer on whether a conversation with me is
-              worth your time. If it is not, the audit tells you. If it is, we
-              set up a call.
+              You also get a clear answer on whether a conversation with Mahesh is
+              worth your time. If it is not, the audit tells you. If it is, get in
+              touch to set up a call.
             </p>
           </div>
 

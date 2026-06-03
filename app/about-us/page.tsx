@@ -17,11 +17,11 @@ export default function AboutPage() {
       <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
-            I do this work because I have done the work.
+            Mahesh does this work because he has done the work.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70">
-            Before I advised CEOs, I ran their job. Before I coached VPs, I was
-            one.
+            Before he advised CEOs, he ran their job. Before he coached VPs, he
+            was one.
           </p>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
@@ -92,11 +92,11 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-                In 2021 I stepped out of the corporate chair.
+                In 2021, Mahesh stepped out of the corporate chair.
               </h2>
               <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
                 <p>
-                  I had run global teams. I had managed nine-figure budgets. And I
+                  He had run global teams. He had managed nine-figure budgets. And he
                   had watched too many smart leaders fail at the exact same moment
                   in their career for the exact same reasons.
                 </p>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                   answers.
                 </p>
                 <p>
-                  I left to work on that gap full time. That is what TIRA Strategic
+                  He left to work on that gap full time. That is what TIRA Strategic
                   Advisory exists to do.
                 </p>
               </div>
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 Stanford GSB Certified Board Director.
               </h3>
               <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I sit on boards and I help boards govern AI capital decisions at
+                Mahesh sits on boards and helps boards govern AI capital decisions at
                 the highest level.
               </p>
             </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 Master Certified Coach.
               </h3>
               <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                I am one of fifteen people in the world holding this designation
+                Mahesh is one of fifteen people in the world holding this designation
                 in Marshall Goldsmith&apos;s Stakeholder Centered Coaching
                 method.
               </p>
@@ -215,39 +215,39 @@ export default function AboutPage() {
       <section className="bg-bg py-14 lg:py-16">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            Three things I bring to every engagement.
+            Three things Mahesh brings to every engagement.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                I have managed the budget.
+                Managed the budget.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                I have run a six hundred million dollar P&amp;L. I know what a real ROI conversation feels like. I do not pretend to understand fiduciary pressure. I have lived inside it.
+                Mahesh has run a six hundred million dollar P&amp;L. He knows what a real ROI conversation feels like. He does not pretend to understand fiduciary pressure. He has lived inside it.
               </p>
             </div>
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                I have invented the product.
+                Invented the product.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                I hold two USPTO patents. I have shipped AI products at scale. I do not learn about technology from press releases.
+                Mahesh holds two USPTO patents. He has shipped AI products at scale. He does not learn about technology from press releases.
               </p>
             </div>
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                I sit on the other side of the table.
+                Sits on the other side of the table.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                I am a Stanford-certified Board Director. I have governed enterprises through volatility. When I advise a Board, I know exactly what the seat feels like.
+                Mahesh is a Stanford-certified Board Director. He has governed enterprises through volatility. When he advises a Board, he knows exactly what the seat feels like.
               </p>
             </div>
             <div className="border-t-2 border-gold pt-5">
               <div className="font-body text-[16px] font-semibold text-navy mb-2">
-                I have stood on the stage.
+                Has stood on the stage.
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">
-                I have delivered keynotes to Fortune 100 leadership teams, executive summits, and Boards. The same clarity I bring to the boardroom, I bring to the stage.
+                Mahesh has delivered keynotes to Fortune 100 leadership teams, executive summits, and Boards. The same clarity he brings to the boardroom, he brings to the stage.
               </p>
               <Link
                 href="/speaking"
@@ -271,7 +271,7 @@ export default function AboutPage() {
                 The other things.
               </h2>
               <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>Home is the Bay Area, where my wife and daughters keep the perspective honest.</p>
+                <p>Home is the Bay Area, where his wife and daughters keep the perspective honest.</p>
                 <p>Reading covers a lot of territory: strategy, behavioral psychology, organizational design, emerging technology. Beyond the desk, there are weights to lift, meals to cook, and travel taken with intention rather than habit.</p>
                 <p>On the side: two USPTO patents, active board seats, and early investments in technology companies. The best clients tend to be the ones who have built something genuinely full outside their titles. That fullness is what carries people through the hardest moments of the work.</p>
                 <p>The work matters most when the rest of it is in order.</p>

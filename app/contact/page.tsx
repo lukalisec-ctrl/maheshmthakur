@@ -18,7 +18,7 @@ export default function ContactPage() {
             Let&apos;s talk.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70">
-            Tell me what you are working on. I read every message.
+            Share what you are working on. Mahesh reads every message.
           </p>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
@@ -47,8 +47,8 @@ export default function ContactPage() {
             What to expect.
           </h3>
           <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            I personally read every message. I respond to every fit within two
-            business days. I tell you directly if I am not the right person, and
+            Mahesh personally reads every message. He responds to every fit within two
+            business days. He will tell you directly if he is not the right person, and
             where to go instead.
           </p>
         </div>

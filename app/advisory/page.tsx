@@ -9,7 +9,7 @@ import { AUDIT_URL, BOOK_A_CALL_URL } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'AI Strategy Advisory for Boards. Turn AI Spending Into Real Returns.',
   description:
-    'Independent board-level advisory for AI capital decisions. I help CEOs and Boards turn eight-figure AI budgets into measurable P&L impact.',
+    'Independent board-level advisory for AI capital decisions. Mahesh helps CEOs and Boards turn eight-figure AI budgets into measurable P&L impact.',
 }
 
 const CLIENT_STATS = [
@@ -61,7 +61,7 @@ export default function AdvisoryPage() {
             moving.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
-            I help Boards and CEOs fix that. Independent. Operator-led. Tied to
+            Mahesh helps Boards and CEOs fix that. Independent. Operator-led. Tied to
             financial outcomes, not slides.
           </p>
           <div>
@@ -135,23 +135,23 @@ export default function AdvisoryPage() {
       <section className="py-14 lg:py-20" style={{ background: '#F4F6FA' }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            Three ways I can help.
+            Three ways Mahesh can help.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
                 label: 'Board Advisor',
-                body: 'I sit with your Board or Audit Committee as an independent expert. I give you a second opinion on every major AI capital decision. I tell you which spending is a moat and which is a wrapper.',
+                body: 'Mahesh sits with your Board or Audit Committee as an independent expert. He gives you a second opinion on every major AI capital decision. He tells you which spending is a moat and which is a wrapper.',
                 qualifier: 'For Boards and Audit Committees making recurring AI capital decisions.',
               },
               {
                 label: 'Interim CTPO',
-                body: 'For companies with a stalled product roadmap, I step in as Interim Chief Technology and Product Officer. I realign engineering with strategy. I run ninety-day cycles instead of twelve-month roadmaps. I leave when the trajectory is fixed.',
+                body: 'For companies with a stalled product roadmap, Mahesh steps in as Interim Chief Technology and Product Officer. He realigns engineering with strategy. He runs ninety-day cycles instead of twelve-month roadmaps. He leaves when the trajectory is fixed.',
                 qualifier: 'For companies with a stalled roadmap and no clear owner of the technical strategy.',
               },
               {
                 label: 'C-Suite Alignment Sprint',
-                body: 'A focused engagement for leadership teams that cannot agree on the AI roadmap. I get the CEO, CFO, and CTO into the same room and we leave with a single defensible plan tied to P&L milestones.',
+                body: 'A focused engagement for leadership teams that cannot agree on the AI roadmap. Mahesh gets the CEO, CFO, and CTO into the same room and they leave with a single defensible plan tied to P&L milestones.',
                 qualifier: 'For leadership teams that cannot reach consensus on where AI fits in the business.',
               },
             ].map((card) => (
@@ -180,7 +180,7 @@ export default function AdvisoryPage() {
       <section className="bg-[#F4F6FA] py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
-            Three things have to line up. I call this the Conviction Engine.
+            Three things have to line up. Mahesh calls this the Conviction Engine.
           </h2>
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
             {[
@@ -262,11 +262,11 @@ export default function AdvisoryPage() {
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            The seat I sit in.
+            The seat Mahesh sits in.
           </h2>
           <div className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] space-y-4">
             <p className="text-navy italic mb-6">
-              Most advisors have studied this problem. I have lived it.
+              Most advisors have studied this problem. Mahesh has lived it.
             </p>
             <p>
               Public company Boards and Audit Committees. CEOs of B2B SaaS and
@@ -275,9 +275,9 @@ export default function AdvisoryPage() {
               overseeing portfolio company AI strategy.
             </p>
             <p>
-              If you are running a ten-person seed stage startup, I am not your
+              If you are running a ten-person seed stage startup, Mahesh is not your
               fit. If you are a Fortune 500 board member with an AI line item
-              that is keeping you up at night, we should talk.
+              that is keeping you up at night, reach out.
             </p>
           </div>
         </div>
@@ -306,7 +306,7 @@ export default function AdvisoryPage() {
               {
                 question: 'How is this different from hiring a consulting firm?',
                 answer:
-                  'A consulting firm sends a team. I am the engagement. I have managed a billion-dollar revenue line and a six hundred million dollar P&L. I do not learn your business from a discovery deck. I have sat in the seat you are asking me to advise on.',
+                  'A consulting firm sends a team. Mahesh is the engagement. He has managed a billion-dollar revenue line and a six hundred million dollar P&L. He does not learn your business from a discovery deck. He has sat in the seat he is being asked to advise on.',
               },
               {
                 question: 'Do you sign NDAs?',
@@ -316,7 +316,7 @@ export default function AdvisoryPage() {
               {
                 question: 'Have you worked with companies in my industry?',
                 answer:
-                  'My client base spans B2B SaaS, enterprise tech, healthcare technology, financial services, and e-commerce. If your question is whether I have seen your specific problem before, the answer is almost certainly yes.',
+                  "Mahesh's client base spans B2B SaaS, enterprise tech, healthcare technology, financial services, and e-commerce. If your question is whether he has seen your specific problem before, the answer is almost certainly yes.",
               },
             ]}
           />
@@ -332,11 +332,11 @@ export default function AdvisoryPage() {
             Book a call.
           </h3>
           <p className="font-body text-[14px] text-muted text-center mb-4">
-            I take a limited number of advisory engagements each year.
+            Mahesh takes a limited number of advisory engagements each year.
           </p>
           <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
-            Fifteen minutes, video. I will tell you whether I can help. If I
-            cannot, I will tell you who can.
+            Fifteen minutes, video. Mahesh will tell you whether he can help. If
+            he cannot, he will tell you who can.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
