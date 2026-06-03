@@ -353,15 +353,21 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-white py-14 lg:py-20">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-            Ready to Start the Conversation?
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            If you are preparing for bigger scope, navigating a promotion cycle, or working on your presence and influence as a senior leader, send a short note.
-          </p>
-          <ContactForm buttonLabel="Send Request" />
+      <section className="bg-white py-10 lg:py-14">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <div>
+              <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-navy leading-tight mb-4">
+                Ready to Start the Conversation?
+              </h2>
+              <p className="font-body text-[16px] leading-[1.75] text-[#1A1A1A]">
+                If you are preparing for bigger scope, navigating a promotion cycle, or working on your presence and influence as a senior leader, send a short note.
+              </p>
+            </div>
+            <div>
+              <ContactForm buttonLabel="Send Request" />
+            </div>
+          </div>
         </div>
       </section>
     </>
