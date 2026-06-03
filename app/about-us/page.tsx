@@ -40,8 +40,7 @@ export default function AboutPage() {
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            Twenty years inside the companies people now write case studies
-            about.
+            The operating years.
           </h2>
 
           <div className="space-y-10">
@@ -92,17 +91,20 @@ export default function AboutPage() {
 
           <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { company: 'Microsoft', metric: '$1B Revenue' },
-              { company: 'GoDaddy', metric: '$600M P&L' },
-              { company: 'Amazon', metric: '40% Marketplace' },
-              { company: 'Intuit', metric: '19% SaaS Growth' },
+              { company: 'Microsoft', metric: '$1B', label: 'Revenue' },
+              { company: 'GoDaddy', metric: '$600M', label: 'P&L Managed' },
+              { company: 'Amazon', metric: '40%', label: 'Marketplace' },
+              { company: 'Intuit', metric: '19%', label: 'SaaS Growth' },
             ].map((item) => (
-              <div key={item.company} className="text-center">
-                <div className="font-display text-[14px] font-semibold text-gold uppercase tracking-wide mb-1">
+              <div key={item.company} className="border-t-2 border-gold pt-5">
+                <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-2">
                   {item.company}
                 </div>
-                <div className="font-body text-[13px] text-muted">
+                <div className="font-display text-[32px] font-bold text-navy leading-none mb-2">
                   {item.metric}
+                </div>
+                <div className="font-body text-[12px] uppercase tracking-[0.08em] text-muted">
+                  {item.label}
                 </div>
               </div>
             ))}
@@ -199,13 +201,19 @@ export default function AboutPage() {
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What People Say About Mahesh
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <TestimonialCard
               quote="Mahesh is sharp, wise, funny, highly accomplished, and incredibly knowledgeable. His enthusiasm for your team's potential is infectious. I value his candor, his wisdom, and his uncanny ability to say precisely what you need to hear at exactly the right moment. My only regret is not hiring him earlier."
               name="Monisha Kanoth"
               title="Senior Data Engineering Manager"
               company="Apple"
             />
+            {/* PHOTO SLOT: Add a photo of Mahesh here — e.g. mahesh-about-2.jpg or similar */}
+            <div className="bg-border flex items-center justify-center min-h-[300px] lg:min-h-full">
+              <span className="font-body text-[13px] uppercase tracking-[0.08em] text-muted">
+                Photo coming soon
+              </span>
+            </div>
             <TestimonialCard
               quote="Mahesh brings a rich perspective as a business leader, technologist, and coach. He humanizes and simplifies complex situations. It is very hard to find an executive coach who has been there and done that."
               name="Hyo Jung Song"
@@ -284,11 +292,12 @@ export default function AboutPage() {
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             The other things.
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            I live in the Bay Area with my wife and two daughters. I lift
-            weights. I cook. I travel. The work matters most when the rest of
-            the life is in order.
-          </p>
+          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+            <p>Home is the Bay Area, where my wife and daughters keep the perspective honest.</p>
+            <p>Reading covers a lot of territory: strategy, behavioral psychology, organizational design, emerging technology. Beyond the desk, there are weights to lift, meals to cook, and travel taken with intention rather than habit.</p>
+            <p>On the side: two USPTO patents, active board seats, and early investments in technology companies. The best clients tend to be the ones who have built something genuinely full outside their titles. That fullness is what carries people through the hardest moments of the work.</p>
+            <p>The work matters most when the rest of it is in order.</p>
+          </div>
         </div>
       </section>
 

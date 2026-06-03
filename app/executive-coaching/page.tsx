@@ -7,7 +7,7 @@ import Accordion from '@/components/Accordion'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Executive Coaching for Senior Tech Leaders',
+  title: 'Leadership Coaching. AI-Native.',
   description:
     'Private one-on-one coaching for technology leaders at every level — from first-time managers to C-Suite — building presence, judgment, and influence for bigger scope.',
 }
@@ -134,7 +134,7 @@ export default function ExecutiveCoachingPage() {
             Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
-            Executive Coaching for Senior Tech Leaders
+            Leadership Coaching. AI-Native.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
             Mahesh helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.
@@ -209,22 +209,35 @@ export default function ExecutiveCoachingPage() {
 
       {/* The Invisible Bar */}
       <section className="bg-bg py-24 lg:py-32">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            The Invisible Bar
-          </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-            <p>Most leaders are not held back because they lack intelligence, effort, or capability.</p>
-            <p>They get held back because the bar changes, and no one tells them.</p>
-            <p>
-              At one level, leaders are rewarded for execution. Deliver the project. Ship the product. Hit the number. At the next level, the evaluation shifts. The question is no longer what did you deliver. The question is how does the room feel when you walk in, how well do you think under pressure, and whether the people above you trust you with more.
-            </p>
-            <p>
-              This shift is real. It is consistent across companies. Most leaders do not see it clearly until they have already been passed over.
-            </p>
-            <p>
-              Mahesh calls this the Invisible Bar. His coaching is built around helping leaders see it precisely and cross it.
-            </p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+                The Invisible Bar
+              </h2>
+              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                <p>Most leaders are not held back because they lack intelligence, effort, or capability.</p>
+                <p>They get held back because the bar changes, and no one tells them.</p>
+                <p>
+                  At one level, leaders are rewarded for execution. Deliver the project. Ship the product. Hit the number. At the next level, the evaluation shifts. The question is no longer what did you deliver. The question is how does the room feel when you walk in, how well do you think under pressure, and whether the people above you trust you with more.
+                </p>
+                <p>
+                  This shift is real. It is consistent across companies. Most leaders do not see it clearly until they have already been passed over.
+                </p>
+                <p>
+                  Mahesh calls this the Invisible Bar. His coaching is built around helping leaders see it precisely and cross it.
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/images/mahesh-boardroom.jpg"
+                alt="Mahesh M. Thakur"
+                width={600}
+                height={700}
+                className="object-cover w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -232,12 +245,12 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* What Changes Through the Work */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-navy py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
             What Changes Through the Work
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
+          <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
             Every engagement is private and tailored. The situations below are the ones Mahesh most commonly works through with technology leaders, not as a fixed curriculum, but as the terrain that tends to come up when the stakes are high.
           </p>
           <div className="space-y-12">
@@ -247,8 +260,8 @@ export default function ExecutiveCoachingPage() {
                   {String(index + 1).padStart(2, '0')}
                 </div>
                 <div className="pt-1">
-                  <h3 className="font-body text-[18px] font-semibold text-navy mb-3">{item.title}</h3>
-                  <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{item.body}</p>
+                  <h3 className="font-body text-[18px] font-semibold text-white mb-3">{item.title}</h3>
+                  <p className="font-body text-[17px] leading-[1.75] text-white/70">{item.body}</p>
                 </div>
               </div>
             ))}

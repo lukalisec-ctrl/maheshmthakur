@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
+import Accordion from '@/components/Accordion'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -96,6 +97,34 @@ const STEPS = [
   },
 ]
 
+const FAQ_ITEMS = [
+  {
+    question: 'How much time does participation require?',
+    answer:
+      'One session every two weeks, ninety minutes each. Members are also expected to engage thoughtfully between sessions and attend quarterly one-on-one advisory conversations with Mahesh.',
+  },
+  {
+    question: 'Is this only for Bay Area leaders?',
+    answer:
+      'No. The forum is global. Sessions are scheduled to accommodate members across time zones.',
+  },
+  {
+    question: 'How private is the forum?',
+    answer:
+      'The forum operates under the Chatham House Rule. Every member accepts this standard before joining. What is shared in the room stays in the room.',
+  },
+  {
+    question: 'Is this only for technology leaders?',
+    answer:
+      'Primarily yes, with some participants from finance, healthcare, and telecom. Rooms are kept cross-industry on purpose to encourage diverse strategic thinking.',
+  },
+  {
+    question: 'Can my company reimburse the cost?',
+    answer:
+      'Yes. Graduates receive a Certificate in Strategic Command from TIRA Academy. Most members submit this as the formal credential their company reimburses against. An invoice can be provided in any format required.',
+  },
+]
+
 export default function CSuiteForumPage() {
   return (
     <>
@@ -123,7 +152,7 @@ export default function CSuiteForumPage() {
         {/* PHOTO SLOT: Boardroom session shot, Mahesh facilitating a forum meeting */}
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
-            src="/images/csf-hero.jpg"
+            src="/images/c-suite_forum.jpeg"
             alt="The C-Suite Forum in session"
             fill
             className="object-cover"
@@ -177,7 +206,7 @@ export default function CSuiteForumPage() {
           </h2>
           <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
             <p>
-              Mahesh works with Directors, Vice Presidents, Senior Managers, and high-potential leaders preparing for expanded scope. The common thread is not title. It is a leader who has outgrown their current circle and is ready to operate at a higher level.
+              Mahesh works with C-Suite executives, Directors, Vice Presidents, and Senior Managers — across technology, finance, healthcare, and enterprise — who are preparing for expanded scope, greater enterprise influence, or the next stage of their leadership. The common thread is not title. It is a leader who has outgrown their current circle and is ready to operate at a higher level.
             </p>
             <p>These are the moments that typically bring leaders to the forum.</p>
           </div>
@@ -291,7 +320,7 @@ export default function CSuiteForumPage() {
             What Forum Members Say
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-12 max-w-4xl">
-            Leaders from NVIDIA, Apple, Meta, Google, LinkedIn, Microsoft, Adobe, eBay, VMware, Autodesk, Micron, Marvell, John Deere, Bank of America, Chase, Wells Fargo, Intuit, Walmart, National Geographic, and Hackensack Meridian Health have participated in Mahesh&apos;s coaching, advisory, and leadership development engagements.
+            Leaders from NVIDIA, Apple, Meta, Google, Microsoft, Adobe, Bank of America, Walmart, and dozens of other global organizations have participated in Mahesh&apos;s coaching, advisory, and leadership development engagements.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {FORUM_TESTIMONIALS.map((t, i) => (
@@ -337,6 +366,18 @@ export default function CSuiteForumPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* FAQ */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
+            Common Questions
+          </h2>
+          <Accordion items={FAQ_ITEMS} />
         </div>
       </section>
 

@@ -4,7 +4,6 @@ import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import ContactForm from '@/components/ContactForm'
 import { ASSESSMENT_URL } from '@/lib/constants'
-import { coachedAt } from '@/lib/logos'
 
 export const metadata: Metadata = {
   title: 'Mahesh M. Thakur | Executive Coach for Technology Leaders',
@@ -230,6 +229,14 @@ export default function HomePage() {
                   The next level requires presence, judgment, trust, and communication that lands when the stakes are high.
                 </p>
               </div>
+              <div className="mt-8">
+                <Link
+                  href="/executive-coaching"
+                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                >
+                  Work With Mahesh
+                </Link>
+              </div>
             </div>
             <div>
               <Image
@@ -246,22 +253,19 @@ export default function HomePage() {
 
       <GoldDivider />
 
-      {/* Coached Leaders At */}
+      {/* Trusted At */}
       <section className="bg-white py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-8">
-            Coached leaders at
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
-            {coachedAt.map((name) => (
-              <span
-                key={name}
-                className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy/60"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
+            Trusted at the Highest Levels of Enterprises
+          </h2>
+          <Image
+            src="/images/client_logos.jpeg"
+            alt="Client organizations"
+            width={900}
+            height={220}
+            className="w-full max-w-4xl h-auto mx-auto"
+          />
         </div>
       </section>
 

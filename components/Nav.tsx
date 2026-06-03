@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: 'C-Suite Forum', href: '/c-suite-forum' },
   { label: 'Speaking', href: '/speaking' },
   { label: 'What Clients Say', href: '/testimonials' },
-  { label: 'Insights', href: '/insights' },
 ]
 
 export default function Nav() {

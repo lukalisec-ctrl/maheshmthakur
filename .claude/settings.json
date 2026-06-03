@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc --noEmit 2>&1)",
+      "Bash(npx tsc --noEmit 2>&1 | head -30)",
+      "Bash(npm run build 2>&1)",
+      "Bash(npm run build 2>&1 | tail -60)",
+      "Bash(git -C * status)",
+      "Bash(git -C * add *)",
+      "Bash(git -C * commit *)",
+      "Bash(git -C * push *)",
+      "Bash(git -C * log *)"
+    ]
+  }
+}

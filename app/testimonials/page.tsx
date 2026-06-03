@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import TestimonialCard from '@/components/TestimonialCard'
@@ -54,27 +55,6 @@ const FEATURED = [
   },
 ]
 
-const COMPANIES = [
-  'Meta',
-  'Google',
-  'Apple',
-  'Microsoft',
-  'Samsung',
-  'NVIDIA',
-  'PayPal',
-  'Walmart',
-  'Adobe',
-  'LinkedIn',
-  'eBay',
-  'Autodesk',
-  'Intuit',
-  'OpenAI',
-  'National Geographic',
-  'Hackensack Meridian Health',
-  'Sendoso',
-  'Corent Technologies',
-  'Zoox',
-]
 
 const LIBRARY = [
   {
@@ -211,7 +191,7 @@ export default function TestimonialsPage() {
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            Six Voices.
+            In Their Own Words.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {FEATURED.map((t) => (
@@ -234,28 +214,19 @@ export default function TestimonialsPage() {
 
       <GoldDivider />
 
-      {/* Section 3 — Companies Represented */}
+      {/* Section 3 — Trusted At */}
       <section className="bg-bg py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            Companies Represented
-          </div>
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
-            Leaders From Across the Industry.
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
+            Trusted at the Highest Levels of Enterprises
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
-            Mahesh has coached and advised leaders at the following organizations.
-          </p>
-          <div className="flex flex-wrap gap-x-10 gap-y-5">
-            {COMPANIES.map((name) => (
-              <span
-                key={name}
-                className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy/60"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
+          <Image
+            src="/images/client_logos.jpeg"
+            alt="Client organizations"
+            width={900}
+            height={220}
+            className="w-full max-w-4xl h-auto mx-auto"
+          />
         </div>
       </section>
 
@@ -265,7 +236,7 @@ export default function TestimonialsPage() {
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            The Full Library.
+            Client Success Stories.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {LIBRARY.map((t) => (
