@@ -7,7 +7,7 @@ import Accordion from '@/components/Accordion'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Leadership Coaching. AI-Native.',
+  title: 'The AI-Native Leadership Coach.',
   description:
     'Private one-on-one coaching for technology leaders at every level — from first-time managers to C-Suite — building presence, judgment, and influence for bigger scope.',
 }
@@ -134,7 +134,7 @@ export default function ExecutiveCoachingPage() {
             Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
-            Leadership Coaching. AI-Native.
+            The AI-Native Leadership Coach.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
             Mahesh helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.

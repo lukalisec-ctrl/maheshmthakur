@@ -238,12 +238,12 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* What the Forum Explores */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-navy py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
             The Challenges Explored Together
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
+          <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
             Topics evolve based on what members bring into the room. Every session has direct and immediate relevance to what is live in members&apos; work.
           </p>
           <div className="space-y-12">
@@ -253,8 +253,8 @@ export default function CSuiteForumPage() {
                   {String(index + 1).padStart(2, '0')}
                 </div>
                 <div className="pt-1">
-                  <h3 className="font-body text-[18px] font-semibold text-navy mb-3">{arena.title}</h3>
-                  <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{arena.body}</p>
+                  <h3 className="font-body text-[18px] font-semibold text-white mb-3">{arena.title}</h3>
+                  <p className="font-body text-[17px] leading-[1.75] text-white/70">{arena.body}</p>
                 </div>
               </div>
             ))}

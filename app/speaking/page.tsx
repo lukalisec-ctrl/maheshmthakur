@@ -221,25 +221,28 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 4 — Signature Keynotes */}
-      <section className="bg-white py-24 lg:py-32">
+      <section className="bg-navy py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
             Signature keynotes.
           </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
+            Each talk is built for a specific moment and customized to the event&apos;s audience and objectives.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {TALKS.map((talk) => (
               <div
                 key={talk.title}
-                className="bg-bg border border-border border-t-4 border-t-navy p-10"
+                className="border border-white/20 border-t-4 border-t-gold p-10 flex flex-col gap-4"
               >
-                <h3 className="font-body text-[18px] font-semibold text-navy leading-snug mb-3">
+                <h3 className="font-body text-[18px] font-semibold text-white leading-snug">
                   {talk.title}
                 </h3>
-                <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mb-4">
+                <div className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-gold">
                   {talk.audience}
                 </div>
-                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{talk.body}</p>
-                <p className="font-body text-[14px] italic text-gold mt-4">{talk.takeaway}</p>
+                <p className="font-body text-[17px] leading-[1.75] text-white/70">{talk.body}</p>
+                <p className="font-body text-[14px] italic text-white/50 mt-auto">{talk.takeaway}</p>
               </div>
             ))}
           </div>
@@ -248,27 +251,8 @@ export default function SpeakingPage() {
 
       <GoldDivider />
 
-      {/* Section 5 — What Audiences Walk Away With */}
+      {/* Section 5 — Watch Mahesh on Stage */}
       <section className="bg-bg py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
-            Decode AI. Align Capital, Product, and Execution. Drive Transformation.
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {OUTCOME_CARDS.map((card) => (
-              <div key={card.title} className="bg-white border border-border p-10">
-                <h3 className="font-body text-[18px] font-semibold text-navy mb-4">{card.title}</h3>
-                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{card.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* Section 6 — Watch Mahesh on Stage */}
-      <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
             Watch Mahesh on stage.
@@ -289,6 +273,25 @@ export default function SpeakingPage() {
                   loading="lazy"
                   style={{ border: 0 }}
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Section 6 — What Audiences Walk Away With */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+            Decode AI. Align Capital, Product, and Execution. Drive Transformation.
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {OUTCOME_CARDS.map((card) => (
+              <div key={card.title} className="bg-bg border border-border p-10">
+                <h3 className="font-body text-[18px] font-semibold text-navy mb-4">{card.title}</h3>
+                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{card.body}</p>
               </div>
             ))}
           </div>

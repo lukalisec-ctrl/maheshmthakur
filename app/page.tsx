@@ -6,9 +6,9 @@ import ContactForm from '@/components/ContactForm'
 import { ASSESSMENT_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Mahesh M. Thakur | Executive Coach for Technology Leaders',
+  title: 'Mahesh M. Thakur | The Leader the AI Era Demands',
   description:
-    'Mahesh M. Thakur helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.',
+    'Mahesh M. Thakur helps high-performing senior leaders build the presence, judgment, and influence required for bigger scope. AI-Native Coach. Top 100 Coach Globally.',
 }
 
 const INSIGHTS = [
@@ -52,25 +52,17 @@ export default function HomePage() {
       <section className="bg-navy min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-24 lg:py-0">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            Top 100 Coach Globally &nbsp;|&nbsp; Trusted Advisor &nbsp;|&nbsp; Keynote Speaker
+            Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
-            High-Stakes Leadership for Technology Leaders
+            The Leader the AI Era Demands.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-4">
             Delivering impact, influence, and executive presence at enterprise grade.
           </p>
-          <p className="font-body text-[17px] leading-[1.75] text-white/60 mb-10">
-            Mahesh M. Thakur helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.
+          <p className="font-body text-[17px] leading-[1.75] text-white/60">
+            Mahesh M. Thakur helps high-performing senior leaders build the presence, judgment, and influence required for bigger scope, in an era where AI changes how leadership is evaluated.
           </p>
-          <div>
-            <a
-              href="#work-with-mahesh"
-              className="inline-block bg-white text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold hover:text-white transition-colors"
-            >
-              Learn More
-            </a>
-          </div>
         </div>
         <div className="relative min-h-[50vh] lg:min-h-full">
           <Image
@@ -81,81 +73,6 @@ export default function HomePage() {
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
-        </div>
-      </section>
-
-      {/* Work With Mahesh */}
-      <section id="work-with-mahesh" className="bg-white py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
-            Work With Mahesh
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
-              <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Private coaching for high-performing technology leaders who are ready to build greater presence, judgment, and influence for bigger scope.
-              </p>
-              <div>
-                <Link
-                  href="/executive-coaching"
-                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
-              <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                A confidential peer room for senior technology leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
-              </p>
-              <div>
-                <Link
-                  href="/c-suite-forum"
-                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-                >
-                  Request Invitation
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* Partnering With Leaders */}
-      <section className="bg-bg py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-            Partnering With Leaders at Critical Inflection Points
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            Mahesh works with high-performing technology leaders when performance alone is no longer enough.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-border">
-              <thead>
-                <tr className="bg-navy text-white">
-                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left w-[200px]">
-                    Moment
-                  </th>
-                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left">
-                    What the leader is navigating
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {INFLECTION_ROWS.map((row, i) => (
-                  <tr key={row.moment} className={`border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-bg'}`}>
-                    <td className="px-6 py-5 font-body font-semibold text-navy align-top">{row.moment}</td>
-                    <td className="px-6 py-5 font-body text-[16px] italic text-[#1A1A1A]">{row.nav}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       </section>
 
@@ -266,6 +183,83 @@ export default function HomePage() {
             height={220}
             className="w-full max-w-4xl h-auto mx-auto"
           />
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Partnering With Leaders */}
+      <section className="bg-bg py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+            Partnering With Leaders at Critical Inflection Points
+          </h2>
+          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+            Mahesh works with high-performing leaders when performance alone is no longer enough.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-border">
+              <thead>
+                <tr className="bg-navy text-white">
+                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left w-[200px]">
+                    Moment
+                  </th>
+                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left">
+                    What the leader is navigating
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {INFLECTION_ROWS.map((row, i) => (
+                  <tr key={row.moment} className={`border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-bg'}`}>
+                    <td className="px-6 py-5 font-body font-semibold text-navy align-top">{row.moment}</td>
+                    <td className="px-6 py-5 font-body text-[16px] italic text-[#1A1A1A]">{row.nav}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Work With Mahesh */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
+            Work With Mahesh
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
+              <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
+              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                Private coaching for high-performing leaders who are ready to build greater presence, judgment, and influence for bigger scope.
+              </p>
+              <div>
+                <Link
+                  href="/executive-coaching"
+                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+            <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6">
+              <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
+              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+                A confidential peer room for senior leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
+              </p>
+              <div>
+                <Link
+                  href="/c-suite-forum"
+                  className="inline-block border border-navy text-navy px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                >
+                  Request Invitation
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
