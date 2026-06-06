@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'About Mahesh M. Thakur. Operator. Board Director. Executive Coach.',
@@ -229,57 +229,26 @@ export default function AboutPage() {
 
       <GoldDivider />
 
-      {/* Personal */}
-      <section className="bg-white py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-                The other things.
-              </h2>
-              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>Home is the Bay Area, where his wife and daughters keep the perspective honest.</p>
-                <p>Reading covers a lot of territory: strategy, behavioral psychology, organizational design, emerging technology. Beyond the desk, there are weights to lift, meals to cook, and travel taken with intention rather than habit.</p>
-                <p>On the side: two USPTO patents, active board seats, and early investments in technology companies. The best clients tend to be the ones who have built something genuinely full outside their titles. That fullness is what carries people through the hardest moments of the work.</p>
-                <p>The work matters most when the rest of it is in order.</p>
+      {/* CTA — An Invitation to Begin */}
+      <section className="bg-bg py-10 lg:py-14">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+              <div>
+                <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
+                  An Invitation to Begin
+                </div>
+                <h2 className="font-display text-[28px] lg:text-[36px] font-bold text-white leading-tight mb-5">
+                  Ready to elevate your leadership impact?
+                </h2>
+                <p className="font-body text-[16px] leading-[1.75] text-white/65">
+                  If you are ready to explore what is possible, request a private discovery conversation. A first step toward transformative results.
+                </p>
+              </div>
+              <div>
+                <ContactForm buttonLabel="Request a Conversation" dark />
               </div>
             </div>
-            <div className="relative min-h-[400px] lg:min-h-[500px]">
-              <Image
-                src="/images/P2135140-condensed.jpeg"
-                alt="Mahesh M. Thakur"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Footer */}
-      <section className="bg-bg py-16 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <div className="w-8 h-[2px] bg-gold mx-auto mb-6" />
-          <h3 className="font-display text-[40px] lg:text-[52px] font-bold text-navy leading-tight mb-4">
-            Let&apos;s talk.
-          </h3>
-          <p className="font-body text-[16px] text-muted mb-10">
-            Select the path that fits where you are.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/advisory"
-              className="bg-navy text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-gold transition-colors"
-            >
-              For Boards and CEOs
-            </Link>
-            <Link
-              href="/executive-coaching"
-              className="border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-            >
-              For VPs and Directors
-            </Link>
           </div>
         </div>
       </section>
