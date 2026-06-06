@@ -16,7 +16,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
+          <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-6">
             Mahesh does this work because he has done the work.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70">
@@ -39,7 +39,7 @@ export default function AboutPage() {
       {/* Operator Years */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-8">
             The operating years.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
@@ -91,7 +91,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+              <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-8">
                 In 2021, Mahesh stepped out of the corporate chair.
               </h2>
               <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
@@ -130,7 +130,7 @@ export default function AboutPage() {
       {/* Credentials */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
             The pedigree that matters.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -195,7 +195,7 @@ export default function AboutPage() {
       {/* How I Work */}
       <section className="bg-bg py-14 lg:py-16">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-8">
             Three things Mahesh brings to every engagement.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -238,7 +238,7 @@ export default function AboutPage() {
                 <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
                   An Invitation to Begin
                 </div>
-                <h2 className="font-display text-[28px] lg:text-[36px] font-bold text-white leading-tight mb-5">
+                <h2 className="font-display text-[22px] lg:text-[28px] font-bold text-white leading-tight mb-5">
                   Ready to elevate your leadership impact?
                 </h2>
                 <p className="font-body text-[16px] leading-[1.75] text-white/65">

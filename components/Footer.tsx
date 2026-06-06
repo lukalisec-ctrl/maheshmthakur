@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
 
         <div className="mb-12">
-          <h3 className="font-display text-[24px] font-semibold text-white mb-2">
+          <h3 className="font-display text-[20px] font-semibold text-white mb-2">
             The Executive Navigator
           </h3>
           <p className="font-body text-[14px] text-white/60 mb-4">

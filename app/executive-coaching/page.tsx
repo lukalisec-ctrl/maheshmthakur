@@ -140,12 +140,20 @@ export default function ExecutiveCoachingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
           </div>
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-6">
+          <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-6">
             The AI-Native Leadership Coach.
           </h1>
-          <p className="font-body text-[18px] leading-[1.75] text-white/70">
+          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-8">
             Private coaching for technology leaders from Director to C-Suite. Building the presence, judgment, and influence required for bigger scope.
           </p>
+          <div>
+            <Link
+              href="/about-us"
+              className="inline-block border border-gold text-gold px-6 py-2.5 font-body text-[11px] font-medium tracking-[0.16em] uppercase hover:bg-gold hover:text-white transition-colors"
+            >
+              Read Mahesh&apos;s Full Bio Here
+            </Link>
+          </div>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
@@ -167,7 +175,7 @@ export default function ExecutiveCoachingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             Leadership Challenges
           </div>
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
             From high performer to recognized leader.
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
@@ -192,7 +200,7 @@ export default function ExecutiveCoachingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             What Changes Through the Coaching
           </div>
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
             What leaders gain from working with Mahesh.
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
@@ -235,7 +243,7 @@ export default function ExecutiveCoachingPage() {
       {/* FAQ */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-10">
             Common Questions
           </h2>
           <Accordion items={FAQ_ITEMS} />
@@ -253,7 +261,7 @@ export default function ExecutiveCoachingPage() {
                 <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
                   An Invitation to Begin
                 </div>
-                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
+                <h2 className="font-display text-[20px] lg:text-[23px] font-semibold text-white leading-tight mb-4">
                   Ready to elevate your leadership impact?
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">

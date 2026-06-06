@@ -14,7 +14,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
-          <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
+          <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-8">
             Let&apos;s talk.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70">
@@ -40,7 +40,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
-                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
+                <h2 className="font-display text-[20px] lg:text-[23px] font-semibold text-white leading-tight mb-4">
                   Send a Note.
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">
