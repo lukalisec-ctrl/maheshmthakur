@@ -32,7 +32,7 @@ export default function AuditPage() {
       </section>
 
       {/* What It Tells You */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
             What it tells you.

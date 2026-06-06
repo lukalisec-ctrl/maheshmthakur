@@ -25,7 +25,7 @@ const CREDENTIALS = [
   },
   {
     label: 'Market Verification',
-    body: 'Featured in Forbes for pioneering AI methodologies utilized by Meta and Spotify.',
+    body: 'Featured in Forbes and Inc. magazine for pioneering AI methodologies utilized by Meta and Spotify.',
   },
 ]
 
@@ -121,16 +121,13 @@ export default function SpeakingPage() {
   return (
     <>
       {/* Section 1 — Hero */}
-      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            Keynote Speaker &nbsp;|&nbsp; Top 100 Coach &nbsp;|&nbsp; Stanford GSB Certified Board Member
-          </div>
           <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-8">
             Boardroom Vision for the Agentic Era.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
-            Keynotes that move boards and executive teams from AI ambiguity to measurable financial certainty.
+            Keynotes for boards, executive teams, leadership offsites, and global conferences. Moving organizations from AI ambiguity to measurable financial certainty.
           </p>
           <div>
             <a
@@ -156,7 +153,7 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 2 — The Message */}
-      <section id="the-message" className="bg-white py-14 lg:py-20">
+      <section id="the-message" className="bg-white py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             The Message
@@ -187,23 +184,36 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 3 — A Rare Tier of Executive Advisory */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            A Rare Tier of Executive Advisory
-          </div>
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
-            The Credentials Behind the Message
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
-            {CREDENTIALS.map((item) => (
-              <div key={item.label}>
-                <h3 className="font-body text-[14px] font-semibold uppercase tracking-[0.08em] text-gold mb-3">
-                  {item.label}
-                </h3>
-                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">{item.body}</p>
+      <section className="bg-bg py-8 lg:py-12">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="relative min-h-[420px] lg:min-h-[540px]">
+              <Image
+                src="/images/MMT_SpeakerShowcase.JPG"
+                alt="Mahesh M. Thakur speaking"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div>
+              <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
+                A Rare Tier of Executive Advisory
               </div>
-            ))}
+              <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
+                The Credentials Behind the Message
+              </h2>
+              <div className="grid grid-cols-1 gap-y-8">
+                {CREDENTIALS.map((item) => (
+                  <div key={item.label}>
+                    <h3 className="font-body text-[14px] font-semibold uppercase tracking-[0.08em] text-gold mb-3">
+                      {item.label}
+                    </h3>
+                    <p className="font-body text-[16px] leading-[1.75] text-[#1A1A1A]">{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -211,7 +221,7 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 4 — Signature Keynotes */}
-      <section className="bg-navy py-14 lg:py-20">
+      <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-4">
             Signature keynotes.
@@ -242,7 +252,7 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 5 — Watch Mahesh on Stage */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Watch Mahesh on stage.
@@ -272,7 +282,7 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 6 — What Audiences Walk Away With */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Decode AI. Align Capital, Product, and Execution. Drive Transformation.
@@ -291,7 +301,7 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 7 — Past Stages */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Past Stages and Audiences
@@ -299,23 +309,26 @@ export default function SpeakingPage() {
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Delivered at Boards, Summits, and Leadership Offsites Globally.
           </h2>
-          <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
-            {[
-              'GoDaddy',
-              'Qualcomm',
-              'ProductCon',
-              'Stanford GSB',
-              'Fortune 100 Leadership Summits',
-              'C-Suite Network',
-              'Executive Leadership Councils',
-            ].map((venue) => (
-              <span
-                key={venue}
-                className="font-display text-[15px] font-semibold uppercase tracking-[0.08em] text-navy/70"
-              >
-                {venue}
-              </span>
-            ))}
+          <div className="flex flex-col items-center gap-10 mb-8">
+            <div className="text-center">
+              <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-5">Companies</div>
+              <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-3">
+                {['GoDaddy', 'Stanford GSB', 'Meta', 'Google', 'NVIDIA', 'Qualcomm'].flatMap((venue, i, arr) => [
+                  <span key={venue} className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy">{venue}</span>,
+                  ...(i < arr.length - 1 ? [<span key={venue + '-dot'} className="text-gold text-[14px]">·</span>] : []),
+                ])}
+              </div>
+            </div>
+            <div className="w-12 h-px bg-gold" />
+            <div className="text-center">
+              <div className="font-body text-[11px] uppercase tracking-[0.14em] text-gold mb-5">Events &amp; Forums</div>
+              <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-3">
+                {['Fortune 100 Leadership Summits', 'C-Suite Network', 'Executive Leadership Councils'].flatMap((venue, i, arr) => [
+                  <span key={venue} className="font-display text-[16px] font-semibold uppercase tracking-[0.08em] text-navy">{venue}</span>,
+                  ...(i < arr.length - 1 ? [<span key={venue + '-dot'} className="text-gold text-[14px]">·</span>] : []),
+                ])}
+              </div>
+            </div>
           </div>
           <p className="font-body text-[15px] italic text-muted mb-10">
             Each talk is customized to the event&apos;s theme, audience, and objectives.
@@ -349,14 +362,22 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 8 — What Audiences Take Away */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-6 lg:py-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
+          <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-6">
             What Audiences Take Away
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {TESTIMONIALS.map((t, i) => (
-              <TestimonialCard key={i} {...t} />
+              <div key={i} className="bg-white border border-border p-5 flex flex-col gap-4">
+                <p className="font-body text-[14px] italic leading-[1.7] text-navy">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <div className="font-body text-[13px] font-semibold text-navy">{t.name}</div>
+                  <div className="font-body text-[12px] text-muted mt-0.5">{t.title ? `${t.title}, ${t.company}` : t.company}</div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -365,23 +386,21 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 9 — Final CTA Form */}
-      <section id="contact" className="bg-bg py-10 lg:py-14">
+      <section id="contact" className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
-                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
-                  Contact Mahesh Today
+                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+                  Bring the right speaker to the right room.
                 </h2>
-                <p className="font-body text-[15px] leading-[1.75] text-white/65">
+                <p className="font-body text-[15px] leading-[1.75] text-muted">
                   If you are organizing a board retreat, executive summit, conference, or leadership offsite and want to explore whether Mahesh is the right speaker for your audience, share a short note. Every inquiry is reviewed personally.
                 </p>
               </div>
               <div>
-                <ContactForm buttonLabel="Inquire for Availability" dark />
+                <ContactForm buttonLabel="Inquire for Availability" />
               </div>
-            </div>
           </div>
         </div>
       </section>

@@ -52,7 +52,7 @@ export default function AdvisoryPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-8">
             You are approving an eight-figure AI budget. The P&amp;L is not
@@ -87,7 +87,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* The Problem + How Mahesh Helps — combined */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
             The problem is not the technology.
@@ -130,7 +130,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* CEO Testimonials */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What CEOs Say
@@ -153,14 +153,14 @@ export default function AdvisoryPage() {
       </section>
 
       {/* Proof Stats */}
-      <section className="bg-navy py-14 lg:py-20">
+      <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <StatBlock stats={PROOF_STATS} theme="dark" />
         </div>
       </section>
 
       {/* Client Outcomes */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What Clients Achieve
@@ -172,7 +172,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* FAQ */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Common questions.
@@ -203,7 +203,7 @@ export default function AdvisoryPage() {
       <GoldDivider />
 
       {/* CTA Footer */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
           <h3 className="font-body text-[18px] font-semibold uppercase tracking-[0.08em] text-navy mb-4">
             Book a call.

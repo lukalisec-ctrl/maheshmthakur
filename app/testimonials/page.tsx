@@ -168,7 +168,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Section 1 — Hero */}
-      <section className="bg-navy py-14 lg:py-20">
+      <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             What Clients Say
@@ -188,21 +188,21 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 2 — Featured Testimonials */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-6 lg:py-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
             In Their Own Words.
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURED.map((t) => (
-              <div key={t.name} className="bg-bg border border-border p-10 flex flex-col gap-6">
-                <p className="font-body text-[18px] italic leading-[1.75] text-navy flex-1">
+              <div key={t.name} className="bg-bg border border-border p-6 flex flex-col gap-4">
+                <p className="font-body text-[15px] italic leading-[1.7] text-navy flex-1">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div>
-                  <div className="font-body text-[15px] font-semibold text-navy">{t.name}</div>
-                  <div className="font-body text-[14px] text-muted">{t.title}</div>
-                  <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">
+                  <div className="font-body text-[14px] font-semibold text-navy">{t.name}</div>
+                  <div className="font-body text-[13px] text-muted">{t.title}</div>
+                  <div className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">
                     {t.company}
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 3 — Trusted At */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Trusted at the Highest Levels of Enterprises
@@ -233,7 +233,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 4 — The Full Library */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Client Success Stories.
@@ -249,7 +249,7 @@ export default function TestimonialsPage() {
       <GoldDivider />
 
       {/* Section 5 — Final CTA */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative min-h-[400px] lg:min-h-[480px]">

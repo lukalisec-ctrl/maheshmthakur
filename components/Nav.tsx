@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const NAV_LINKS = [
   { label: 'Meet Mahesh', href: '/about-us' },
@@ -14,6 +15,7 @@ const NAV_LINKS = [
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   return (
     <header className="sticky top-0 z-50">
@@ -39,7 +41,7 @@ export default function Nav() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-body text-[13px] font-medium uppercase tracking-[0.08em] text-navy hover:text-gold transition-colors"
+                  className={`font-body text-[13px] font-medium uppercase tracking-[0.08em] transition-colors ${pathname === link.href ? 'text-gold' : 'text-navy hover:text-gold'}`}
                 >
                   {link.label}
                 </Link>
@@ -75,7 +77,7 @@ export default function Nav() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block font-body text-[13px] font-medium uppercase tracking-[0.08em] text-navy hover:text-gold transition-colors py-1"
+                  className={`block font-body text-[13px] font-medium uppercase tracking-[0.08em] transition-colors py-1 ${pathname === link.href ? 'text-gold' : 'text-navy hover:text-gold'}`}
                 >
                   {link.label}
                 </Link>

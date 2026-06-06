@@ -13,38 +13,12 @@ export const metadata: Metadata = {
 }
 
 const CHALLENGES = [
-  {
-    title: 'Performance plateau',
-    body: 'You keep delivering. The right people are not noticing. The rules have changed and no one said so.',
-  },
-  {
-    title: 'Vague feedback',
-    body: 'You have been told you are close. Close is not a roadmap. You need to know exactly what the gap is.',
-  },
-  {
-    title: 'Influence ceiling',
-    body: 'You can execute within your team. Moving people above you and across functions is harder than it should be.',
-  },
-  {
-    title: 'Presence under pressure',
-    body: 'You know what you want to say. In a room with senior stakeholders, something shifts and you lose the room.',
-  },
-  {
-    title: 'Scope expansion',
-    body: 'You are being asked to lead beyond what you have done before. You want to be genuinely ready.',
-  },
-  {
-    title: 'Strategic visibility',
-    body: 'Your work is strong. The people who matter are not seeing it the way you intend.',
-  },
-  {
-    title: 'Promotion readiness',
-    body: 'You are navigating a promotion cycle with no clear signal on what is actually being evaluated.',
-  },
-  {
-    title: 'AI-era positioning',
-    body: 'The landscape is shifting. You want to lead into it with confidence and clarity, not react from behind.',
-  },
+  '"My company just reorganized. My scope changed overnight and I am figuring out who I need to be in this new structure."',
+  '"We went through layoffs. I survived, but now I am being asked to lead a larger team through a strategy I did not write."',
+  '"The company is growing fast. I am being asked to lead at a scale I have never operated at before."',
+  '"I know what I want to say. In a room with senior stakeholders, something shifts and I lose the room."',
+  '"I have been told I am close. But close is not a roadmap. I need to know exactly what the gap is."',
+  '"I am navigating a promotion cycle with no clear signal on what is actually being evaluated."',
 ]
 
 const OUTCOMES = [
@@ -62,15 +36,15 @@ const OUTCOMES = [
   },
   {
     title: 'Clarity under pressure',
-    body: 'Think, communicate, and decide well in the moments that matter most.',
+    body: 'Walk into a board review, a reorg, or a high-stakes conversation and come out having led it — not just survived it.',
   },
   {
-    title: 'Strategic positioning',
-    body: 'Ensure the right people see your work, your judgment, and your readiness for more.',
+    title: 'Visibility that is earned',
+    body: 'The right people see your judgment, your work, and your readiness — before the opportunity is on the table.',
   },
   {
     title: 'AI-era leadership',
-    body: 'Lead with confidence and relevance as technology reshapes what leadership requires at the top.',
+    body: 'Lead with authority as AI shifts who gets trusted, who gets promoted, and who gets asked to the table.',
   },
 ]
 
@@ -98,36 +72,64 @@ const COACHING_TESTIMONIALS = [
   },
 ]
 
+const PHASES = [
+  {
+    number: '01',
+    framework: 'See the Bar',
+    title: 'The Executive Presence Audit',
+    items: [
+      'How you show up physically and mentally in high-stakes rooms',
+      'Reading the situation before you speak',
+      'Aligning your message with what senior leaders actually care about',
+    ],
+  },
+  {
+    number: '02',
+    framework: 'Close the Gap',
+    title: 'Operational Command',
+    items: [
+      'Making decisions at the pace the organization requires',
+      'Running meetings that move things forward',
+      'Translating your work into business and financial outcomes',
+    ],
+  },
+  {
+    number: '03',
+    framework: 'Beyond the Bar',
+    title: 'Political Navigation and Scaling',
+    items: [
+      'Influencing people who do not report to you',
+      'Leading your team through change without losing momentum',
+      'Making your readiness for the next level visible to the people who decide',
+    ],
+  },
+]
+
 const FAQ_ITEMS = [
   {
-    question: 'Who is this coaching for?',
+    question: 'Who is this for?',
     answer:
-      'Mahesh works with technology leaders from Director to C-Suite. The common thread is not title. It is a leader who is ready to operate at a higher level than they do today.',
+      'Technology leaders from Director to C-Suite at firms like NVIDIA, Meta, Google, Apple, and high-growth companies. The common thread is not title. It is a leader who is ready to operate at a higher level and wants a direct, structured path to get there.',
   },
   {
-    question: 'How long is the engagement?',
+    question: 'What makes this different from standard coaching?',
     answer:
-      'Mahesh offers three-month and six-month options. Most clients who complete a three-month engagement renew because the results become visible before it ends.',
+      'Standard coaching is reflective. This is clinical and prescriptive. Mahesh is one of only 15 people globally designated as a Master Certified Coach in Stakeholder Centered Coaching, the world\'s premier methodology for measurable leadership results. Every engagement is a direct 1:1 with Mahesh. Nothing is delegated.',
   },
   {
-    question: 'How is this different from mentoring or consulting?',
+    question: 'How is success measured?',
     answer:
-      'A mentor shares their experience. A consultant solves a defined problem. Coaching is a structured private engagement focused on how a leader thinks, operates, and shows up. The goal is permanent capability, not a single answer.',
+      'Using the Marshall Goldsmith stakeholder framework, your growth is validated by the people you actually lead and work alongside. Not self-reported. Results are visible to the people who matter before the engagement ends.',
   },
   {
-    question: 'What support is available between sessions?',
+    question: 'Why is pricing not listed?',
     answer:
-      'Leaders have access to Mahesh by email between sessions for real situations as they arise. Mahesh also does preparation and follow-up work around every session.',
+      'Every engagement is a bespoke strategic partnership built around your specific situation, goals, and trajectory. We begin with a confidential conversation to determine fit before any investment is discussed.',
   },
   {
-    question: 'Is everything confidential?',
+    question: 'How do I find out if this is the right fit?',
     answer:
-      "Yes. Every engagement begins with a mutual NDA. Every conversation is strictly confidential. Nothing is shared with anyone, including the leader's organisation.",
-  },
-  {
-    question: 'How does the process start?',
-    answer:
-      'Send a short note through the form below. If there is a clear fit, the team will be in touch to schedule a first conversation.',
+      'Send a short note through the form below. Mahesh reviews every inquiry personally. If there is a clear fit, you will be invited to a fifteen-minute call to assess alignment. No commitment required.',
   },
 ]
 
@@ -135,16 +137,16 @@ export default function ExecutiveCoachingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
+      <section className="bg-navy py-16 lg:py-0 lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
           <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-6">
             The AI-Native Leadership Coach.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-8">
-            Private coaching for technology leaders from Director to C-Suite. Building the presence, judgment, and influence required for bigger scope.
+            When organizations expand, shrink, or restructure, the rules of leadership change. Mahesh coaches technology leaders from Director to C-Suite through the transitions that define careers.
           </p>
           <div className="w-full mt-2">
-            <div className="grid grid-cols-2 max-w-[240px] mb-3">
+            <div className="grid grid-cols-2 gap-10 mb-3">
               <div className="flex items-center justify-center h-16">
                 <Image
                   src="/images/MCC1.png"
@@ -164,10 +166,9 @@ export default function ExecutiveCoachingPage() {
                 />
               </div>
             </div>
-            <div className="flex items-center font-body text-[10px] uppercase tracking-[0.12em] text-gold max-w-[240px]">
-              <div className="flex-1 text-center">Master Certified Coach</div>
-              <span className="px-2">|</span>
-              <div className="flex-1 text-center">Top 100 Coach Globally</div>
+            <div className="grid grid-cols-2 gap-10 font-body text-[10px] uppercase tracking-[0.12em] text-gold">
+              <div className="text-center whitespace-nowrap">Master Certified Coach</div>
+              <div className="text-center whitespace-nowrap">Top 100 Coach Globally</div>
             </div>
           </div>
         </div>
@@ -186,7 +187,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* The Challenges */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             Leadership Challenges
@@ -197,12 +198,11 @@ export default function ExecutiveCoachingPage() {
           <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
             The rules change at a certain level. Most leaders find out too late. These are the moments that bring leaders to Mahesh.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border">
-            {CHALLENGES.map((item) => (
-              <div key={item.title} className="bg-white p-6">
-                <h3 className="font-body text-[15px] font-semibold text-navy mb-2">{item.title}</h3>
-                <p className="font-body text-[14px] leading-[1.7] text-muted">{item.body}</p>
-              </div>
+          <div className="space-y-5">
+            {CHALLENGES.map((quote) => (
+              <p key={quote} className="font-body text-[17px] italic text-[#1A1A1A] border-l-2 border-border pl-5">
+                {quote}
+              </p>
             ))}
           </div>
         </div>
@@ -210,23 +210,75 @@ export default function ExecutiveCoachingPage() {
 
       <GoldDivider />
 
+      {/* The Program */}
+      <section className="bg-bg py-8 lg:py-12">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
+            The Leadership Bar Framework™
+          </h2>
+          <p className="font-body text-[16px] leading-[1.75] text-muted mb-12">
+            Most leaders are held back not by capability, but by a bar they cannot see. The Leadership Bar Framework was built to change that. It starts by naming exactly what is being evaluated at the next level. Then it builds the capabilities that make the leap possible: presence, judgment, influence, and trust. Every engagement moves through three phases. First, diagnosing the real gap. Then closing it. Then leading with the authority that belongs at the next level.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            {PHASES.map((phase) => (
+              <div key={phase.number} className="border-t border-border pt-6">
+                <div className="font-display text-[40px] font-bold text-gold leading-none mb-3">
+                  {phase.number}
+                </div>
+                <h3 className="font-body text-[18px] font-semibold text-navy mb-1">
+                  {phase.framework}
+                </h3>
+                <div className="font-body text-[12px] uppercase tracking-[0.1em] text-muted mb-5">
+                  {phase.title}
+                </div>
+                <ul className="space-y-3">
+                  {phase.items.map((item) => (
+                    <li key={item} className="flex gap-3 items-start">
+                      <span className="text-gold font-semibold flex-shrink-0 mt-0.5">—</span>
+                      <span className="font-body text-[14px] leading-[1.6] text-[#1A1A1A]">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Strip */}
+      <section className="bg-gold py-7">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-5">
+          <p className="font-body text-[15px] font-semibold uppercase tracking-[0.18em] text-white text-center lg:text-left">
+            Request a Confidential Executive Leadership Strategy Session
+          </p>
+          <a
+            href="#contact"
+            className="flex-shrink-0 inline-block bg-white text-navy px-8 py-3 font-body font-semibold text-[11px] tracking-[0.18em] uppercase hover:bg-navy hover:text-white transition-colors"
+          >
+            Inquire Here
+          </a>
+        </div>
+      </section>
+
+      <GoldDivider />
+
       {/* What Leaders Gain */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            What Changes Through the Coaching
+            What Changes
           </div>
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
-            What leaders gain from working with Mahesh.
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-4">
+            What shifts when you work with Mahesh.
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
+          <p className="font-body text-[17px] leading-[1.75] text-white/60 mb-10">
             Private, tailored engagements built around what is live in the leader&apos;s world. No fixed curriculum.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {OUTCOMES.map((item) => (
               <div key={item.title} className="border-t-2 border-gold pt-5">
-                <h3 className="font-body text-[16px] font-semibold text-navy mb-2">{item.title}</h3>
-                <p className="font-body text-[15px] leading-[1.7] text-[#1A1A1A]">{item.body}</p>
+                <h3 className="font-body text-[16px] font-semibold text-white mb-2">{item.title}</h3>
+                <p className="font-body text-[15px] leading-[1.7] text-white/70">{item.body}</p>
               </div>
             ))}
           </div>
@@ -236,7 +288,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* What Clients Say */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What Clients Say
@@ -257,7 +309,7 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* FAQ */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Common Questions
@@ -269,25 +321,23 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-bg py-10 lg:py-14">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
                   An Invitation to Begin
                 </div>
-                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
-                  Ready to elevate your leadership impact?
+                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+                  Every transition starts with one conversation.
                 </h2>
-                <p className="font-body text-[15px] leading-[1.75] text-white/65">
-                  If you are preparing for bigger scope, navigating a promotion cycle, or working on your presence and influence as a senior leader, request a private discovery conversation.
+                <p className="font-body text-[15px] leading-[1.75] text-muted">
+                  If you are leading through a reorganization, taking on expanded scope, or navigating the transition to the next level, request a private discovery conversation.
                 </p>
               </div>
               <div>
-                <ContactForm buttonLabel="Request a Conversation" dark />
+                <ContactForm buttonLabel="Request a Conversation" />
               </div>
-            </div>
           </div>
         </div>
       </section>

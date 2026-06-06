@@ -78,7 +78,7 @@ export default function ContactForm({
           {buttonLabel}
         </button>
         <p className={`font-body text-[12px] ${dark ? 'text-white/40' : 'text-muted'}`}>
-          All inquiries are treated confidentially.
+          Every inquiry is reviewed personally. All conversations are strictly confidential.
         </p>
       </div>
     </form>

@@ -30,15 +30,6 @@ const INSIGHTS = [
   },
 ]
 
-const INVISIBLE_BAR_ITEMS = [
-  'Executive presence',
-  'Strategic communication',
-  'Stakeholder influence',
-  'Enterprise judgment',
-  'Promotion readiness',
-  'Confidence under pressure',
-]
-
 
 export default function HomePage() {
   return (
@@ -109,7 +100,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Credibility Metrics */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Results at Scale
@@ -143,7 +134,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Why Senior Leaders Work With Mahesh */}
-      <section className="bg-bg py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -171,13 +162,13 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div>
+            <div className="flex items-center justify-center">
               <Image
-                src="/images/mahesh-coaching.jpg"
+                src="/images/P2134727.jpeg"
                 alt="Mahesh M. Thakur"
                 width={600}
                 height={700}
-                className="object-cover w-full"
+                className="object-cover w-[75%] mx-auto object-top"
               />
             </div>
           </div>
@@ -187,7 +178,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Trusted At */}
-      <section className="bg-white py-10 lg:py-14">
+      <section className="bg-white py-6 lg:py-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
             Trusted at the Highest Levels of Enterprises
@@ -208,37 +199,42 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* The Leadership Bar + Assessment — combined */}
-      <section className="bg-navy py-14 lg:py-20">
+      <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-6">
-                The Leadership Bar
+                The Leadership Bar Framework™
               </h2>
-              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/75 mb-8">
-                <p>
-                  Most leaders are not held back because they lack intelligence, effort, or capability.
-                </p>
-                <p>
-                  They get held back because the bar changes. At the next level, the evaluation shifts to judgment, influence, presence, and trust. No one explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
-                </p>
-              </div>
-              <ul className="space-y-2 mb-10">
-                {INVISIBLE_BAR_ITEMS.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="text-gold font-semibold flex-shrink-0">—</span>
-                    <span className="font-body text-[16px] text-white/70">{item}</span>
-                  </li>
+              <p className="font-body text-[16px] leading-[1.75] text-white/70 mb-8">
+                Most leaders are held back not by capability, but by a bar they cannot see. The Leadership Bar Framework names exactly what is being evaluated at the next level and builds the capabilities that make the leap possible.
+              </p>
+              <div className="space-y-4">
+                {[
+                  { number: '01', framework: 'See the Bar', body: 'Diagnose exactly what is being evaluated at the next level and where the real gap is.' },
+                  { number: '02', framework: 'Close the Gap', body: 'Build the presence, judgment, and operational authority that the next level requires.' },
+                  { number: '03', framework: 'Beyond the Bar', body: 'Lead with the influence, visibility, and credibility that belong at the level above.' },
+                ].map((phase) => (
+                  <div key={phase.number} className="border-t border-white/20 pt-4">
+                    <div className="flex items-center gap-5 mb-1">
+                      <span className="font-display text-[22px] font-bold text-gold leading-none flex-shrink-0">{phase.number}</span>
+                      <span className="font-body text-[16px] font-semibold text-white">{phase.framework}</span>
+                    </div>
+                    <p className="font-body text-[14px] leading-[1.6] text-white/55 pl-11">{phase.body}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
             <div className="lg:border-l lg:border-white/20 lg:pl-16">
               <div className="w-8 h-[2px] bg-gold mb-6" />
-              <h3 className="font-display text-[20px] font-semibold text-white leading-tight mb-4">
+              <h3 className="font-display text-[32px] font-semibold text-white leading-tight mb-4">
                 The Leadership Assessment
               </h3>
+              <p className="font-body text-[16px] leading-[1.75] text-white/65 mb-4">
+                Find out what may be limiting your readiness for bigger scope, stronger influence, and higher-stakes leadership.
+              </p>
               <p className="font-body text-[16px] leading-[1.75] text-white/65 mb-8">
-                Find out what may be limiting your readiness for bigger scope, stronger influence, and higher-stakes leadership. Five questions. Five minutes. A clear picture of where you stand.
+                Five questions. A clear picture of where you stand.
               </p>
               <a
                 href={ASSESSMENT_URL}
@@ -254,7 +250,7 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Latest Insights */}
-      <section className="bg-white py-14 lg:py-20">
+      <section className="bg-white py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             The Latest From Mahesh
@@ -281,22 +277,22 @@ export default function HomePage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-[#0d2240] py-14 lg:py-20">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div>
               <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
                 An Invitation to Begin
               </div>
-              <h2 className="font-display text-[22px] lg:text-[28px] font-semibold text-white leading-tight mb-5">
-                Ready to Start the Conversation?
+              <h2 className="font-display text-[22px] lg:text-[28px] font-semibold text-navy leading-tight mb-5">
+                If you are navigating a transition, this is where it starts.
               </h2>
-              <p className="font-body text-[16px] leading-[1.75] text-white/65">
-                If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note. Mahesh reads every message personally.
+              <p className="font-body text-[16px] leading-[1.75] text-muted">
+                If you are navigating a transition, preparing for bigger scope, or leading through a moment that requires more than you have had to bring before, send a short note. Mahesh reads every message personally.
               </p>
             </div>
             <div>
-              <ContactForm buttonLabel="Send Request" dark />
+              <ContactForm buttonLabel="Send Request" />
             </div>
           </div>
         </div>
