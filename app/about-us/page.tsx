@@ -186,26 +186,73 @@ export default function AboutPage() {
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What People Say About Mahesh
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <TestimonialCard
-              quote="Mahesh is sharp, wise, funny, highly accomplished, and incredibly knowledgeable. His enthusiasm for your team's potential is infectious. I value his candor, his wisdom, and his uncanny ability to say precisely what you need to hear at exactly the right moment. My only regret is not hiring him earlier."
-              name="Monisha Kanoth"
-              title="Senior Data Engineering Manager"
-              company="Apple"
-            />
-            <TestimonialCard
-              quote="What sets Mahesh apart is that he has himself walked the walk a few times in startups and in trillion-dollar companies."
-              name="Sudha Thota"
-              title="Senior Director of Product Management"
-              company="Microsoft"
-            />
-            <TestimonialCard
-              quote="Mahesh brings a rich perspective as a business leader, technologist, and coach. He humanizes and simplifies complex situations. It is very hard to find an executive coach who has been there and done that."
-              name="Hyo Jung Song"
-              title="Vice President of Mobile"
-              company="Samsung"
-            />
+          <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {[
+              {
+                quote: 'Hiring Mahesh will amplify your strengths and equip you with practical tools to lead at a higher level.',
+                name: 'Varun Vontimitta',
+                title: 'Partner Engineering Leader',
+                company: 'Meta',
+              },
+              {
+                quote: 'Thanks to Mahesh, I am now a part of a Fortune 5 company. Working with Mahesh has been life-changing for me.',
+                name: 'Shikha Jain',
+                title: 'Machine Learning Product Manager',
+                company: 'Apple',
+              },
+              {
+                quote: 'What sets Mahesh apart is that he has himself walked the walk a few times in startups and in trillion-dollar companies.',
+                name: 'Sudha Thota',
+                title: 'Senior Director of Product Management',
+                company: 'Microsoft',
+              },
+              {
+                quote: 'It is very hard to find an executive coach who has been there and done that.',
+                name: 'Hyo Jung Song',
+                title: 'Vice President of Mobile',
+                company: 'Samsung',
+              },
+              {
+                quote: 'His uncanny ability to say precisely what you need to hear at exactly the right moment. My only regret is not hiring him earlier.',
+                name: 'Monisha Kanoth',
+                title: 'Senior Data Engineering Manager',
+                company: 'Apple',
+              },
+              {
+                quote: 'Every engineering leader focused on building executive presence should work with Mahesh. The impact of your work shifts from being competent to achieving true excellence.',
+                name: 'Vijay Kristipati',
+                title: 'Head of Engineering',
+                company: 'Google',
+              },
+              {
+                quote: 'Mahesh is uniquely qualified as an indispensable tech CEO coach. He genuinely listens and dives into your business as your thought partner.',
+                name: 'Feyzi Fatehi',
+                title: 'Chief Executive Officer',
+                company: 'Corent Technologies',
+              },
+              {
+                quote: 'Mahesh helped me establish myself as a visionary leader in my organization. He provided the best strategies to elevate my org, the product vision, and the business performance.',
+                name: 'Nivedita Ojha',
+                title: 'Vice President Product Management',
+                company: 'Autodesk',
+              },
+            ].map((t) => (
+              <div
+                key={t.name}
+                className="w-[320px] lg:w-[360px] flex-shrink-0 snap-start bg-white border border-border p-8 flex flex-col gap-6"
+              >
+                <p className="font-body text-[17px] italic leading-[1.75] text-navy flex-1">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <div className="font-body text-[14px] font-semibold text-navy">{t.name}</div>
+                  <div className="font-body text-[13px] text-muted mt-0.5">{t.title}</div>
+                  <div className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">{t.company}</div>
+                </div>
+              </div>
+            ))}
           </div>
+          <p className="font-body text-[12px] text-muted mt-4 tracking-wide">Scroll to see more →</p>
         </div>
       </section>
 
