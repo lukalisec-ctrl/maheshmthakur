@@ -134,10 +134,10 @@ export default function SpeakingPage() {
           </p>
           <div>
             <a
-              href="#the-message"
+              href="#contact"
               className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
             >
-              Learn More
+              Book Mahesh
             </a>
           </div>
         </div>
@@ -365,14 +365,14 @@ export default function SpeakingPage() {
       <GoldDivider />
 
       {/* Section 9 — Final CTA Form */}
-      <section className="bg-bg py-10 lg:py-14">
+      <section id="contact" className="bg-bg py-10 lg:py-14">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
                 <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
-                  Book Mahesh.
+                  Contact Mahesh Today
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">
                   If you are organizing a board retreat, executive summit, conference, or leadership offsite and want to explore whether Mahesh is the right speaker for your audience, share a short note. Every inquiry is reviewed personally.

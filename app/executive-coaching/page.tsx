@@ -131,9 +131,17 @@ export default function ExecutiveCoachingPage() {
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             The AI-Native Leadership Coach.
           </h1>
-          <p className="font-body text-[18px] leading-[1.75] text-white/70">
+          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-8">
             Mahesh helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.
           </p>
+          <div>
+            <Link
+              href="/about-us"
+              className="inline-block border border-white/40 text-white/80 px-8 py-4 font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+            >
+              Read Mahesh&apos;s Full Bio Here
+            </Link>
+          </div>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
@@ -185,6 +193,14 @@ export default function ExecutiveCoachingPage() {
               </tbody>
             </table>
           </div>
+          <div className="mt-10">
+            <a
+              href="#contact"
+              className="inline-block bg-gold text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-navy transition-colors"
+            >
+              Inquire Here
+            </a>
+          </div>
         </div>
       </section>
 
@@ -200,7 +216,7 @@ export default function ExecutiveCoachingPage() {
             Private, tailored engagements. No fixed curriculum — built around what is live in the leader&apos;s world.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
-            {WORK_ITEMS.map((item, index) => (
+            {WORK_ITEMS.map((item) => (
               <div key={item.title} className="border-t border-white/20 pt-5">
                 <h3 className="font-body text-[16px] font-semibold text-white mb-2">{item.title}</h3>
                 <p className="font-body text-[15px] leading-[1.7] text-white/60">{item.body}</p>
@@ -246,14 +262,14 @@ export default function ExecutiveCoachingPage() {
       <GoldDivider />
 
       {/* Final CTA Form */}
-      <section className="bg-bg py-10 lg:py-14">
+      <section id="contact" className="bg-bg py-10 lg:py-14">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
                 <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
-                  Ready to Start the Conversation?
+                  Talk to Mahesh Today
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">
                   If you are preparing for bigger scope, navigating a promotion cycle, or working on your presence and influence as a senior leader, send a short note.

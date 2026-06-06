@@ -2,7 +2,15 @@
 
 import { useRef, useEffect } from 'react'
 
-const TESTIMONIALS = [
+export type CarouselTestimonial = {
+  quote: string
+  name?: string
+  title?: string
+  company?: string
+  attribution?: string // for anonymous entries
+}
+
+const DEFAULT_TESTIMONIALS: CarouselTestimonial[] = [
   {
     quote: 'Hiring Mahesh will amplify your strengths and equip you with practical tools to lead at a higher level.',
     name: 'Varun Vontimitta',
@@ -53,41 +61,39 @@ const TESTIMONIALS = [
   },
 ]
 
-// 3 copies so the loop works in both scroll directions
-const ITEMS = [...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS]
-const CARD_GAP = 24 // px — matches mr-6
+type Props = {
+  testimonials?: CarouselTestimonial[]
+  cardWidth?: number // px, default 360
+}
 
-export default function TestimonialCarousel() {
+const CARD_GAP = 24
+
+export default function TestimonialCarousel({ testimonials = DEFAULT_TESTIMONIALS, cardWidth = 360 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
+  const items = [...testimonials, ...testimonials, ...testimonials]
 
   useEffect(() => {
     const el = ref.current
     if (!el) return
 
-    // Measure one set width from the live DOM so responsive widths are correct
     const setWidth = el.scrollWidth / 3
-
-    // Start in the middle copy so the user can scroll left or right
     el.scrollLeft = setWidth
 
     const onScroll = () => {
       const { scrollLeft } = el
       if (scrollLeft >= setWidth * 2) {
-        // Drifted into third copy — jump back one set (same visual position)
         el.scrollLeft = scrollLeft - setWidth
       } else if (scrollLeft < setWidth) {
-        // Drifted into first copy — jump forward one set
         el.scrollLeft = scrollLeft + setWidth
       }
     }
 
-    el.addEventListener('scroll', onScroll, { passive: true })
-
-    // Recalculate on resize so the jump point stays accurate
     const onResize = () => {
       const newSetWidth = el.scrollWidth / 3
       el.scrollLeft = newSetWidth
     }
+
+    el.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onResize)
 
     return () => {
@@ -102,19 +108,29 @@ export default function TestimonialCarousel() {
       className="flex overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden cursor-grab active:cursor-grabbing"
       style={{ scrollBehavior: 'auto' }}
     >
-      {ITEMS.map((t, i) => (
+      {items.map((t, i) => (
         <div
           key={i}
-          className="w-[300px] lg:w-[360px] flex-none bg-white border border-border p-8 flex flex-col gap-6"
-          style={{ marginRight: CARD_GAP }}
+          className="flex-none bg-white border border-border p-8 flex flex-col gap-6"
+          style={{ width: cardWidth, marginRight: CARD_GAP }}
         >
           <p className="font-body text-[17px] italic leading-[1.75] text-navy flex-1">
             &ldquo;{t.quote}&rdquo;
           </p>
           <div>
-            <div className="font-body text-[14px] font-semibold text-navy">{t.name}</div>
-            <div className="font-body text-[13px] text-muted mt-0.5">{t.title}</div>
-            <div className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">{t.company}</div>
+            {t.name ? (
+              <>
+                <div className="font-body text-[14px] font-semibold text-navy">{t.name}</div>
+                {t.title && <div className="font-body text-[13px] text-muted mt-0.5">{t.title}</div>}
+                {t.company && (
+                  <div className="font-body text-[12px] font-semibold uppercase tracking-[0.08em] text-gold mt-1">
+                    {t.company}
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="font-body text-[13px] font-semibold text-navy">{t.attribution}</div>
+            )}
           </div>
         </div>
       ))}
