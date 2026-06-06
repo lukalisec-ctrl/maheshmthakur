@@ -37,19 +37,19 @@ const FORUM_MOMENTS = [
 const ARENAS = [
   {
     title: 'Executive visibility and strategic presence',
-    body: 'Building the influence, perception, and positioning that accelerate advancement at senior levels.',
+    body: 'Building the influence and positioning that accelerate advancement at senior levels.',
   },
   {
     title: 'Navigating politics and stakeholder complexity',
-    body: 'Understanding and managing the invisible dynamics that shape leadership effectiveness in large organizations.',
+    body: 'Managing the invisible dynamics that shape leadership effectiveness in large organizations.',
   },
   {
     title: 'AI-era leadership and strategic relevance',
-    body: 'Maintaining clarity, positioning, and strategic authority as AI reshapes organizational priorities and power structures.',
+    body: 'Maintaining clarity and authority as AI reshapes organizational priorities and power structures.',
   },
   {
     title: 'Decision-making under pressure',
-    body: 'Developing the frameworks and composure to make high-stakes decisions when the information is incomplete and the stakes are real.',
+    body: 'The composure and frameworks to make high-stakes calls when information is incomplete.',
   },
   {
     title: 'Career positioning and executive advancement',
@@ -88,12 +88,12 @@ const STEPS = [
   {
     number: '02',
     title: 'Introductory conversation',
-    body: 'A confidential discussion with Mahesh to explore your leadership goals, challenges, and trajectory. Together, you assess alignment, contribution potential, and fit within the forum community.',
+    body: 'A confidential discussion with Mahesh to explore your goals and assess alignment, contribution potential, and fit.',
   },
   {
     number: '03',
     title: 'Invitation and enrollment',
-    body: 'Selected leaders receive a formal invitation to the upcoming forum. Participation is intentionally limited to preserve the quality, trust, and depth of every conversation.',
+    body: 'Selected leaders receive a formal invitation. Participation is intentionally limited to preserve the quality and depth of every conversation.',
   },
 ]
 
@@ -137,19 +137,10 @@ export default function CSuiteForumPage() {
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             The C-Suite Forum
           </h1>
-          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
+          <p className="font-body text-[18px] leading-[1.75] text-white/70">
             A confidential executive leadership forum for senior leaders navigating visibility, influence, and AI-era transformation.
           </p>
-          <div>
-            <a
-              href="#why-it-exists"
-              className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
-            >
-              Learn More
-            </a>
-          </div>
         </div>
-        {/* PHOTO SLOT: Boardroom session shot, Mahesh facilitating a forum meeting */}
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
             src="/images/c-suite_forum.jpeg"
@@ -164,27 +155,20 @@ export default function CSuiteForumPage() {
 
       <GoldDivider />
 
-      {/* Why It Exists */}
+      {/* Why It Exists + Who It's For — combined */}
       <section id="why-it-exists" className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             The Higher You Rise, The Fewer Honest Conversations You Have
           </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            <p>Senior leadership is isolating by design.</p>
-            <p>
-              The decisions get harder. The honest conversations get rarer. The people above you evaluate you. The people below you need things from you. The peers inside your organization have their own agendas. And the most important questions about your trajectory, your blind spots, and your next move go largely unasked.
-            </p>
-            <p>
-              Most leaders are navigating the most complex terrain of their careers with the fewest real thinking partners they have ever had.
-            </p>
-            <p>The C-Suite Forum is built for that gap.</p>
-          </div>
-          <ul className="space-y-3 mt-8">
+          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
+            Senior leadership is isolating by design. The decisions get harder, the honest conversations get rarer, and the most important questions about trajectory, blind spots, and next moves go largely unasked. The C-Suite Forum is built for that gap.
+          </p>
+          <ul className="space-y-3 mb-10">
             {[
               'Confidential. What is shared in the room stays in the room.',
-              'Peer-level. Every member understands the weight and complexity of senior leadership.',
-              'Real situations. Every session is built around actual challenges members bring forward.',
+              'Peer-level. Every member understands the weight of senior leadership.',
+              'Real situations. Every session is built around what members bring forward.',
               'Selective. The caliber of the room is everything.',
             ].map((item) => (
               <li key={item} className="flex gap-3">
@@ -193,23 +177,7 @@ export default function CSuiteForumPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* Who This Is For */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-            Who This Forum Is Designed For
-          </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            <p>
-              Mahesh works with C-Suite executives, Directors, Vice Presidents, and Senior Managers — across technology, finance, healthcare, and enterprise — who are preparing for expanded scope, greater enterprise influence, or the next stage of their leadership. The common thread is not title. It is a leader who has outgrown their current circle and is ready to operate at a higher level.
-            </p>
-            <p>These are the moments that typically bring leaders to the forum.</p>
-          </div>
+          <p className="font-body text-[15px] text-muted mb-6">These are the moments that typically bring leaders to the forum.</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-border">
               <thead>
@@ -237,73 +205,22 @@ export default function CSuiteForumPage() {
 
       <GoldDivider />
 
-      {/* What the Forum Explores */}
+      {/* Challenges Explored */}
       <section className="bg-navy py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-3">
             The Challenges Explored Together
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
-            Topics evolve based on what members bring into the room. Every session has direct and immediate relevance to what is live in members&apos; work.
+          <p className="font-body text-[15px] leading-[1.75] text-white/50 mb-10">
+            Topics evolve based on what members bring into the room. Every session has direct relevance to what is live in members&apos; work.
           </p>
-          <div className="space-y-12">
-            {ARENAS.map((arena, index) => (
-              <div key={arena.title} className="flex gap-8 items-start">
-                <div className="font-display text-[40px] font-bold text-gold leading-none flex-shrink-0 w-12 text-right">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
-                <div className="pt-1">
-                  <h3 className="font-body text-[18px] font-semibold text-white mb-3">{arena.title}</h3>
-                  <p className="font-body text-[17px] leading-[1.75] text-white/70">{arena.body}</p>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
+            {ARENAS.map((arena) => (
+              <div key={arena.title} className="border-t border-white/20 pt-5">
+                <h3 className="font-body text-[16px] font-semibold text-white mb-2">{arena.title}</h3>
+                <p className="font-body text-[15px] leading-[1.7] text-white/60">{arena.body}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* How the Forum Works */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
-            How the Forum Works
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
-            Participation is intentionally limited to preserve the depth, trust, and quality of every conversation.
-          </p>
-          <div className="space-y-10">
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">Forum structure</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Eight to fifteen senior leaders. One session every two weeks. Six-month engagement. Facilitated executive advisory discussions centered on the real situations members bring forward.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">One-on-one sessions with Mahesh</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Each participant receives individual strategic advisory sessions with Mahesh each quarter, dedicated to personal leadership challenges, career trajectory, and growth.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">Confidentiality</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                The forum operates under the Chatham House Rule. What is shared within the room stays within the room. Every member accepts this standard before joining.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">What members gain</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Greater executive confidence, sharper strategic clarity, stronger stakeholder influence, and the kind of peer relationships that sustain career momentum well beyond the engagement.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">Who belongs in the room</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Active engagement. Thoughtful perspective. Real challenges brought forward. Genuine investment in the growth of every other leader in the room.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -313,19 +230,13 @@ export default function CSuiteForumPage() {
       {/* Testimonials */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-4">
-            Trusted by Leaders Across Global Organizations
-          </div>
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+          <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
             What Forum Members Say
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-12 max-w-4xl">
-            Leaders from NVIDIA, Apple, Meta, Google, Microsoft, Adobe, Bank of America, Walmart, and dozens of other global organizations have participated in Mahesh&apos;s coaching, advisory, and leadership development engagements.
-          </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {FORUM_TESTIMONIALS.map((t, i) => (
               <div key={i} className="bg-bg border border-border p-8 flex flex-col gap-6">
-                <p className="font-body text-[16px] italic leading-[1.75] text-navy">
+                <p className="font-body text-[16px] italic leading-[1.75] text-navy flex-1">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="font-body text-[14px] font-semibold text-navy">
@@ -347,7 +258,7 @@ export default function CSuiteForumPage() {
       {/* How to Join */}
       <section className="bg-bg py-10 lg:py-14">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
             <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight">
               How to Join
             </h2>
@@ -355,6 +266,9 @@ export default function CSuiteForumPage() {
               Participation is selective and limited.
             </p>
           </div>
+          <p className="font-body text-[13px] text-muted mb-8">
+            8–15 leaders per cohort &nbsp;·&nbsp; Sessions every two weeks &nbsp;·&nbsp; Six-month engagement &nbsp;·&nbsp; Chatham House confidentiality
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {STEPS.map((step) => (
               <div key={step.number} className="border-t-2 border-gold pt-5">
