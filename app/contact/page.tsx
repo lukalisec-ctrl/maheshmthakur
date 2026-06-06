@@ -40,7 +40,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
-                <h2 className="font-display text-[20px] lg:text-[23px] font-semibold text-white leading-tight mb-4">
+                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
                   Send a Note.
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">

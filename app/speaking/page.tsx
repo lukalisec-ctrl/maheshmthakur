@@ -161,7 +161,7 @@ export default function SpeakingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             The Message
           </div>
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-8">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
             The Reason Most AI Investments Fail Is Not Technical.
           </h2>
           <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
@@ -192,7 +192,7 @@ export default function SpeakingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             A Rare Tier of Executive Advisory
           </div>
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             The Credentials Behind the Message
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
@@ -213,7 +213,7 @@ export default function SpeakingPage() {
       {/* Section 4 — Signature Keynotes */}
       <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-4">
             Signature keynotes.
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
@@ -244,7 +244,7 @@ export default function SpeakingPage() {
       {/* Section 5 — Watch Mahesh on Stage */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Watch Mahesh on stage.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -274,7 +274,7 @@ export default function SpeakingPage() {
       {/* Section 6 — What Audiences Walk Away With */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Decode AI. Align Capital, Product, and Execution. Drive Transformation.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -296,7 +296,7 @@ export default function SpeakingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
             Past Stages and Audiences
           </div>
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Delivered at Boards, Summits, and Leadership Offsites Globally.
           </h2>
           <div className="flex flex-wrap gap-x-10 gap-y-4 mb-8">
@@ -371,7 +371,7 @@ export default function SpeakingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
                 <div className="w-8 h-[2px] bg-gold mb-5" />
-                <h2 className="font-display text-[20px] lg:text-[23px] font-semibold text-white leading-tight mb-4">
+                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
                   Contact Mahesh Today
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">

@@ -111,7 +111,7 @@ export default function HomePage() {
       {/* Credibility Metrics */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Results at Scale
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -147,7 +147,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-8">
+              <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
                 Why Senior Leaders Work With Mahesh
               </h2>
               <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
@@ -189,7 +189,7 @@ export default function HomePage() {
       {/* Trusted At */}
       <section className="bg-white py-10 lg:py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
             Trusted at the Highest Levels of Enterprises
           </h2>
           <p className="font-body text-[16px] leading-[1.75] text-muted mb-10 max-w-2xl mx-auto">
@@ -212,7 +212,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-white leading-tight mb-6">
+              <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-6">
                 The Leadership Bar
               </h2>
               <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/75 mb-8">
@@ -256,7 +256,7 @@ export default function HomePage() {
       {/* Latest Insights */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             The Latest From Mahesh
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

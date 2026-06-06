@@ -190,7 +190,7 @@ export default function TestimonialsPage() {
       {/* Section 2 — Featured Testimonials */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             In Their Own Words.
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -217,7 +217,7 @@ export default function TestimonialsPage() {
       {/* Section 3 — Trusted At */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Trusted at the Highest Levels of Enterprises
           </h2>
           <Image
@@ -235,7 +235,7 @@ export default function TestimonialsPage() {
       {/* Section 4 — The Full Library */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-12">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-12">
             Client Success Stories.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -262,7 +262,7 @@ export default function TestimonialsPage() {
               />
             </div>
             <div>
-              <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-6">
+              <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-6">
                 Ready to Start the Conversation?
               </h2>
               <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">

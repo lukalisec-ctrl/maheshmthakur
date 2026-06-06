@@ -175,7 +175,7 @@ export default function ExecutiveCoachingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             Leadership Challenges
           </div>
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
             From high performer to recognized leader.
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
@@ -200,7 +200,7 @@ export default function ExecutiveCoachingPage() {
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
             What Changes Through the Coaching
           </div>
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
             What leaders gain from working with Mahesh.
           </h2>
           <p className="font-body text-[17px] leading-[1.75] text-muted mb-10">
@@ -243,7 +243,7 @@ export default function ExecutiveCoachingPage() {
       {/* FAQ */}
       <section className="bg-bg py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[20px] lg:text-[26px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             Common Questions
           </h2>
           <Accordion items={FAQ_ITEMS} />
@@ -261,7 +261,7 @@ export default function ExecutiveCoachingPage() {
                 <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
                   An Invitation to Begin
                 </div>
-                <h2 className="font-display text-[20px] lg:text-[23px] font-semibold text-white leading-tight mb-4">
+                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-white leading-tight mb-4">
                   Ready to elevate your leadership impact?
                 </h2>
                 <p className="font-body text-[15px] leading-[1.75] text-white/65">
