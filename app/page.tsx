@@ -81,41 +81,26 @@ export default function HomePage() {
       {/* Credibility Metrics */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">100%</div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
-                Value Rating
-              </div>
+              <div className="font-body text-[11px] font-semibold uppercase tracking-[0.12em] text-gold mb-4">Revenue Optimization</div>
+              <div className="font-display text-[56px] font-bold text-navy leading-none mb-3">16%</div>
               <p className="font-body text-[15px] leading-[1.7] text-muted">
-                89.5% of keynote audiences rated the session inspiring and immediately relevant.
+                Increase in Revenue Per Employee within 12 months across client organizations.
               </p>
             </div>
             <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">100%</div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
-                Re-Hire Intent
-              </div>
+              <div className="font-body text-[11px] font-semibold uppercase tracking-[0.12em] text-gold mb-4">Execution Discipline</div>
+              <div className="font-display text-[56px] font-bold text-navy leading-none mb-3">81%</div>
               <p className="font-body text-[15px] leading-[1.7] text-muted">
-                88.4% of event organizers rated the session engaging, interactive, and worth repeating.
-              </p>
-            </div>
-            <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">15</div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
-                Worldwide
-              </div>
-              <p className="font-body text-[15px] leading-[1.7] text-muted">
-                One of only 15 Master Certified Coaches globally in Marshall Goldsmith&apos;s Stakeholder Centered Coaching method.
+                Shifted organizational delivery from 23 percent to 81 percent on-time and on-budget.
               </p>
             </div>
             <div className="bg-navy p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$1B</div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-white mb-2">
-                Revenue Delivered
-              </div>
+              <div className="font-body text-[11px] font-semibold uppercase tracking-[0.12em] text-gold mb-4">Scale</div>
+              <div className="font-display text-[56px] font-bold text-gold leading-none mb-3">$1B</div>
               <p className="font-body text-[15px] leading-[1.7] text-white/70">
-                Core architect of the first $1 billion in Bing Ads revenue at Microsoft. Operator-level credibility no coach-only advisor can match.
+                Core architect of the $1 billion Bing Ads revenue engine at Microsoft.
               </p>
             </div>
           </div>
