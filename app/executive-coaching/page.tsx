@@ -9,13 +9,13 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'The AI-Native Leadership Coach.',
   description:
-    'Private one-on-one coaching for technology leaders at every level — from first-time managers to C-Suite — building presence, judgment, and influence for bigger scope.',
+    'Private one-on-one coaching for technology leaders at every level, from first-time managers to C-Suite, building presence, judgment, and influence for bigger scope.',
 }
 
 const WORK_ITEMS = [
   {
     title: 'Performing under pressure without losing yourself',
-    body: 'The steadiness that holds when the stakes are highest — and the room is full of senior stakeholders.',
+    body: 'The steadiness that holds when the stakes are highest, with the room full of senior stakeholders.',
   },
   {
     title: 'Influencing without authority',
@@ -23,11 +23,11 @@ const WORK_ITEMS = [
   },
   {
     title: 'Showing up as a leader, not just a deliverer',
-    body: 'Being seen by the right people as ready for more — not just trusted by your team.',
+    body: 'Being seen by the right people as ready for more, not just trusted by your team.',
   },
   {
     title: 'Communicating at the right altitude',
-    body: 'Different calibration for different rooms. Not a different identity — a different altitude.',
+    body: 'Different calibration for different rooms. Not a different identity. A different altitude.',
   },
   {
     title: 'Navigating difficult environments without absorbing them',
@@ -137,7 +137,7 @@ export default function ExecutiveCoachingPage() {
           <div>
             <Link
               href="/about-us"
-              className="inline-block border border-white/40 text-white/80 px-8 py-4 font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+              className="inline-block border border-gold text-gold px-6 py-2.5 font-body text-[11px] font-medium tracking-[0.16em] uppercase hover:bg-gold hover:text-white transition-colors"
             >
               Read Mahesh&apos;s Full Bio Here
             </Link>
@@ -165,7 +165,7 @@ export default function ExecutiveCoachingPage() {
           </h2>
           <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
             <p>
-              High-performing leaders who are already delivering results — but hitting a ceiling. The promotion stalls. The feedback gets vague. The rules change and no one explains what changed.
+              High-performing leaders who are already delivering results, hitting a ceiling. The promotion stalls. The feedback gets vague. The rules change and no one explains what changed.
             </p>
             <p>
               At a certain level the evaluation shifts. It is no longer about what was delivered. It is about presence, judgment, and whether senior leaders trust you with more. Mahesh calls this the Leadership Bar. His coaching is built around crossing it.
@@ -193,10 +193,13 @@ export default function ExecutiveCoachingPage() {
               </tbody>
             </table>
           </div>
-          <div className="mt-10">
+          <div className="mt-14 flex flex-col items-center gap-5 border-t border-border pt-10">
+            <p className="font-body text-[14px] text-muted tracking-wide text-center">
+              If this describes where you are, the next step is a conversation.
+            </p>
             <a
               href="#contact"
-              className="inline-block bg-gold text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-navy transition-colors"
+              className="inline-block bg-gold text-white px-10 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-navy transition-colors"
             >
               Inquire Here
             </a>
@@ -213,7 +216,7 @@ export default function ExecutiveCoachingPage() {
             What Changes Through the Work
           </h2>
           <p className="font-body text-[15px] leading-[1.75] text-white/50 mb-10">
-            Private, tailored engagements. No fixed curriculum — built around what is live in the leader&apos;s world.
+            Private, tailored engagements. No fixed curriculum, built around what is live in the leader&apos;s world.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
             {WORK_ITEMS.map((item) => (

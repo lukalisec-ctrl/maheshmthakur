@@ -94,7 +94,7 @@ export default function AdvisoryPage() {
           </h2>
           <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-12">
             <p>Every committee meeting has AI on the agenda. Pilots are shipping. Products are not scaling. Revenue is not moving. And no one can answer the one question that matters: where is the return.</p>
-            <p>The gap is not technical. It is the translation layer between Silicon Valley and the boardroom — capital allocated to the wrong bets, product strategy bolted on instead of built in, execution on a twelve-month roadmap in a market that moves every ninety days.</p>
+            <p>The gap is not technical. It is the translation layer between Silicon Valley and the boardroom: capital allocated to the wrong bets, product strategy bolted on instead of built in, execution on a twelve-month roadmap in a market that moves every ninety days.</p>
           </div>
           <h3 className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-gold mb-6">
             Three ways Mahesh can help
@@ -103,7 +103,7 @@ export default function AdvisoryPage() {
             {[
               {
                 label: 'Board Advisor',
-                body: 'Sits with your Board or Audit Committee as an independent expert. A second opinion on every major AI capital decision — which spending builds a moat and which is a vendor wrapper.',
+                body: 'Sits with your Board or Audit Committee as an independent expert. A second opinion on every major AI capital decision: which spending builds a moat and which is a vendor wrapper.',
                 qualifier: 'For Boards and Audit Committees making recurring AI capital decisions.',
               },
               {
@@ -185,11 +185,11 @@ export default function AdvisoryPage() {
               },
               {
                 question: 'Is this ongoing or project-based?',
-                answer: 'Both. Board Advisory is ongoing with a defined monthly cadence. The C-Suite Alignment Sprint is a contained project. Interim CTPO engagements run until the trajectory is fixed — usually three to six months.',
+                answer: 'Both. Board Advisory is ongoing with a defined monthly cadence. The C-Suite Alignment Sprint is a contained project. Interim CTPO engagements run until the trajectory is fixed, usually three to six months.',
               },
               {
                 question: 'How is this different from hiring a consulting firm?',
-                answer: 'A consulting firm sends a team. Mahesh is the engagement. He has managed a billion-dollar revenue line and a six hundred million dollar P&L. He does not learn your business from a discovery deck — he has sat in the seat he is being asked to advise on.',
+                answer: 'A consulting firm sends a team. Mahesh is the engagement. He has managed a billion-dollar revenue line and a six hundred million dollar P&L. He does not learn your business from a discovery deck. He has sat in the seat he is being asked to advise on.',
               },
               {
                 question: 'Do you sign NDAs?',
@@ -209,7 +209,7 @@ export default function AdvisoryPage() {
             Book a call.
           </h3>
           <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
-            Mahesh takes a limited number of advisory engagements each year. Fifteen minutes, video. He will tell you whether he can help — and if not, who can.
+            Mahesh takes a limited number of advisory engagements each year. Fifteen minutes, video. He will tell you whether he can help, and if not, who can.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

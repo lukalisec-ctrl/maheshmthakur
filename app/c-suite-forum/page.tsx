@@ -159,7 +159,7 @@ export default function CSuiteForumPage() {
           <div>
             <Link
               href="/about-us"
-              className="inline-block border border-white/40 text-white/80 px-8 py-4 font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+              className="inline-block border border-gold text-gold px-6 py-2.5 font-body text-[11px] font-medium tracking-[0.16em] uppercase hover:bg-gold hover:text-white transition-colors"
             >
               Read Mahesh&apos;s Full Bio Here
             </Link>
@@ -224,10 +224,13 @@ export default function CSuiteForumPage() {
               </tbody>
             </table>
           </div>
-          <div className="mt-10">
+          <div className="mt-14 flex flex-col items-center gap-5 border-t border-border pt-10">
+            <p className="font-body text-[14px] text-muted tracking-wide text-center">
+              If the forum sounds aligned with where you are, the next step is a conversation.
+            </p>
             <a
               href="#contact"
-              className="inline-block bg-gold text-white px-8 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-navy transition-colors"
+              className="inline-block bg-gold text-white px-10 py-4 font-body font-semibold text-sm tracking-widest uppercase hover:bg-navy transition-colors"
             >
               Inquire Here
             </a>
