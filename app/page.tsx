@@ -39,11 +39,6 @@ const INVISIBLE_BAR_ITEMS = [
   'Confidence under pressure',
 ]
 
-const INFLECTION_ROWS = [
-  { moment: 'Bigger scope', nav: '"I am being asked to lead beyond my current role."' },
-  { moment: 'Executive presence', nav: '"I need to show up with more clarity, confidence, and authority."' },
-  { moment: 'Enterprise influence', nav: '"I need to influence senior stakeholders across functions and agendas."' },
-]
 
 export default function HomePage() {
   return (
@@ -174,97 +169,46 @@ export default function HomePage() {
 
       <GoldDivider />
 
-      {/* Partnering With Leaders */}
-      <section className="bg-bg py-14 lg:py-20">
+      {/* The Leadership Bar + Assessment — combined */}
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
-            Partnering With Leaders at Critical Inflection Points
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
-            Mahesh works with high-performing leaders when performance alone is no longer enough.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-border">
-              <thead>
-                <tr className="bg-navy text-white">
-                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left w-[200px]">
-                    Moment
-                  </th>
-                  <th className="px-6 py-5 font-body text-[12px] uppercase tracking-[0.08em] text-left">
-                    What the leader is navigating
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {INFLECTION_ROWS.map((row, i) => (
-                  <tr key={row.moment} className={`border-b border-border ${i % 2 === 0 ? 'bg-white' : 'bg-bg'}`}>
-                    <td className="px-6 py-5 font-body font-semibold text-navy align-top">{row.moment}</td>
-                    <td className="px-6 py-5 font-body text-[16px] italic text-[#1A1A1A]">{row.nav}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* The Leadership Bar */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
+              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-6">
                 The Leadership Bar
               </h2>
-              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
+              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/75 mb-8">
                 <p>
                   Most leaders are not held back because they lack intelligence, effort, or capability.
                 </p>
                 <p>
-                  They get held back because the bar changes. At one level, leaders are rewarded for execution. At the next, they are evaluated on judgment, influence, presence, and trust. No one explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
+                  They get held back because the bar changes. At the next level, the evaluation shifts to judgment, influence, presence, and trust. No one explains this shift. Leaders who do not see it get passed over. Leaders who do see it move ahead.
                 </p>
-                <p>Mahesh helps leaders cross that bar.</p>
               </div>
-            </div>
-            <div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-5">
-                What We Strengthen
-              </div>
-              <ul className="space-y-3">
+              <ul className="space-y-2 mb-10">
                 {INVISIBLE_BAR_ITEMS.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="text-gold font-semibold flex-shrink-0">—</span>
-                    <span className="font-body text-[17px] text-[#1A1A1A]">{item}</span>
+                    <span className="font-body text-[16px] text-white/70">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
+            <div className="bg-white/5 border border-white/10 p-10">
+              <h3 className="font-display text-[24px] font-semibold text-white leading-tight mb-4">
+                The Leadership Assessment
+              </h3>
+              <p className="font-body text-[16px] leading-[1.75] text-white/65 mb-8">
+                Find out what may be limiting your readiness for bigger scope, stronger influence, and higher-stakes leadership. Five questions. Five minutes. A clear picture of where you stand.
+              </p>
+              <a
+                href={ASSESSMENT_URL}
+                className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
+              >
+                Take the Assessment
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* The Leadership Assessment */}
-      <section className="bg-navy py-14 lg:py-20">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-6">
-            The Leadership Assessment
-          </h2>
-          <div className="space-y-4 font-body text-[17px] leading-[1.75] text-white/80 mb-10">
-            <p>
-              Find out what may be limiting your readiness for bigger scope, stronger influence, and higher-stakes leadership.
-            </p>
-            <p>Five questions. Five minutes. A clear picture of where you stand.</p>
-          </div>
-          <a
-            href={ASSESSMENT_URL}
-            className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
-          >
-            Take the Assessment
-          </a>
         </div>
       </section>
 
