@@ -226,48 +226,77 @@ export default function HomePage() {
 
       {/* Work With Mahesh */}
       <section className="bg-white py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
-            Work With Mahesh
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
+            Coaching and Leadership Services
+          </div>
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12">
+            Ways to Work With Mahesh
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            <div className="relative min-h-[400px] lg:min-h-full">
-              <Image
-                src="/images/P2134727.jpeg"
-                alt="Mahesh M. Thakur"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+
+          {/* Coaching */}
+          <div className="mb-10">
+            <div className="font-body text-[11px] uppercase tracking-[0.14em] text-muted mb-1">
+              One-on-One Coaching
             </div>
-            <div className="flex flex-col gap-8">
-              <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6 flex-1">
-                <h3 className="font-body text-[18px] font-semibold text-navy">Coaching</h3>
-                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                  Private coaching for high-performing leaders who are ready to build greater presence, judgment, and influence for bigger scope.
-                </p>
-                <div>
+            <div className="divide-y divide-border">
+              {[
+                {
+                  title: 'Executive Presence and Authority',
+                  body: 'For leaders who need to command the room with greater clarity, confidence, and influence at senior levels.',
+                },
+                {
+                  title: 'Promotion Readiness',
+                  body: 'For leaders preparing for the next title, building the visibility and track record that make the step inevitable.',
+                },
+                {
+                  title: 'Enterprise Influence',
+                  body: 'For leaders who need to move boards, CEOs, and cross-functional peers without positional authority.',
+                },
+                {
+                  title: 'Leadership Transition',
+                  body: 'For leaders stepping into bigger scope, a new level, or the shift from operator to executive.',
+                },
+                {
+                  title: 'AI-Era Leadership',
+                  body: 'For senior leaders staying strategically relevant as technology reshapes what leadership requires at the top.',
+                },
+              ].map((item) => (
+                <div key={item.title} className="py-5 flex items-start justify-between gap-8">
+                  <div className="flex-1">
+                    <div className="font-body text-[16px] font-semibold text-navy mb-1">{item.title}</div>
+                    <p className="font-body text-[14px] leading-[1.7] text-muted">{item.body}</p>
+                  </div>
                   <Link
                     href="/executive-coaching"
-                    className="inline-block border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
+                    className="font-body text-[13px] text-gold underline decoration-gold flex-shrink-0 mt-1"
                   >
-                    Learn More
+                    Learn More →
                   </Link>
                 </div>
-              </div>
-              <div className="bg-bg border border-border border-t-4 border-t-navy p-10 flex flex-col gap-6 flex-1">
-                <h3 className="font-body text-[18px] font-semibold text-navy">C-Suite Forum</h3>
-                <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                  A confidential peer room for senior leaders preparing for stronger enterprise influence, sharper judgment, and higher-stakes leadership.
-                </p>
-                <div>
-                  <Link
-                    href="/c-suite-forum"
-                    className="inline-block border border-navy text-navy px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-                  >
-                    Request Invitation
-                  </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* C-Suite Forum */}
+          <div>
+            <div className="font-body text-[11px] uppercase tracking-[0.14em] text-muted mb-1">
+              Group Leadership Forum
+            </div>
+            <div className="border-t border-border pt-5">
+              <div className="flex items-start justify-between gap-8">
+                <div className="flex-1">
+                  <div className="font-body text-[16px] font-semibold text-navy mb-1">The C-Suite Forum</div>
+                  <p className="font-body text-[14px] leading-[1.7] text-muted">
+                    A confidential peer room for senior leaders navigating visibility, influence, and AI-era transformation. Selective. Global. Biweekly.
+                  </p>
                 </div>
+                <Link
+                  href="/c-suite-forum"
+                  className="font-body text-[13px] text-gold underline decoration-gold flex-shrink-0 mt-1"
+                >
+                  Request Invitation →
+                </Link>
               </div>
             </div>
           </div>
