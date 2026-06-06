@@ -52,7 +52,7 @@ export default function HomePage() {
       <section className="bg-navy min-h-[60vh] lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-5">
         <div className="lg:col-span-3 flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-12 lg:py-0">
           <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            Top 100 Coach Globally &nbsp;|&nbsp; AI-Native Coach &nbsp;|&nbsp; Trusted Advisor
+            Top 100 Coach Globally &nbsp;|&nbsp; Stanford GSB Board Director &nbsp;|&nbsp; Master Certified Coach
           </div>
           <h1 className="font-display text-[32px] lg:text-[48px] font-bold text-white leading-tight mb-5">
             AI-Native Coaching for Leaders Who Are Ready for More.
@@ -81,43 +81,41 @@ export default function HomePage() {
       {/* Credibility Metrics */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-12 text-center">
-            Operator Experience. Coaching Depth. Enterprise Context.
-          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-navy p-8">
-              <h3 className="font-body text-[15px] font-semibold text-white mb-3">
-                Top 100 Coach and Rare Master Certification
-              </h3>
-              <p className="font-body text-[15px] leading-[1.7] text-white/70">
-                Selected for Marshall Goldsmith&apos;s 100 Coaches. One of only approximately 15 Master Certified Coaches worldwide in Stakeholder Centered Coaching.
-              </p>
-            </div>
             <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">20+</div>
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">100%</div>
               <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
-                Years of Operator Experience
+                Value Rating
               </div>
               <p className="font-body text-[15px] leading-[1.7] text-muted">
-                Executive experience across Microsoft, Amazon, Intuit, and GoDaddy.
+                89.5% of keynote audiences rated the session inspiring and immediately relevant.
               </p>
             </div>
             <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$1B</div>
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">100%</div>
               <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
+                Re-Hire Intent
+              </div>
+              <p className="font-body text-[15px] leading-[1.7] text-muted">
+                88.4% of event organizers rated the session engaging, interactive, and worth repeating.
+              </p>
+            </div>
+            <div className="bg-bg border border-border p-8">
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">15</div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
+                Worldwide
+              </div>
+              <p className="font-body text-[15px] leading-[1.7] text-muted">
+                One of only 15 Master Certified Coaches globally in Marshall Goldsmith&apos;s Stakeholder Centered Coaching method.
+              </p>
+            </div>
+            <div className="bg-navy p-8">
+              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$1B</div>
+              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-white mb-2">
                 Revenue Delivered
               </div>
-              <p className="font-body text-[15px] leading-[1.7] text-muted">
-                Part of the Microsoft Bing Ads core team that helped deliver the first $1 billion in revenue.
-              </p>
-            </div>
-            <div className="bg-bg border border-border p-8">
-              <div className="font-display text-[48px] font-bold text-gold leading-none mb-2">$600M</div>
-              <div className="font-body text-[13px] font-semibold uppercase tracking-[0.08em] text-navy mb-2">
-                P&amp;L Managed
-              </div>
-              <p className="font-body text-[15px] leading-[1.7] text-muted">
-                Managed product portfolios with P&amp;L responsibility above $600M at GoDaddy.
+              <p className="font-body text-[15px] leading-[1.7] text-white/70">
+                Core architect of the first $1 billion in Bing Ads revenue at Microsoft. Operator-level credibility no coach-only advisor can match.
               </p>
             </div>
           </div>
@@ -173,9 +171,12 @@ export default function HomePage() {
       {/* Trusted At */}
       <section className="bg-white py-10 lg:py-14">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
             Trusted at the Highest Levels of Enterprises
           </h2>
+          <p className="font-body text-[16px] leading-[1.75] text-muted mb-10 max-w-2xl mx-auto">
+            Senior leaders at Microsoft, Apple, Google, Meta, Samsung, NVIDIA, Adobe, and dozens of the world&apos;s most demanding technology organizations have worked with Mahesh.
+          </p>
           <Image
             src="/images/client_logos.jpeg"
             alt="Client organizations"
