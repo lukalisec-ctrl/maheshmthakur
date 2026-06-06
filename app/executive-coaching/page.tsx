@@ -137,22 +137,38 @@ export default function ExecutiveCoachingPage() {
       {/* Hero */}
       <section className="bg-navy py-16 lg:py-0 lg:min-h-[80vh] grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-16">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            Top 100 Coach Globally &nbsp;|&nbsp; Master Certified Coach &nbsp;|&nbsp; Trusted Advisor
-          </div>
           <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-6">
             The AI-Native Leadership Coach.
           </h1>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-8">
             Private coaching for technology leaders from Director to C-Suite. Building the presence, judgment, and influence required for bigger scope.
           </p>
-          <div>
-            <Link
-              href="/about-us"
-              className="inline-block border border-gold text-gold px-6 py-2.5 font-body text-[11px] font-medium tracking-[0.16em] uppercase hover:bg-gold hover:text-white transition-colors"
-            >
-              Read Mahesh&apos;s Full Bio Here
-            </Link>
+          <div className="w-full mt-2">
+            <div className="grid grid-cols-2 max-w-[240px] mb-3">
+              <div className="flex items-center justify-center h-16">
+                <Image
+                  src="/images/MCC1.png"
+                  alt="Master Certified Coach"
+                  width={160}
+                  height={160}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="flex items-center justify-center h-16">
+                <Image
+                  src="/images/100coaches.png"
+                  alt="100 Coaches"
+                  width={160}
+                  height={160}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center font-body text-[10px] uppercase tracking-[0.12em] text-gold max-w-[240px]">
+              <div className="flex-1 text-center">Master Certified Coach</div>
+              <span className="px-2">|</span>
+              <div className="flex-1 text-center">Top 100 Coach Globally</div>
+            </div>
           </div>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
