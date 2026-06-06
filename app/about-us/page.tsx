@@ -24,7 +24,7 @@ export default function AboutPage() {
             Before he coached leaders through the hardest transitions of their careers, he had navigated every one of them himself.
           </p>
           <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
-            Before he advised boards on AI strategy, he had already built the products those boards are now trying to fund.
+            He had already built the AI products those boards are now trying to fund.
           </p>
           <div>
             <a
