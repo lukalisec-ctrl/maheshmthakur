@@ -55,9 +55,32 @@ export default function HomePage() {
           <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-3">
             Delivering impact, influence, and executive presence at enterprise grade.
           </p>
-          <p className="font-body text-[15px] leading-[1.75] text-white/60">
+          <p className="font-body text-[15px] leading-[1.75] text-white/60 mb-10">
             A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur now helps senior leaders navigate bigger scope, executive visibility, and high-stakes influence in the AI era.
           </p>
+          <div className="flex items-center gap-8 flex-wrap">
+            <Image
+              src="/images/GSB_H_SEAL_2C-1024x332.jpeg"
+              alt="Stanford GSB"
+              width={120}
+              height={39}
+              className="h-10 w-auto object-contain"
+            />
+            <Image
+              src="/images/6980bbcf8b296319de737f85_98165a83e191056f3123f92a64eef791_mcc.jpeg"
+              alt="Master Certified Coach"
+              width={80}
+              height={80}
+              className="h-10 w-auto object-contain"
+            />
+            <Image
+              src="/images/100-Coaches-Stacked-Logo-reverse.jpeg"
+              alt="100 Coaches"
+              width={80}
+              height={80}
+              className="h-10 w-auto object-contain"
+            />
+          </div>
         </div>
         <div className="lg:col-span-2 relative min-h-[40vh] lg:min-h-full">
           <Image
@@ -194,7 +217,8 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white/5 border border-white/10 p-10">
+            <div className="lg:border-l lg:border-white/20 lg:pl-16">
+              <div className="w-8 h-[2px] bg-gold mb-6" />
               <h3 className="font-display text-[24px] font-semibold text-white leading-tight mb-4">
                 The Leadership Assessment
               </h3>
