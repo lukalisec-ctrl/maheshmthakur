@@ -58,27 +58,13 @@ export default function HomePage() {
           <p className="font-body text-[15px] leading-[1.75] text-white/60 mb-10">
             A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur now helps senior leaders navigate bigger scope, executive visibility, and high-stakes influence in the AI era.
           </p>
-          <div className="flex items-center gap-8 flex-wrap">
+          <div>
             <Image
-              src="/images/GSB_H_SEAL_2C-1024x332.jpeg"
-              alt="Stanford GSB"
-              width={120}
-              height={39}
-              className="h-10 w-auto object-contain"
-            />
-            <Image
-              src="/images/6980bbcf8b296319de737f85_98165a83e191056f3123f92a64eef791_mcc.jpeg"
-              alt="Master Certified Coach"
-              width={80}
+              src="/images/Gemini_Generated_Image_e34x77e34x77e34x.png"
+              alt="Stanford GSB | Master Certified Coach | 100 Coaches"
+              width={400}
               height={80}
-              className="h-10 w-auto object-contain"
-            />
-            <Image
-              src="/images/100-Coaches-Stacked-Logo-reverse.jpeg"
-              alt="100 Coaches"
-              width={80}
-              height={80}
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </div>
         </div>
@@ -263,25 +249,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <GoldDivider />
-
       {/* Final CTA Form */}
-      <section className="bg-bg py-10 lg:py-14">
+      <section className="bg-navy py-14 lg:py-20">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="bg-navy px-8 lg:px-14 py-10 lg:py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-              <div>
-                <div className="w-8 h-[2px] bg-gold mb-5" />
-                <h2 className="font-display text-[24px] lg:text-[28px] font-semibold text-white leading-tight mb-4">
-                  Ready to Start the Conversation?
-                </h2>
-                <p className="font-body text-[15px] leading-[1.75] text-white/65">
-                  If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note.
-                </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            <div>
+              <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
+                An Invitation to Begin
               </div>
-              <div>
-                <ContactForm buttonLabel="Send Request" dark />
-              </div>
+              <h2 className="font-display text-[28px] lg:text-[36px] font-semibold text-white leading-tight mb-5">
+                Ready to Start the Conversation?
+              </h2>
+              <p className="font-body text-[16px] leading-[1.75] text-white/65">
+                If you are navigating bigger scope, executive presence, stakeholder influence, or a leadership transition, send a short note. Mahesh reads every message personally.
+              </p>
+            </div>
+            <div>
+              <ContactForm buttonLabel="Send Request" dark />
             </div>
           </div>
         </div>
