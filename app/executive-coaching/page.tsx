@@ -15,27 +15,27 @@ export const metadata: Metadata = {
 const WORK_ITEMS = [
   {
     title: 'Performing under pressure without losing yourself',
-    body: 'Most leaders know what they want to say. Under pressure, in a room with senior stakeholders, something shifts. The thinking gets faster, the delivery gets worse, and the version of you that shows up is not the version you intended. The work builds the steadiness that holds when the stakes are highest.',
+    body: 'The steadiness that holds when the stakes are highest — and the room is full of senior stakeholders.',
   },
   {
     title: 'Influencing without authority',
-    body: 'At a certain level, getting things done requires moving people who do not report to you, do not owe you anything, and have their own agendas. Mahesh works on the specific relationships and conversations where that influence is breaking down.',
+    body: 'Moving people who do not report to you, do not owe you anything, and have their own agendas.',
   },
   {
     title: 'Showing up as a leader, not just a deliverer',
-    body: 'There is a version of performance that is productive but invisible. Heads down, delivering, trusted by your team, but not yet seen by the people above you as someone ready for more. The work makes the right people see the right things.',
+    body: 'Being seen by the right people as ready for more — not just trusted by your team.',
   },
   {
     title: 'Communicating at the right altitude',
-    body: 'What you say in a peer meeting and what you say in front of a VP or C-Suite leader requires a different calibration. Not a different identity. A different altitude. Mahesh works on the specific moments where that calibration is off.',
+    body: 'Different calibration for different rooms. Not a different identity — a different altitude.',
   },
   {
     title: 'Navigating difficult environments without absorbing them',
-    body: 'Micromanagement, resistant peers, toxic dynamics, ambiguous authority. Some environments are genuinely hard. The work is not about tolerating them. It is about building the internal steadiness and strategic clarity to operate well inside them while making clear decisions about whether to stay.',
+    body: 'Operating well inside hard environments while staying strategically clear on whether to stay.',
   },
   {
     title: 'Building the track record that makes promotion inevitable',
-    body: 'Promotion decisions are made before the formal process begins. The leaders who get promoted are the ones who have already been doing the next job in the eyes of the people who matter. Mahesh works on closing that gap deliberately.',
+    body: 'Promotion decisions are made before the formal process begins. Mahesh works on closing that gap deliberately.',
   },
 ]
 
@@ -44,11 +44,6 @@ const FAQ_ITEMS = [
     question: 'Who is this coaching for?',
     answer:
       'Mahesh works with technology leaders at every level, from first-time managers to C-Suite executives. The common thread is not title. It is a leader who is ready to operate at a higher level than they do today.',
-  },
-  {
-    question: 'Is coaching only for senior executives?',
-    answer:
-      'No. Mahesh works with technology leaders at every level, from first-time managers to C-Suite executives. The common thread is not title. It is a leader who is ready to operate at a higher level than they do today.',
   },
   {
     question: 'How long is the engagement?',
@@ -87,7 +82,7 @@ const COACHING_TESTIMONIALS = [
   },
   {
     quote:
-      'Leadership in this era requires you to elevate both yourself and your teams. Every engineering leader focused on building executive presence should work with Mahesh. Many engineers struggle with the so-called "soft skills" required to succeed in the executive suite. With Mahesh\'s guidance, those perceived weaknesses become powerful strengths. The impact of your work shifts from being competent to achieving true excellence.',
+      'Every engineering leader focused on building executive presence should work with Mahesh. The impact of your work shifts from being competent to achieving true excellence.',
     name: 'Vijay Kristipati',
     title: 'Head of Engineering',
     company: 'Google',
@@ -136,17 +131,9 @@ export default function ExecutiveCoachingPage() {
           <h1 className="font-display text-[36px] lg:text-[56px] font-bold text-white leading-tight mb-8">
             The AI-Native Leadership Coach.
           </h1>
-          <p className="font-body text-[18px] leading-[1.75] text-white/70 mb-10">
+          <p className="font-body text-[18px] leading-[1.75] text-white/70">
             Mahesh helps high-performing technology leaders build the presence, judgment, and influence required for bigger scope.
           </p>
-          <div>
-            <a
-              href="#who-this-is-for"
-              className="inline-block bg-gold text-white px-10 py-5 font-body font-semibold text-sm tracking-widest uppercase hover:bg-white hover:text-navy transition-colors"
-            >
-              Learn More
-            </a>
-          </div>
         </div>
         <div className="relative min-h-[40vh] lg:min-h-full">
           <Image
@@ -162,24 +149,20 @@ export default function ExecutiveCoachingPage() {
 
       <GoldDivider />
 
-      {/* Who Mahesh Works With */}
+      {/* Who This Is For + The Leadership Bar — combined */}
       <section id="who-this-is-for" className="bg-white py-14 lg:py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-6">
             Who Mahesh Works With
           </h2>
-          <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-10">
+          <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A] mb-8">
             <p>
-              Mahesh works with high-performing leaders who are already succeeding. They deliver results. They are respected by their teams. They have strong track records.
+              High-performing leaders who are already delivering results — but hitting a ceiling. The promotion stalls. The feedback gets vague. The rules change and no one explains what changed.
             </p>
             <p>
-              At some point, the dynamic shifts. The promotion does not come through. The feedback gets vague. They are asked to lead at a level where the rules are different and no one explains what changed.
+              At a certain level the evaluation shifts. It is no longer about what was delivered. It is about presence, judgment, and whether senior leaders trust you with more. Mahesh calls this the Leadership Bar. His coaching is built around crossing it.
             </p>
-            <p>That is the moment most leaders reach out.</p>
           </div>
-          <p className="font-body text-[17px] italic leading-[1.75] text-navy mt-2 mb-10">
-            Mahesh works with technology leaders at every level of the journey, from first-time managers building their leadership foundation to C-Suite executives preparing for their next mandate.
-          </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-border">
               <thead>
@@ -207,112 +190,22 @@ export default function ExecutiveCoachingPage() {
 
       <GoldDivider />
 
-      {/* The Leadership Bar */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-8">
-                The Leadership Bar
-              </h2>
-              <div className="space-y-5 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>Most leaders are not held back because they lack intelligence, effort, or capability.</p>
-                <p>They get held back because the bar changes, and no one tells them.</p>
-                <p>
-                  At one level, leaders are rewarded for execution. Deliver the project. Ship the product. Hit the number. At the next level, the evaluation shifts. The question is no longer what did you deliver. The question is how does the room feel when you walk in, how well do you think under pressure, and whether the people above you trust you with more.
-                </p>
-                <p>
-                  This shift is real. It is consistent across companies. Most leaders do not see it clearly until they have already been passed over.
-                </p>
-                <p>
-                  Mahesh calls this the Invisible Bar. His coaching is built around helping leaders see it precisely and cross it.
-                </p>
-              </div>
-            </div>
-            <div>
-              <Image
-                src="/images/mahesh-boardroom.jpg"
-                alt="Mahesh M. Thakur"
-                width={600}
-                height={700}
-                className="object-cover w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
       {/* What Changes Through the Work */}
       <section className="bg-navy py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-4">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-white leading-tight mb-3">
             What Changes Through the Work
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-white/50 mb-12">
-            Every engagement is private and tailored. The situations below are the ones Mahesh most commonly works through with technology leaders, not as a fixed curriculum, but as the terrain that tends to come up when the stakes are high.
+          <p className="font-body text-[15px] leading-[1.75] text-white/50 mb-10">
+            Private, tailored engagements. No fixed curriculum — built around what is live in the leader&apos;s world.
           </p>
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
             {WORK_ITEMS.map((item, index) => (
-              <div key={item.title} className="flex gap-8 items-start">
-                <div className="font-display text-[40px] font-bold text-gold leading-none flex-shrink-0 w-12 text-right">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
-                <div className="pt-1">
-                  <h3 className="font-body text-[18px] font-semibold text-white mb-3">{item.title}</h3>
-                  <p className="font-body text-[17px] leading-[1.75] text-white/70">{item.body}</p>
-                </div>
+              <div key={item.title} className="border-t border-white/20 pt-5">
+                <h3 className="font-body text-[16px] font-semibold text-white mb-2">{item.title}</h3>
+                <p className="font-body text-[15px] leading-[1.7] text-white/60">{item.body}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <GoldDivider />
-
-      {/* What to Expect */}
-      <section className="bg-bg py-14 lg:py-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-4">
-            What to Expect
-          </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-muted mb-12">
-            The engagement is private, one-on-one, and built around what is actually happening in the leader&apos;s work, not a fixed syllabus.
-          </p>
-          <div className="space-y-10">
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">How sessions work</h3>
-              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>
-                  The first session is 60 minutes. Mahesh uses it to go deep on the leader&apos;s situation, goals, and how they operate: how they think under pressure, how they make decisions, what triggers them, and what they are trying to build. Every session after that is 45 minutes, split between the long-term goals set at the start and whatever is immediate and live in the leader&apos;s world right now.
-                </p>
-                <p>
-                  Sessions are typically weekly at the start of the engagement, when the work is most intensive. As the leader stabilises, cadence moves to biweekly.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">Between sessions</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Leaders have access to Mahesh by email between sessions for real situations as they arise. For urgent matters, text works. Mahesh also does preparation and follow-up work around every session, not just the session itself.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">Engagement options</h3>
-              <div className="space-y-4 font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                <p>
-                  Mahesh offers three-month and six-month engagements. Most clients who complete a three-month engagement renew, because the results become visible before it ends. The six-month engagement is the standard for leaders working on deeper identity and operational shifts.
-                </p>
-                <p>All engagements include a mutual NDA. Everything discussed is strictly confidential.</p>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-body text-[17px] font-semibold text-navy mb-3">How it starts</h3>
-              <p className="font-body text-[17px] leading-[1.75] text-[#1A1A1A]">
-                Send a short note through the form below. Mahesh&apos;s team reviews every inquiry personally. If there is a clear fit, they will be in touch to schedule a first conversation.
-              </p>
-            </div>
           </div>
         </div>
       </section>
