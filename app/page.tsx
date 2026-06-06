@@ -41,7 +41,7 @@ export default function HomePage() {
             Executive Leadership Through High-Stakes Transitions.
           </h1>
           <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-3">
-            Whether the organization is expanding, shrinking, or restructuring, transitions define leaders. Mahesh prepares them.
+            Whether your organization is expanding, shrinking, or restructuring, how you lead through it defines your career. Mahesh prepares you for that moment.
           </p>
           <p className="font-body text-[15px] leading-[1.75] text-white/60 mb-10">
             A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur works with senior technology leaders from Director to C-Suite navigating the moments that define careers.
