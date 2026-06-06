@@ -46,26 +46,52 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-navy min-h-[60vh] lg:min-h-[70vh] grid grid-cols-1 lg:grid-cols-5">
         <div className="lg:col-span-3 flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-12 lg:py-0">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            Top 100 Coach Globally &nbsp;|&nbsp; Stanford GSB Board Director &nbsp;|&nbsp; Master Certified Coach
-          </div>
           <h1 className="font-display text-[32px] lg:text-[48px] font-bold text-white leading-tight mb-5">
-            AI-Native Coaching for Leaders Who Are Ready for More.
+            Executive Leadership Through High-Stakes Transitions.
           </h1>
           <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-3">
-            Delivering impact, influence, and executive presence at enterprise grade.
+            Whether the organization is expanding, shrinking, or restructuring, transitions define leaders. Mahesh prepares them.
           </p>
           <p className="font-body text-[15px] leading-[1.75] text-white/60 mb-10">
-            A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur now helps senior leaders navigate bigger scope, executive visibility, and high-stakes influence in the AI era.
+            A former Vice President at Microsoft, Amazon, Intuit, and GoDaddy, Mahesh M. Thakur works with senior technology leaders from Director to C-Suite navigating the moments that define careers.
           </p>
-          <div>
-            <Image
-              src="/images/Gemini_Generated_Image_e34x77e34x77e34x.png"
-              alt="Stanford GSB | Master Certified Coach | 100 Coaches"
-              width={400}
-              height={80}
-              className="h-12 w-auto object-contain"
-            />
+          <div className="w-full">
+            <div className="grid grid-cols-3 mb-4">
+              <div className="flex items-center justify-center h-20">
+                <Image
+                  src="/images/Stanford.png"
+                  alt="Stanford GSB"
+                  width={360}
+                  height={116}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="flex items-center justify-center h-20">
+                <Image
+                  src="/images/MCC1.png"
+                  alt="Master Certified Coach"
+                  width={160}
+                  height={160}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+              <div className="flex items-center justify-center h-20">
+                <Image
+                  src="/images/100coaches.png"
+                  alt="100 Coaches"
+                  width={160}
+                  height={160}
+                  className="h-full w-auto object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex items-center font-body text-[11px] uppercase tracking-[0.12em] text-gold">
+              <div className="flex-1 text-center">Stanford GSB Board Director</div>
+              <span className="px-2">|</span>
+              <div className="flex-1 text-center">Master Certified Coach</div>
+              <span className="px-2">|</span>
+              <div className="flex-1 text-center">Top 100 Coach Globally</div>
+            </div>
           </div>
         </div>
         <div className="lg:col-span-2 relative min-h-[40vh] lg:min-h-full">
@@ -85,6 +111,9 @@ export default function HomePage() {
       {/* Credibility Metrics */}
       <section className="bg-white py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[32px] lg:text-[40px] font-semibold text-navy leading-tight mb-10">
+            Results at Scale
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-bg border border-border p-8">
               <div className="font-body text-[11px] font-semibold uppercase tracking-[0.12em] text-gold mb-4">Revenue Optimization</div>
