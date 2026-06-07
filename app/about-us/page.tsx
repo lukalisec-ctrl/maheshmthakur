@@ -249,9 +249,6 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
               <div>
-                <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
-                  An Invitation to Begin
-                </div>
                 <h2 className="font-display text-[22px] lg:text-[28px] font-bold text-navy leading-tight mb-5">
                   Working with someone who has been there starts with a conversation.
                 </h2>

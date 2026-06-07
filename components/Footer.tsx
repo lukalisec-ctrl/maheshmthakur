@@ -68,8 +68,8 @@ export default function Footer() {
               </div>
               <ul className="space-y-3">
                 {[
-                  { label: 'About', href: '/about-us' },
-                  { label: 'Testimonials', href: '/testimonials' },
+                  { label: 'Meet Mahesh', href: '/about-us' },
+                  { label: 'What Clients Say', href: '/testimonials' },
                   { label: 'Contact', href: '/contact' },
                   { label: 'Blog', href: '/blog' },
                   { label: 'Newsletter', href: '/newsletter' },

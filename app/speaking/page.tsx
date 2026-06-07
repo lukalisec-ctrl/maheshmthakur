@@ -155,9 +155,6 @@ export default function SpeakingPage() {
       {/* Section 2 — The Message */}
       <section id="the-message" className="bg-white py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            The Message
-          </div>
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-8">
             The Reason Most AI Investments Fail Is Not Technical.
           </h2>

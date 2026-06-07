@@ -161,9 +161,6 @@ export default function CSuiteForumPage() {
       {/* Who This Is For */}
       <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            Who This Is For
-          </div>
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
             The strength of this forum comes from the caliber of the leaders in the room.
           </h2>
@@ -207,9 +204,6 @@ export default function CSuiteForumPage() {
       {/* What the Forum Is */}
       <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            The Forum
-          </div>
           <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-4">
             A Curated, Confidential, High-Caliber Environment
           </h2>
@@ -259,7 +253,7 @@ export default function CSuiteForumPage() {
       <GoldDivider />
 
       {/* Testimonials */}
-      <section className="bg-white py-8 lg:py-12">
+      <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-3">
             What Forum Members Say
@@ -294,6 +288,29 @@ export default function CSuiteForumPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <GoldDivider />
+
+      {/* Video */}
+      <section className="bg-white py-8 lg:py-12">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-4">
+            Hear from forum members.
+          </h2>
+          <p className="font-body text-[16px] leading-[1.75] text-muted mb-8">
+            Senior technology leaders share what they gained from the C-Suite Forum.
+          </p>
+          <div className="aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/5Y1d96bDOrs"
+              title="C-Suite Forum: Success Stories & Wins from Top Bay Area Tech Leaders"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import GoldDivider from '@/components/GoldDivider'
 import TestimonialCard from '@/components/TestimonialCard'
-import Accordion from '@/components/Accordion'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -21,32 +20,6 @@ const CHALLENGES = [
   '"I am navigating a promotion cycle with no clear signal on what is actually being evaluated."',
 ]
 
-const OUTCOMES = [
-  {
-    title: 'Executive presence that commands the room',
-    body: 'Show up with the clarity, confidence, and authority that senior leaders trust and respond to.',
-  },
-  {
-    title: 'Influence above and across',
-    body: 'Move boards, CEOs, and cross-functional peers without positional authority.',
-  },
-  {
-    title: 'Promotion readiness that is visible',
-    body: 'Build the track record and perception that make the next step inevitable, not uncertain.',
-  },
-  {
-    title: 'Clarity under pressure',
-    body: 'Walk into a board review, a reorg, or a high-stakes conversation and come out having led it — not just survived it.',
-  },
-  {
-    title: 'Visibility that is earned',
-    body: 'The right people see your judgment, your work, and your readiness — before the opportunity is on the table.',
-  },
-  {
-    title: 'AI-era leadership',
-    body: 'Lead with authority as AI shifts who gets trusted, who gets promoted, and who gets asked to the table.',
-  },
-]
 
 const COACHING_TESTIMONIALS = [
   {
@@ -69,6 +42,33 @@ const COACHING_TESTIMONIALS = [
     name: 'Shikha Jain',
     title: 'Machine Learning PM',
     company: 'Apple',
+  },
+]
+
+const DIFFERENTIATORS = [
+  {
+    title: 'He ran the job before he coached it.',
+    body: 'Former Vice President at Microsoft, Amazon, Intuit, and GoDaddy. Mahesh has managed nine-figure P&Ls, built billion-dollar products, and led global teams through every kind of transition. He coaches from direct experience, not theory.',
+  },
+  {
+    title: 'One of fifteen people in the world.',
+    body: 'Mahesh is one of fifteen people worldwide to hold the Master Certified Coach designation in Marshall Goldsmith\'s Stakeholder Centered Coaching. Of the roughly five million certified coaches in the world, fifteen carry this designation.',
+  },
+  {
+    title: 'Selected from eighteen thousand.',
+    body: 'Mahesh was selected from 18,000 global applicants to join Marshall Goldsmith\'s 100 Coaches, the most selective leadership development community in the world.',
+  },
+  {
+    title: 'AI leader before AI was a strategy.',
+    body: 'One of the first product leaders inside what is now Microsoft AI. Featured in Forbes and Inc. for pioneering AI methodologies now used by Meta and Spotify. His perspective on AI leadership was built in the field, not derived from it.',
+  },
+  {
+    title: 'Results that are measured, not claimed.',
+    body: 'Coaching engagements have produced a 16% increase in Revenue Per Employee and shifted organizational delivery from 23% to 81% on-time and on-budget. Every result is validated by the stakeholders who work alongside the leader, not reported by the leader themselves.',
+  },
+  {
+    title: 'The organizations that trust him.',
+    body: 'Senior leaders at Microsoft, Apple, Google, Meta, Samsung, NVIDIA, Adobe, and dozens of the world\'s most demanding technology organizations have worked with Mahesh. Many come through referral from leaders who have worked with him before.',
   },
 ]
 
@@ -105,33 +105,6 @@ const PHASES = [
   },
 ]
 
-const FAQ_ITEMS = [
-  {
-    question: 'Who is this for?',
-    answer:
-      'Technology leaders from Director to C-Suite at firms like NVIDIA, Meta, Google, Apple, and high-growth companies. The common thread is not title. It is a leader who is ready to operate at a higher level and wants a direct, structured path to get there.',
-  },
-  {
-    question: 'What makes this different from standard coaching?',
-    answer:
-      'Standard coaching is reflective. This is clinical and prescriptive. Mahesh is one of only 15 people globally designated as a Master Certified Coach in Stakeholder Centered Coaching, the world\'s premier methodology for measurable leadership results. Every engagement is a direct 1:1 with Mahesh. Nothing is delegated.',
-  },
-  {
-    question: 'How is success measured?',
-    answer:
-      'Using the Marshall Goldsmith stakeholder framework, your growth is validated by the people you actually lead and work alongside. Not self-reported. Results are visible to the people who matter before the engagement ends.',
-  },
-  {
-    question: 'Why is pricing not listed?',
-    answer:
-      'Every engagement is a bespoke strategic partnership built around your specific situation, goals, and trajectory. We begin with a confidential conversation to determine fit before any investment is discussed.',
-  },
-  {
-    question: 'How do I find out if this is the right fit?',
-    answer:
-      'Send a short note through the form below. Mahesh reviews every inquiry personally. If there is a clear fit, you will be invited to a fifteen-minute call to assess alignment. No commitment required.',
-  },
-]
 
 export default function ExecutiveCoachingPage() {
   return (
@@ -249,7 +222,7 @@ export default function ExecutiveCoachingPage() {
       <section className="bg-gold py-7">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-5">
           <p className="font-body text-[15px] font-semibold uppercase tracking-[0.18em] text-white text-center lg:text-left">
-            Request a Confidential Executive Leadership Strategy Session
+            Request a Confidential Leadership Strategy Session
           </p>
           <a
             href="#contact"
@@ -260,25 +233,17 @@ export default function ExecutiveCoachingPage() {
         </div>
       </section>
 
-      <GoldDivider />
-
-      {/* What Leaders Gain */}
+      {/* What Sets Mahesh Apart */}
       <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-4">
-            What Changes
-          </div>
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-4">
-            What shifts when you work with Mahesh.
+          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-white leading-tight mb-10">
+            What sets Mahesh apart.
           </h2>
-          <p className="font-body text-[17px] leading-[1.75] text-white/60 mb-10">
-            Private, tailored engagements built around what is live in the leader&apos;s world. No fixed curriculum.
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {OUTCOMES.map((item) => (
-              <div key={item.title} className="border-t-2 border-gold pt-5">
-                <h3 className="font-body text-[16px] font-semibold text-white mb-2">{item.title}</h3>
-                <p className="font-body text-[15px] leading-[1.7] text-white/70">{item.body}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
+            {DIFFERENTIATORS.map((item) => (
+              <div key={item.title} className="border-t border-white/20 pt-5">
+                <h3 className="font-body text-[15px] font-semibold text-white mb-2">{item.title}</h3>
+                <p className="font-body text-[15px] leading-[1.7] text-white/60">{item.body}</p>
               </div>
             ))}
           </div>
@@ -290,9 +255,6 @@ export default function ExecutiveCoachingPage() {
       {/* What Clients Say */}
       <section className="bg-bg py-8 lg:py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="font-body text-[13px] uppercase tracking-[0.12em] text-gold mb-8">
-            What Clients Say
-          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {COACHING_TESTIMONIALS.map((t) => (
               <TestimonialCard key={t.name} {...t} />
@@ -308,39 +270,26 @@ export default function ExecutiveCoachingPage() {
 
       <GoldDivider />
 
-      {/* FAQ */}
-      <section className="bg-white py-8 lg:py-12">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <h2 className="font-display text-[24px] lg:text-[32px] font-semibold text-navy leading-tight mb-10">
-            Common Questions
-          </h2>
-          <Accordion items={FAQ_ITEMS} />
-        </div>
-      </section>
-
-      <GoldDivider />
-
       {/* Final CTA Form */}
-      <section className="bg-bg py-8 lg:py-12">
+      <section id="contact" className="bg-bg py-8 lg:py-12">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-              <div>
-                <div className="font-body text-[11px] uppercase tracking-[0.16em] text-gold mb-5">
-                  An Invitation to Begin
-                </div>
-                <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
-                  Every transition starts with one conversation.
-                </h2>
-                <p className="font-body text-[15px] leading-[1.75] text-muted">
-                  If you are leading through a reorganization, taking on expanded scope, or navigating the transition to the next level, request a private discovery conversation.
-                </p>
-              </div>
-              <div>
-                <ContactForm buttonLabel="Request a Conversation" />
-              </div>
+            <div>
+              <div className="w-8 h-[2px] bg-gold mb-6" />
+              <h2 className="font-display text-[22px] lg:text-[26px] font-semibold text-navy leading-tight mb-4">
+                Every transition starts with one conversation.
+              </h2>
+              <p className="font-body text-[15px] leading-[1.75] text-muted">
+                If you are leading through a reorganization, taking on expanded scope, or navigating the transition to the next level, request a private discovery conversation.
+              </p>
+            </div>
+            <div>
+              <ContactForm buttonLabel="Request a Conversation" />
+            </div>
           </div>
         </div>
       </section>
+
     </>
   )
 }

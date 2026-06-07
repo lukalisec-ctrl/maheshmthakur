@@ -170,9 +170,6 @@ export default function TestimonialsPage() {
       {/* Section 1 — Hero */}
       <section className="bg-navy py-8 lg:py-12">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <div className="font-body text-[12px] uppercase tracking-[0.12em] text-gold mb-6">
-            What Clients Say
-          </div>
           <h1 className="font-display text-[28px] lg:text-[44px] font-bold text-white leading-tight mb-8">
             Voices From the Work.
           </h1>
